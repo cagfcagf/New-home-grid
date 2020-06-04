@@ -1,0 +1,46 @@
+
+
+header {
+  background-color: #282E3C;
+}
+
+.grid {
+  display: grid;
+  grid-template: 78px / 1fr 1120px 1fr;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: 78px / repeat(12,1fr);
+  grid-column: 2/3;
+  align-items: center;
+}
+
+.logo {
+  width: 124px;
+  grid-column: 1;
+}
+
+.btn-sesion-size-1 {
+  width: 140px;
+  grid-column: 10;
+}
+
+.btn-sesion-size-2 {
+  width: 140px;
+  grid-column: 11;
+}
+
+.btn-sesion-size-3 {
+  width: 140px;
+  grid-column: 12;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .grid-container {
+    grid-column: 1/13;
+  }
+
+}
