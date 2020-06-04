@@ -43,6 +43,10 @@
   font-weight: 600;
 }
 
+.font-weight-extrabold {
+  font-weight: 800;
+}
+
 /* fonts  sizes */
 
 .font-size-12 {
@@ -59,6 +63,10 @@
 
 .font-size-26 {
   font-size: 26px;
+}
+
+.font-size-29 {
+  font-size: 29px;
 }
 
 
@@ -79,6 +87,7 @@
 
 .btn-sesion-icon {
   height: 21.34px;
+  width: 21.34px;
   margin: 6px 5px 6px 6px;
 }
 
@@ -152,7 +161,7 @@
   color: white;
 }
 
-.btn-main-with-icon:hover, .btn-main-with-icon:hover #Trazado_22, .btn-main-with-icon:hover #Trazado_23,.btn-main-with-icon:hover #Trazado_24,.btn-main-with-icon:hover #Trazado_25  {
+.btn-main-with-icon:hover, .btn-main-with-icon:hover #Trazado_22, .btn-main-with-icon:hover #Trazado_23,.btn-main-with-icon:hover #Trazado_24,.btn-main-with-icon:hover #Trazado_25,.btn-main-with-icon:hover #Trazado_26,.btn-main-with-icon:hover #Trazado_27  {
   background-color: white;
   fill: var(--main-black);
 }
@@ -161,7 +170,7 @@
   color: var(--main-black);
 }
 
-.btn-main-with-icon:active, .btn-main-with-icon:active #Trazado_22, .btn-main-with-icon:active #Trazado_23,.btn-main-with-icon:active #Trazado_24,.btn-main-with-icon:active #Trazado_25 {
+.btn-main-with-icon:active, .btn-main-with-icon:active #Trazado_22, .btn-main-with-icon:active #Trazado_23,.btn-main-with-icon:active #Trazado_24,.btn-main-with-icon:active #Trazado_25,.btn-main-with-icon:active #Trazado_26,.btn-main-with-icon:active #Trazado_27 {
   background-color: var(--light-orange);
   border-color: var(--light-orange);
   fill: white;
