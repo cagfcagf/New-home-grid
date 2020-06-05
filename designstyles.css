@@ -2,6 +2,30 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* grid system */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1120px 1fr;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column: 2/3;
+}
+
+@media only screen and (max-width: 1120px) {
+
+  .grid-container {
+    grid-column: 1/2;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 /* colours */
 
 :root {
@@ -71,6 +95,16 @@
 
 .font-size-35 {
   font-size: 35px;
+}
+
+/* Titulos */
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  color: var(--main-black);
 }
 
 /* boton inicio de sesion  (verde con icono)*/
