@@ -383,3 +383,49 @@ header {
 .card-space {
   margin-top: 45px;
 }
+
+/* faq */
+
+.grid-faq-rows {
+  grid-template-rows: repeat(7,auto);
+}
+
+.grid-faq-rows h2 {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  margin-top: 100px;
+  margin-bottom: 66px;
+}
+
+.faq-container {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  grid-template-rows: repeat(2,auto);
+}
+
+.faq-container .plus {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: var(--main-green);
+  background-image:
+  cursor: pointer;
+}
+
+.faq-container .question {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-container .answer {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 18px;
+  font-weight: 500;
+}
