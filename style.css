@@ -329,3 +329,57 @@ header {
   grid-column: 10/13;
   grid-row: 2/3;
 }
+
+/* Usuarios felices */
+
+.grid-customers-background {
+  background-image: url('images/greybackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-customers-rows {
+  grid-template-rows: repeat(2,auto);
+}
+
+.grid-customers-rows h2 {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  margin-top: 82px;
+  margin-bottom: 68px;
+}
+
+.card-image-1 {
+  background-image: url('images/cristian.jpg');
+  background-size: contain;
+}
+
+.card-image-2 {
+  background-image: url('images/cristian.jpg');
+  background-size: contain;
+}
+
+.card-image-3 {
+  background-image: url('images/cristian.jpg');
+  background-size: contain;
+}
+
+.card-image-4 {
+  background-image: url('images/cristian.jpg');
+  background-size: contain;
+}
+
+.card-image-5 {
+  background-image: url('images/cristian.jpg');
+  background-size: contain;
+}
+
+.card-image-6 {
+  background-image: url('images/cristian.jpg');
+  background-size: contain;
+}
+
+.card-space {
+  margin-top: 45px;
+}
