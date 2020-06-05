@@ -274,3 +274,58 @@ header {
 .flickity-page-dots {
   display: none;
 }
+
+/* nuestras cifras */
+
+.grid-figures-rows {
+  grid-template-rows: repeat(2,auto);
+  margin-bottom: 125px;
+}
+
+.grid-figures-rows h2{
+  grid-column: 1/13;
+  grid-row: 1/2;
+  margin-top: 110px;
+  margin-bottom: 60px;
+}
+
+.figures-container p {
+  text-align: center;
+  margin: 0;
+}
+
+.text-main-figure {
+  color: var(--main-orange);
+  font-size: 47px;
+  font-weight: 800;
+}
+
+.text-second-figure {
+  color: var(--main-black);
+  font-size: 21px;
+  font-weight: 500;
+  line-height : 25px;
+}
+
+.figures-container:nth-child(2) {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  border-right: solid 2px var(--main-green);
+}
+
+.figures-container:nth-child(3) {
+  grid-column: 4/7;
+  grid-row: 2/3;
+  border-right: solid 2px var(--main-green);
+}
+
+.figures-container:nth-child(4) {
+  grid-column: 7/10;
+  grid-row: 2/3;
+  border-right: solid 2px var(--main-green);
+}
+
+.figures-container:nth-child(5) {
+  grid-column: 10/13;
+  grid-row: 2/3;
+}
