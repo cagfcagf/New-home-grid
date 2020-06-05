@@ -69,6 +69,9 @@
   font-size: 29px;
 }
 
+.font-size-35 {
+  font-size: 35px;
+}
 
 /* boton inicio de sesion  (verde con icono)*/
 
@@ -278,26 +281,35 @@
   background-size: contain;
 }
 
-@media screen and (max-width: 1024px) {
-
-.card-3 {
-  display: none;
-}
 
 
-
-}
-
-@media screen and (max-width: 768px) {
-
-.card-2 {
-    display: none;
-  }
-
-}
 
 /* card con icono */
+.card-circle-1 {
+  width: 105px;
+  height: 105px;
+  background-color: var(--main-green);
+  border-radius: 50%;
+  margin: -40px auto 31px auto;
+  position: relative;
+  background-image: url('icons/rapidez.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
 
+.card-circle-2 {
+  width: 105px;
+  height: 105px;
+  background-color: var(--main-green);
+  border-radius: 50%;
+  margin: -40px auto 31px auto;
+  position: relative;
+  background-image: url('icons/seguridad.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
 .card-circle-3 {
   width: 105px;
   height: 105px;
@@ -351,15 +363,6 @@
   padding-right: 27px;
 }
 
-
-
-@media screen and (max-width: 1000px) {
-
-.card-2 {
-    display: none;
-  }
-
-}
 
 /* wizards */
 
