@@ -1,4 +1,6 @@
 
+// Muestra y oculta las preguntas frecuentes
+
 function mostrarOcultar(Faq){
 var elemento = document.getElementById(Faq);
 if(!elemento) {
