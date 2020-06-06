@@ -405,34 +405,6 @@ header {
   grid-template-rows: repeat(3,auto);
 }
 
-.faq-container:nth-child(2) {
-  grid-row: 3/4;
-}
-
-.faq-container:nth-child(3) {
-  grid-row: 4/5;
-}
-
-.faq-container:nth-child(4) {
-  grid-row: 5/6;
-}
-
-.faq-container:nth-child(5) {
-  grid-row: 6/7;
-}
-
-.faq-container:nth-child(6) {
-  grid-row: 7/8;
-}
-
-.faq-container:nth-child(7) {
-  grid-row: 8/9;
-}
-
-.faq-container:nth-child(8) {
-  grid-row: 9/10;
-}
-
 
 .faq-container .bottom-line {
   height: 2px;
@@ -443,7 +415,7 @@ header {
   margin-bottom: 45px;
 }
 
-.faq-container .plus {
+.plus {
   grid-column: 1/2;
   grid-row: 1/2;
   width: 33px;
@@ -473,4 +445,8 @@ header {
   font-size: 18px;
   font-weight: 500;
   display: none;
+}
+
+.less {
+  background-image: url('icons/less.svg');
 }
