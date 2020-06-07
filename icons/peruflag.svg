@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48.369" height="33.496" viewBox="0 0 48.369 33.496">
+  <g id="peru" transform="translate(0 0)">
+    <path id="Trazado_78" data-name="Trazado 78" d="M0,0H17.239V33.4H0Z" transform="translate(15.084 0)" fill="#fff"/>
+    <g id="Grupo_106" data-name="Grupo 106">
+      <path id="Trazado_76" data-name="Trazado 76" d="M15.95,80H4.785A4.616,4.616,0,0,0,0,84.626V108.87A4.616,4.616,0,0,0,4.785,113.5H15.95Z" transform="translate(0 -80)" fill="#e73b36"/>
+      <path id="Trazado_77" data-name="Trazado 77" d="M347.165,80H336v33.5h11.165a4.616,4.616,0,0,0,4.785-4.626V84.626A4.616,4.616,0,0,0,347.165,80Z" transform="translate(-303.581 -80)" fill="#e73b36"/>
+    </g>
+  </g>
+</svg>

@@ -1,18 +1,18 @@
 
 // Muestra y oculta las preguntas frecuentes
 
-function mostrarOcultar(Faq){
+function mostrarOcultar(Faq, icon){
 const elemento = document.getElementById(Faq);
-const icon = document.getElementById('icon');
+const icono = document.getElementById(icon);
 if(!elemento) {
 return true;
 }
 if (elemento.style.display == "none") {
 elemento.style.display = "block"
-icon.classList.add('less');
+icono.classList.add('less');
 } else {
 elemento.style.display = "none"
-icon.classList.remove('less');
+icono.classList.remove('less');
 };
 return true;
 };

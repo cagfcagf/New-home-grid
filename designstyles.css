@@ -107,6 +107,25 @@ h2 {
   color: var(--main-black);
 }
 
+h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+
+
+
 /* boton inicio de sesion  (verde con icono)*/
 
 .btn-sesion {
