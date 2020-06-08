@@ -499,7 +499,7 @@ header {
 
 .location-title {
   grid-row: 1/2;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .address-chile {
@@ -556,6 +556,7 @@ header {
   grid-template-columns: 49px 1fr 16px;
   grid-template-rows: repeat(3, auto);
   display: grid;
+  padding-bottom: 50px ;
 }
 
 .peru-flag {
