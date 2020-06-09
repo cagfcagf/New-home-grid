@@ -169,7 +169,7 @@ h5 {
 /* boton princial */
 
 .btn-main {
-  padding: 12px 46px 12px 46px;
+  
   letter-spacing: -0.2px;
   color: var(--main-black);
   background-color: var(--main-green);
