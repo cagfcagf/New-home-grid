@@ -1,45 +1,6 @@
 
                                               /* home inicial */
 
-/* header */
-
-header {
-  background-color: #282E3C;
-}
-
-.grid-header {
-  height: 78px;
-  align-items: center;
-}
-
-.logo {
-  width: 124px;
-  grid-column: 1;
-}
-
-.btn-sesion-size-1 {
-  width: 140px;
-  grid-column: 9;
-}
-
-.btn-sesion-size-2 {
-  width: 140px;
-  grid-column: 10;
-  margin-left: 50px;
-}
-
-.btn-sesion-size-3 {
-  width: 140px;
-  grid-column: 11;
-  margin-left: 50px;
-}
-
-@media only screen and (max-width: 1120px) {
-
-  .logo {
-    margin-left: 19px;
-  }
-}
 
 
 /* main body */
@@ -164,6 +125,26 @@ header {
 }
 
 
+@media only screen and (max-width: 1120px) {
+
+  .btn-main-with-icon-home-left {
+    width: 116px;
+    grid-area: 3/1/4/7;
+    justify-self: end;
+    margin-right: 25px;
+  }
+
+  .btn-main-with-icon-home-right {
+    width: 116px;
+    grid-area: 3/7/4/13;
+    justify-self: start;
+    margin-left: 25px;
+  }
+
+
+}
+
+
 /* sección por qué */
 
 .grid-wrap-rows {
@@ -197,42 +178,33 @@ header {
   justify-self: center
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 950px) {
 
-
-  .card-1 {
-    grid-column: 1/7;
-    grid-row: 2/3;
-    width: 280px;
+  .grid-wrap-rows {
+    grid-template-rows: repeat(4,auto);
   }
-
-  .card-2 {
-    grid-column: 7/13;
-    grid-row: 2/3;
-    width: 280px;
-  }
-
-  .card-3 {
-    display: none;
-  }
-
-}
-
-@media only screen and (max-width: 730px) {
-
 
   .card-1 {
     grid-column: 1/13;
     grid-row: 2/3;
-    width: 280px;
-  }
+    width: 239px;
+    }
 
   .card-2 {
-    display: none;
+    grid-column: 1/13;
+    grid-row: 3/4;
+    width: 239px;
+
   }
 
+  .card-3 {
+    grid-column: 1/13;
+    grid-row: 4/5;
+    width: 239px;
+  }
 
 }
+
 
 /* Seccion prensa */
 
