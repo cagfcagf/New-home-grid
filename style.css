@@ -320,6 +320,8 @@
     grid-template-rows: repeat(4,auto);
   }
 
+
+
   .card-1 {
     grid-column: 1/13;
     grid-row: 2/3;
@@ -341,6 +343,45 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+
+  .grid-wrap-rows h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 52px;
+    margin-bottom: 87px;
+  }
+
+  .card {
+    border: 0;
+    border-radius: 20px!important;
+    margin: 0 1.5em 80px 1.5em!important;
+    padding: 0px 1.5em 2em 1.5em!important;
+
+  }
+
+  .card-title {
+    color: var(--main-orange);
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .card-text {
+    color: var(--main-black);
+    line-height : 19px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+  }
+
+  .card-circle-1, .card-circle-2, .card-circle-3  {
+    width: 95px;
+    height: 95px;
+    margin: -50px auto 16px auto;
+  }
+
+}
 
 /* Seccion prensa */
 
@@ -381,6 +422,17 @@
 
 .flickity-page-dots {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .grid-press-rows h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 45px;
+  }
+
 }
 
 /* nuestras cifras */
