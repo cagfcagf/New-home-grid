@@ -597,6 +597,7 @@
 
 .grid-customers-rows {
   grid-template-rows: repeat(2,auto);
+  display: grid;
 }
 
 .grid-customers-rows h2 {
