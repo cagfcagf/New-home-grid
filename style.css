@@ -148,10 +148,11 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 24px;
+    text-transform: none;
   }
 
   .home-graphic-line {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2/5;
     align-self: center;
     width: 2px;
@@ -162,17 +163,16 @@
   }
 
   .home-graphic-1 {
-    grid-column: 3/13;
+    grid-column: 2/13;
     grid-row: 2/3;
     height: auto;
     display: flex;
     align-items: center;
-
     margin-right: auto;
   }
 
   .home-graphic-2 {
-    grid-column: 3/13;
+    grid-column: 2/13;
     grid-row: 3/4;
     height: auto;
     display: flex;
@@ -183,7 +183,7 @@
   }
 
   .home-graphic-3 {
-    grid-column: 3/13;
+    grid-column: 2/13;
     grid-row: 4/5;
     height: auto;
     display: flex;
