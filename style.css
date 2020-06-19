@@ -441,13 +441,12 @@
   }
 
   .main-gallery {
-    margin-bottom: 34px;
-  }
+  margin-bottom: 34px;
+}
 
 }
 
 /* nuestras cifras */
-
 
 .grid-container-figures {
   display: grid;
@@ -510,6 +509,7 @@
   .grid-container-figures {
     grid-column: 1/2;
   }
+}
 
   @media only screen and (max-width: 900px) {
 
@@ -584,8 +584,6 @@
 }
 
 
-
-
 /* Usuarios felices */
 
 .grid-customers-background {
@@ -597,7 +595,6 @@
 
 .grid-customers-rows {
   grid-template-rows: repeat(2,auto);
-  display: grid;
 }
 
 .grid-customers-rows h2 {
