@@ -10,7 +10,7 @@ return true;
 if (elemento.style.display == "none") {
 elemento.style.display = "block"
 icono.classList.add('less');
-elemento.classList.add('showtransition');
+elemento.classList.add('animate__fadeIn');
 } else {
 elemento.style.display = "none"
 icono.classList.remove('less');
@@ -30,7 +30,7 @@ return true;
 if (direccion.style.display == "none") {
 direccion.style.display = "block"
 flecha.classList.add('rotar');
-direccion.classList.add('showtransition');
+direccion.classList.add('animate__fadeIn');
 } else {
 direccion.style.display = "none"
 flecha.classList.remove('rotar');
