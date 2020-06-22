@@ -3216,3 +3216,196 @@ margin-left: 14px;
     line-height: 20px;
   }
 }
+
+                                            /* Quienes somos */
+
+.card-value-team {
+  border: 0;
+  border-radius: 20px!important;
+  margin: 40px 0px 0 0px;
+  padding: 0px 0.5em 1.5em 0.5em!important;
+  justify-self: center;
+}
+
+.grid-who-rows {
+  grid-template-rows: repeat(5, auto);
+  padding-top: 20px;
+  padding-bottom: 90px;
+}
+
+.who-title1 {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  margin-top: 44px;
+  margin-bottom: 60px;
+
+}
+
+.history-text {
+  grid-column: 1/13;
+  grid-row: 3/4;
+  border-bottom: solid 2px var(--main-green);
+  padding-bottom: 90px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.who-title2 {
+  grid-column: 1/13;
+  grid-row: 4/5;
+  margin-top: 80px;
+  margin-bottom: 190px;
+}
+
+
+.card-team-1 {
+  grid-column: 1/5;
+  grid-row: 5/6;
+  width: 280px;
+  }
+
+.card-team-2 {
+  grid-column: 5/9;
+  grid-row: 5/6;
+  width: 280px;
+
+  }
+
+.card-team-3 {
+  grid-column: 9/13;
+  grid-row: 5/6;
+  width: 280px;
+
+  }
+
+
+  .card-circle-team-1 {
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    margin: -75px auto 26px auto;
+    position: relative;
+    background-image: url('images/cristian.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .card-circle-team-2 {
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    margin: -75px auto 26px auto;
+    position: relative;
+    background-image: url('images/tomas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .card-circle-team-3 {
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    margin: -75px auto 26px auto;
+    position: relative;
+    background-image: url('images/felipe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .card-title-team {
+    color: var(--main-orange);
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  .card-text-team {
+    color: var(--main-black);
+    line-height : 19px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+@media only screen and (max-width: 950px) {
+
+  .card-circle-team-1, .card-circle-team-2, .card-circle-team-3  {
+    margin: -65px auto 16px auto;
+  }
+
+}
+
+@media only screen and (max-width: 888px) {
+
+  .grid-who-rows {
+    grid-template-rows: repeat(7, auto);
+  }
+
+  .card-team-1 {
+    grid-column: 1/13;
+    grid-row: 5/6;
+    }
+
+  .card-team-2 {
+    grid-column: 1/13;
+    grid-row: 6/7;
+    }
+
+  .card-team-3 {
+    grid-column: 1/13;
+    grid-row: 7/8;
+  }
+
+  .who-title2 {
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+
+  .card-circle-team-1, .card-circle-team-2, .card-circle-team-3  {
+    width: 95px;
+    height: 95px;
+    margin: -50px auto 16px auto;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-who-rows {
+    padding-right: 56px;
+    padding-left: 56px;
+    padding-top: 64px;
+    padding-bottom: 0px;
+  }
+
+  .who-title1 {
+    margin-top: 0px;
+    margin-bottom: 83px;
+  }
+
+  .history-text {
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .who-title2 {
+    margin-top: 40px;
+    margin-bottom: 135px;
+  }
+
+  .card-value-team {
+    margin: 40px 0px 130px 0px!important;
+  }
+
+
+}

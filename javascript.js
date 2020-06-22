@@ -1,7 +1,7 @@
 
 // Muestra y oculta las preguntas frecuentes
 bottom-line
-function mostrarOcultar(Faq, icon, line){
+function mostrarOcultar(Faq, icon){
 const elemento = document.getElementById(Faq);
 const icono = document.getElementById(icon);
 if(!elemento) {
