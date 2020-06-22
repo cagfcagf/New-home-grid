@@ -2401,7 +2401,7 @@ thead {
   }
 
   .buyer-main-description {
-    padding-left: 15px;
+    padding-left: 0px;
   }
 }
 
@@ -2921,7 +2921,7 @@ padding-left: 30px;
 }
 
 .traveler-main-description {
-padding-left: 15px;
+padding-left: 0px;
 }
 }
 
