@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="theme-color" content="#282e3c"/>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flickity.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <title>Paso 1</title>
   </head>
   <body>
@@ -36,85 +37,215 @@
             <div class="row">
               <div class="col-4 d-flex justify-content-center">
                 <div class="wizard-circle d-flex justify-content-center align-items-center">
-                  <h6 class="wizard-number m-0 font-weight-bolder">1</h6>
+                  <h6 class="wizard-number m-0">1</h6>
                 </div>
               </div>
               <div class="col-4 d-flex justify-content-center">
                 <div class="wizard-circle-selected d-flex justify-content-center align-items-center">
-                  <h6 class="wizard-number m-0 font-weight-bolder">2</h6>
+                  <h6 class="wizard-number m-0">2</h6>
                 </div>
               </div>
               <div class="col-4 d-flex justify-content-center">
                 <div class="wizard-circle-selected d-flex justify-content-center align-items-center">
-                  <h6 class="wizard-number m-0 font-weight-bolder">3</h6>
+                  <h6 class="wizard-number m-0">3</h6>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-4 d-flex justify-content-center text-center">
-                <p class="wizard-text font-weight-medium">Haz tu pedido al viajero</p>
+                <p class="wizard-text ">Haz tu pedido al viajero</p>
               </div>
               <div class="col-4 d-flex justify-content-center text-center">
-                <p class="wizard-text font-weight-medium unselected-step">Elige a tu viajero</p>
+                <p class="wizard-text  unselected-step">Elige a tu viajero</p>
               </div>
               <div class="col-4 d-flex justify-content-center text-center">
-                <p class="wizard-text font-weight-medium unselected-step">Tu presupuesto</p>
+                <p class="wizard-text  unselected-step">Tu presupuesto</p>
               </div>
           </div>
           </div>
         </div>
         <div class="step1-remember-container d-flex justify-content-center align-items-center">
-          <p>Recuerda que la información que describas en la solicitud debe ser real. Cualquier cambio puede dejar tu cotización nula, ya que es<br>base a esta información que el viajero te está cotizando.</p>
+          <p>👀 Recuerda que la información que describas en la solicitud debe ser real. Cualquier cambio puede dejar tu cotización nula, ya que es<br>base a esta información que el viajero te está cotizando.</p>
         </div>
         <div class="step1-form-container">
-          <div class="step1-plus1"></div>
-          <div class="step1-plus2"></div>
-          <div class="step1-plus3"></div>
-          <p class="step1-addproduct-title">Agrega tu producto</p>
-          <div class="step1-addproduct-form"> <br><br> </div>
-          <p class="step1-shipping-title">Tipo de entrega</p>
-          <div class="step1-shipping-form"></div>
-          <p class="step1-aditional-title">Información adicional</p>
-          <div class="step1-aditional-form">
-            <div class="container shadow bg-white container-shipping">
-              <div class="row">
-                <div class="col">
-                  <p class="margin-33">Una vez que tus productos lleguen a Chile ¿Cómo prefieres la entrega?</p>
+          <div class="step1-plus1" onclick="return ocultarForm('form_product', 'step1-plus')" id="step1-plus"></div>
+          <div class="step1-plus1-line1"></div>
+          <div class="step1-plus1-line2"></div>
+          <div class="step1-plus2" onclick="return ocultarForm('form_shipping', 'step2-plus')" id="step2-plus"></div>
+          <div class="step1-plus1-line3"></div>
+          <div class="step1-plus1-line4"></div>
+          <div class="step1-plus3" onclick="return ocultarForm('form_aditional', 'step3-plus')" id="step3-plus"></div>
+          <p class="step1-addproduct-title" onclick="return ocultarForm('form_product', 'step1-plus')">Agrega tu producto</p>
+          <div class="step1-addproduct-form animate__animated" id="form_product" >
+              <div class="grid-productform-rows shadow bg-white">
+                <div class="product-form-link-grid">
+                  <h6 class="form-text">Link del producto</h6>
+                  <input type="text" class="form-control" placeholder="http://...">
+                </div>
+                <div class="product-form-price-grid">
+                  <h6 class="form-text">Valor <span class="highlight-semibold">unitario</span> del producto</h6>
+                  <div class="form-value-container">
+                  <div class="wrapper">
+                  <div class="select_wrap form-currency-size">
+                    <ul class="default_option currency-border">
+                        <li>
+                            <div class="wrapper-select">
+                              <p>USD</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul">
+                        <li>
+                            <div class="option">
+                              <p class="options-text">USD</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option">
+                              <p class="options-text">EUR</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  <input type="number" class="form-control field-currency-input">
+                  </div>
+                </div>
+                <div class="product-form-quantity-grid">
+                  <h6 class="form-text">Cantidad</h6>
+                  <input type="number" class="form-control">
+                </div>
+                <div class="product-form-box-grid">
+                  <h6 class="form-text">¿Necesitas la caja del producto?</h6>
+                  <div class="wrapper">
+                  <div class="select_wrap form-box-size">
+                    <ul class="default_option">
+                        <li>
+                            <div class="wrapper-select">
+                              <p>Seleccionar</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul">
+                        <li>
+                            <div class="option">
+                              <p class="options-text">Chile</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option">
+                              <p class="options-text">Perú</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-1 p-0">
-                  <div class="custom-control custom-radio">
-                      <input type="radio" name="customRadio" class="custom-control-input" id="customRadio1">
-                      <label class="custom-control-label" for="customRadio1"></label>
-                  </div>
-                  </div>
-                  <div class="col-11 p-0">
-                    <p class="margin-55"><span class="font-weight-bold">Retiro gratis:</span> en nuestra oficina en Nevería 4631, Of. 302, Las Condes.</p>
-                  </div>
+
                 </div>
-                <div class="row">
-                  <div class="col-1 p-0">
-                    <div class="custom-control custom-radio">
-                        <input type="radio" name="customRadio" class="custom-control-input" id="customRadio2">
-                        <label class="custom-control-label" for="customRadio2"></label>
-                    </div>
-                    </div>
-                    <div class="col-11 p-0">
-                      <p class="margin-55"><span class="font-weight-bold">Envío dentro de Santiago:</span> a través de CorreosChile. Costo: USD 6. En caso de que el paquete supere los 90 cms. lineales y/o 5 kilos, se hará un cargo adicional a definir dependiendo del peso y medidas finales.</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-1 p-0">
-                      <div class="custom-control custom-radio">
-                          <input type="radio" name="customRadio" class="custom-control-input" id="customRadio3">
-                          <label class="custom-control-label" for="customRadio3"></label>
-                      </div>
-                      </div>
-                      <div class="col-11 p-0">
-                        <p class="margin-55"><span class="font-weight-bold">Envío fuera de Santiago:</span> a través de Starken o Chilexpress por pagar. Tú eliges el que más te convenga. Costo: USD 1 para empaque + valor del envío.</p>
-                      </div>
-                    </div>
+                <div class="product-form-category-grid">
+                  <h6 class="form-text">Categoria del producto</h6>
+                  <div class="wrapper">
+                  <div class="select_wrap form-category-size m-0">
+                    <ul class="default_option">
+                        <li>
+                            <div class="wrapper-select">
+                              <p>Seleccionar</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul">
+                        <li>
+                            <div class="option">
+                              <p class="options-text">Chile</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option">
+                              <p class="options-text">Perú</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+                </div>
+              </div>
+          </div>
+          <p class="step1-shipping-title" onclick="return ocultarForm('form_shipping', 'step2-plus')">Tipo de entrega</p>
+          <div class="step1-shipping-form animate__animated" id="form_shipping">
+            <div class="grid-shippingform-rows shadow bg-white">
+              <p class="shipping-form-title-secondary">Una vez que tus productos lleguen a Chile ¿Cómo prefieres la entrega?</p>
+              <div class="custom-control custom-radio shipping-option1-radio">
+              <input type="radio" name="shipping_options" class="custom-control-input" id="customRadio1">
+              <label class="custom-control-label" for="customRadio1"></label>
+              </div>
+              <p class="shipping-option1-text"><span class="font-weight-bold">Retiro gratis:</span> en nuestra oficina en Nevería 4631, Of. 302, Las Condes.</p>
+              <div class="custom-control custom-radio shipping-option2-radio">
+              <input type="radio" name="shipping_options" class="custom-control-input" id="customRadio2">
+              <label class="custom-control-label" for="customRadio2"></label>
+              </div>
+              <p class="shipping-option2-text"><span class="font-weight-bold">Envío dentro de Santiago:</span> a través de CorreosChile. Costo: USD 6. En caso de que el paquete supere los 90 cms. lineales y/o 5 kilos, se hará un cargo adicional a definir dependiendo del peso y medidas finales.</p>
+              <div class="custom-control custom-radio shipping-option3-radio">
+              <input type="radio" name="shipping_options" class="custom-control-input" id="customRadio3">
+              <label class="custom-control-label" for="customRadio3"></label>
+              </div>
+              <p class="shipping-option3-text"><span class="font-weight-bold">Envío fuera de Santiago:</span> a través de Starken o Chilexpress por pagar. Tú eliges el que más te convenga. Costo: USD 1 para empaque + valor del envío.</p>
+            </div>
+
+          </div>
+          <p class="step1-aditional-title" onclick="return ocultarForm('form_aditional', 'step3-plus')">Información adicional</p>
+          <div class="step1-aditional-form shadow bg-white animate__animated" id="form_aditional">
+            <div class="step1-aditional-q1">
+              <p>¿Alguno de tus artículos pesa más de 5 kilos?</p>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_weight_yes" name="product_weight" value="si">
+                <label class="custom-control-label" for="product_weight_yes">Sí</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_weight_no" name="product_weight" value="no">
+                <label class="custom-control-label" for="product_weight_no">No</label>
+              </div>
+
+            </div>
+            <div class="step1-aditional-q2">
+              <p>¿Alguno de tus artículos mide más de 50 cms. de alguno de sus lados?</p>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_size_yes" name="product_size" value="si">
+                <label class="custom-control-label" for="product_size_yes">Sí</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_size_no" name="product_size" value="no">
+                <label class="custom-control-label" for="product_size_no">No</label>
+              </div>
+            </div>
+            <div class="step1-aditional-q3">
+              <p>¿Alguno de los links contiene más de una unidad? Por ejemplo, packs, cajas o bolsas con varias unidades adentro.</p>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_pack_yes" name="product_pack" value="si">
+                <label class="custom-control-label" for="product_pack_yes">Sí</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_pack_no" name="product_pack" value="no">
+                <label class="custom-control-label" for="product_pack_no">No</label>
+              </div>
+            </div>
+            <div class="step1-aditional-q4">
+              <p>¿Quién enviará tus compras al alojamiento del viajero?</p>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_who_yes" name="product_who" value="friend">
+                <label class="custom-control-label" for="product_who_yes">Un familiar, amigo u otro</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="product_who_no" name="product_who" value="store">
+                <label class="custom-control-label" for="product_who_no">Una tienda</label>
+              </div>
+            </div>
+            <div class="step1-aditional-q5">
+              <p>Si quieres, puedes dejarle un comentario al viajero</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step1-aditional-disclaimer">
+              <p>Recuerda que no puedes enviar ningún tipo de información de contacto. El contacto con el viajero está prohibido y hacerlo conlleva al bloqueo de tu cuenta y una multa de $5.000. Además, la información que prevalece es la que está en la sección de arriba donde pusiste los links, por lo que ante cualquier contradicción entre esta y el comentario, prevalecerá la primera. No pongas descripciones ambiguas, tales como “es pequeñito”, “es livianito” u otras, ya que son apreciaciones subjetivas que pueden diferir al del viajero.</p>
             </div>
           </div>
           <a href="#" class="btn btn-add-product p-0 d-flex align-items-center step1-form-buttom-addproduct" role="button"><svg viewBox="0 0 512 512"  class="btn-add-product-icon" xmlns="http://www.w3.org/2000/svg"><path  id="Trazado_30" d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0" fill="#fff"/><path  id="Trazado_31" d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" fill="#fff"/><path  id="Trazado_32" d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0" fill="#fff"/></svg><span class="btn-add-product-text">agregar otro producto</span></a>
@@ -125,8 +256,17 @@
       </div>
 
     </section>
+    <!-- boostrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="javascript.js"</script>
+
+    </script>
+    <script src="flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
     <script src="jquery-3.5.1.min.js"></script>
     <script src="jquery.min.js"></script>
-    <script type="javascript.js"></script>
   </body>
 </html>

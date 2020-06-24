@@ -1,6 +1,6 @@
 
 // Muestra y oculta las preguntas frecuentes
-bottom-line
+
 function mostrarOcultar(Faq, icon){
 const elemento = document.getElementById(Faq);
 const icono = document.getElementById(icon);
@@ -17,6 +17,29 @@ icono.classList.remove('less');
 };
 return true;
 };
+
+// mostrar y ocultar formularios
+
+function ocultarForm(Form, icon){
+const elemento = document.getElementById(Form);
+const icono = document.getElementById(icon);
+if(!elemento) {
+return true;
+}
+if (elemento.style.display == "none") {
+elemento.style.display = "grid"
+icono.classList.remove('form-plus');
+elemento.classList.add('animate__fadeIn');
+} else {
+elemento.style.display = "none"
+icono.classList.add('form-plus');
+};
+return true;
+};
+
+
+
+
 
 
 
