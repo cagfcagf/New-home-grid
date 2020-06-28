@@ -2791,7 +2791,7 @@ width: auto;
 
 .form-value-container input {
   margin-left: -2px;
-  height: 47px;
+  height: 48px;
   border: 1.3px var(--lighter-black) solid;
   z-index: 3;
 
@@ -2911,7 +2911,7 @@ width: auto;
 }
 
 .form-value-container input {
-  height: 47.5px;
+  height: 48px;
 }
 
 .step1-addproduct-title {

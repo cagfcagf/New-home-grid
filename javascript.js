@@ -10,7 +10,7 @@ return true;
 if (elemento.style.display == "none") {
 elemento.style.display = "block"
 icono.classList.add('less');
-elemento.classList.add('animate__fadeIn');
+elemento.classList.add('animate__slideInDown');
 } else {
 elemento.style.display = "none"
 icono.classList.remove('less');
