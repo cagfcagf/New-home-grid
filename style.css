@@ -2435,7 +2435,7 @@ thead {
                                                   /* Paso 1 de compra */
 
 .grid-step1-rows {
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
   padding-top: 20px;
 }
 
@@ -3357,13 +3357,128 @@ width: auto;
   .step1-button-finish-container {
 
     justify-self: center;
+    margin-right: 0px;
 
   }
-
 
 }
 
 
+.leta-step1-title  {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.leta-step1-tip {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.gallery-tip-background {
+  background-color: #F8F8F8;
+  width: 100vw;
+  justify-self: center;
+  grid-column: 1/13;
+  grid-row: 6/7;
+  margin-top: 86px;
+  margin-bottom: 169px;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: auto;
+
+
+}
+
+.tip-container {
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.tip-container-text {
+  width: 620px;
+  right: 300px;
+  margin-right: 5vw;
+}
+
+.gallery-tip-background img {
+  height: 190px;
+  margin-left: 5vw;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .tip-container-text {
+    margin-right: 0;
+  }
+
+  .gallery-tip-background img {
+    margin-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+  .tip-container {
+    width:100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-tip-background img {
+    margin-top: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .leta-step1-title  {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+    letter-spacing: -0.2px;
+  }
+
+  .leta-step1-tip {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-bottom: 50px;
+  }
+
+  .gallery-tip-background img {
+    margin-top: 40px;
+    height: 160px;
+    margin-left: 0;
+  }
+
+  .gallery-tip-background {
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+
+  .tip-container-text {
+    width: 400px;
+    right: 300px;
+    margin-right: 0vw;
+  }
+
+}
 
 
 
