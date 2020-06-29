@@ -2633,6 +2633,14 @@ thead {
   padding-right: calc((100vw - 1120px)/2);
 }
 
+@media only screen and (max-width: 1120px) {
+  .step1-remember-container {
+    width: auto;
+  }
+
+}
+
+
 .step1-remember-container  p {
   font-size: 15px;
   font-weight: 500;
@@ -3392,8 +3400,6 @@ width: auto;
   padding-left: 60px;
   padding-right: 60px;
   height: auto;
-
-
 }
 
 .tip-container {
@@ -3415,6 +3421,17 @@ width: auto;
   height: 190px;
   margin-left: 5vw;
 }
+
+@media only screen and (max-width: 1120px) {
+
+  .gallery-tip-background {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+}
+
 
 @media only screen and (max-width: 1100px) {
 
@@ -3480,8 +3497,104 @@ width: auto;
 
 }
 
+                                        /* Resultados de busqueda */
+
+.grid-step2-rows{
+  grid-template-rows: repeat(6, auto);
+  padding-top: 20px;
+}
+
+.step2-breadcrumb-container{
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+
+.step2-wizard-container {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.step2-instructions {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+  grid-column: 1/13;
+  grid-row: 3/4;
+  margin-bottom: 0px;
+}
+
+.step2-remember-container {
+  grid-column: 1/13;
+  grid-row: 4/5;
+  background-color: var(--background-black);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  justify-self:center;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: calc((100vw - 1120px)/2);
+  padding-right: calc((100vw - 1120px)/2);
+}
+
+.step2-remember-container  p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main-black);
+  line-height : 19px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  margin: 20px 0px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.travelers-results-container {
+    grid-column: 1/13;
+    grid-row: 5/6;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    display: grid;
+}
+
+.traveler-result {
+  width: auto;
+  height: 126px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+.step2-button-finish-container {
+    grid-column: 1/13;
+    grid-row: 6/7;
+    justify-self: center;
+    margin-top: 66px;
+    margin-bottom: 89px;
+}
 
                                             /* Home viajero */
 .grid-traveler-rows {
