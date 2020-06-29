@@ -2296,13 +2296,16 @@ thead {
   .buyer-main-description {
     padding-left: 0px;
   }
+
+  .leta-buyer {
+    width: 100%;
+  }
+
+
 }
 
 @media only screen and (max-width: 768px) {
 
-  .grid-buyer-rows {
-    padding: 40px 10px 50px 10px;
-  }
 
   .breadcrumbs-grid, .step1-breadcrumb-container {
     display: none;
@@ -2311,6 +2314,9 @@ thead {
 
   .grid-buyer-rows h2 {
     grid-row: 1/2;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .grid-buyer-left {
@@ -2318,8 +2324,8 @@ thead {
     grid-column: 1/13;
     border-right: 0px;
     border-bottom: solid 2px var(--main-green);
-    padding-right: 0px;
-    padding-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 22px;
   }
 
@@ -2327,7 +2333,8 @@ thead {
     font-size: 18px;
     line-height : 20px;
     margin-bottom: 31px;
-    padding-left: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
 
@@ -2357,7 +2364,7 @@ thead {
   }
 
   .buyer-main-question-flex {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .grid-buyer-right {
@@ -2365,6 +2372,7 @@ thead {
     display: grid;
     margin-top: 50px;
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .buyer-main-question2 {
@@ -2379,7 +2387,7 @@ thead {
   }
 
   .form-buyer-size {
-    width: 358px;
+    width: 60vw;
     margin-top: 15px;
     height: 25px;
   }
@@ -2417,7 +2425,7 @@ thead {
   .comeback-buttom-buyer {
 
     padding-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
   }
 
   .leta-image-buyer {
