@@ -768,20 +768,14 @@ thead {
 /* wrapper helper */
 
 .wrapper-helper {
-  bottom: 15px;
-  left: 264px;
-  position: relative;
   height: 27px;
   width: 27px;
   background-image: url('icons/helper.svg');
   background-position: center;
   background-repeat: no-repeat;
-}
+  align-self: center;
+  margin-left: 15px;
 
-@media only screen and (max-width: 1120px) {
-  .wrapper-helper {
-    left: 220px;
-  }
 }
 
 
@@ -817,10 +811,6 @@ thead {
       top: 15px;
   }
 
-  .wrapper-helper {
-    bottom: 19px;
-    left: 334px;
-  }
 
 }
 
@@ -2996,10 +2986,6 @@ width: auto;
   }
 
 
-  .form-text {
-    font-size: 15px;
-    }
-
   .form-control {
     font-size: 13px;
     padding: 9.3px 20px;
@@ -3711,8 +3697,6 @@ margin-top: 0px;
 
 .form-traveler-size {
 width: 358px;
-margin-top: 15px;
-height: 25px;
 }
 
 .traveler-search-buttom-size {
@@ -3729,6 +3713,14 @@ background-color: #F8F8F8;
 justify-self:center;
 margin-top: 120px;
 }
+
+.form-text-traveler {
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 25px;
+  }
 
 .leta-traveler p {
 font-size: 36px;
@@ -3832,12 +3824,12 @@ padding-left: 0px;
 
 @media only screen and (max-width: 768px) {
 
-.grid-traveler-rows {
-padding: 40px 10px 50px 10px;
-}
 
 .grid-traveler-rows h2 {
 grid-row: 1/2;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 40px;
 }
 
 .grid-traveler-left {
@@ -3848,13 +3840,15 @@ border-bottom: solid 2px var(--main-green);
 padding-right: 0px;
 padding-right: 0px;
 margin-top: 22px;
+margin-left: 10px;
+margin-right: 10px;
 }
 
 .traveler-main-description {
 font-size: 18px;
 line-height : 20px;
 margin-bottom: 31px;
-padding-left: 14px;
+padding-left: 0px;
 }
 
 
@@ -3888,7 +3882,7 @@ line-height : 16px;
 }
 
 .traveler-main-question-flex {
-align-items: flex-start;
+align-items: center;
 }
 
 .grid-traveler-right {
@@ -3900,13 +3894,13 @@ padding-left: 10px;
 
 
 .traveler-main-search-buttom {
-margin-top: 20px;
+  margin-top: 20px;
+
 }
 
 .form-traveler-size {
-width: 298px;
-margin-top: 15px;
-height: 25px;
+width: 60vw;
+
 }
 
 .traveler-search-buttom-size {
@@ -3920,7 +3914,13 @@ padding-bottom: 9px;
 height: 163px;
 justify-self:center;
 margin-top: 157px;
+width: 100%;
 
+}
+
+.form-text-traveler {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .leta-traveler p {
@@ -3943,7 +3943,7 @@ align-items: center;
 .comeback-buttom-traveler {
 
 padding-top: 20px;
-padding-bottom: 0px;
+padding-bottom: 50px;
 }
 
 .leta-image-traveler {
@@ -3955,6 +3955,7 @@ margin-top: -150px;
 .traveler-main-description-icon-image1, .traveler-main-description-icon-image2, .traveler-main-description-icon-image3, .traveler-main-description-icon-image4{
 margin-left: 14px;
 }
+
 
 
 }
