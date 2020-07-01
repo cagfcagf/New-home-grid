@@ -60,3 +60,18 @@ flecha.classList.remove('rotar');
 };
 return true;
 };
+
+
+// Pinta de naranjo el fondo de un viajero seleccionado
+
+function travelerSelected(travelerbox, travelercheck){
+
+const traveler = document.getElementById(travelercheck);
+
+if (traveler.checked) {
+    document.getElementById(travelerbox).style.backgroundColor = "rgba(235, 143, 0, 0.2)";
+} else {
+    document.getElementById(travelerbox).style.backgroundColor = "white";
+}
+
+};

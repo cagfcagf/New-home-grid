@@ -541,7 +541,6 @@ thead {
 .custom-control-input:checked~.custom-control-label::before {
   border-color: var(--main-orange);
   background-color: var(--main-orange);
-
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
@@ -2569,19 +2568,19 @@ thead {
 }
 
 @media only screen and (max-width: 768px) {
-.step1-wizard-container  .wizard-line-2, .wizard-line-3, .wizard-line-4{
+.step1-wizard-container  .wizard-line-2, .step1-wizard-container .wizard-line-3, .step1-wizard-container .wizard-line-4{
     display: none;
   }
 
-.step1-wizard-container  .wizard-text-2, .wizard-text-3{
+.step1-wizard-container  .wizard-text-2, .step1-wizard-container .wizard-text-3{
   display: none;
 }
 
-.step1-wizard-container .wizard-number-2, .wizard-number-3{
+.step1-wizard-container .wizard-number-2, .step1-wizard-container .wizard-number-3{
   display: none;
 }
 
-.step1-wizard-container .wizard-circle-2, .wizard-circle-3{
+.step1-wizard-container .wizard-circle-2, .step1-wizard-container .wizard-circle-3{
   display: none;
 
 }
@@ -2590,17 +2589,17 @@ thead {
   grid-column: 7/13;
 }
 
-.step1-wizard-container .wizard-text-1{
+.wizard-text-1, .wizard-text-2, .wizard-text-3{
   grid-column: 1/13;
   font-size: 20px;
 }
 
-.step1-wizard-container .wizard-number-1{
+.wizard-number-1, .wizard-number-2, .wizard-number-3{
   grid-column: 1/13;
   font-size: 25px;
 }
 
-.step1-wizard-container .wizard-circle-1{
+.wizard-circle-1,.wizard-circle-2, .wizard-circle-3{
   grid-column: 1/13;
   width: 43px;
   height: 43px;
@@ -3535,8 +3534,6 @@ width: auto;
   justify-self:center;
   margin-bottom: 32px;
   margin-top: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-left: calc((100vw - 1120px)/2);
   padding-right: calc((100vw - 1120px)/2);
 }
@@ -3549,7 +3546,7 @@ width: auto;
   text-align: center;
   justify-self: center;
   align-self: center;
-  margin: 20px 0px;
+  margin: 12px 0px;
   padding-left: 14px;
   padding-right: 14px;
 }
@@ -3567,18 +3564,200 @@ width: auto;
   height: 126px;
   grid-column: 1/2;
   grid-row: 1/2;
+  grid-template-columns: 10fr auto 30fr auto 30fr auto 30fr auto 20fr auto 17fr auto 30fr auto 30fr auto 80fr auto 35fr;
+  grid-template-rows: 25fr auto 25fr;
+  display: grid;
+  margin-bottom: 44px;
 
+}
+
+.traveler-result:nth-child(2) {
+  grid-row: 2/3;
+}
+
+.from-country-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+
+.from-country-container img {
+  height: 23px;
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+
+.from-country-destination{
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 15px;
+  margin: 0px;
+  text-align: center;
 }
 
 
 
 
+.from-country-title, .from-date-title, .until-date-title, .arrives-date-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 7px;
+}
+
+.from-date-content, .until-date-content, .arrives-date-content{
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: normal;
+  margin: 0px;
+  padding-top: 7px;
+}
+
+.from-date-container {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+.until-date-container {
+  grid-column: 6/7;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+.arrives-date-container {
+  grid-column: 8/9;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .orange-travel-separator {
+    grid-column: 10/11;
+    grid-row: 2/3;
+    height: 76px;
+    width: 1px;
+    background-color: var(--main-orange);
+    align-self: center;
+    }
+
+  .traveler-name-step2 {
+    grid-column: 12/13;
+    grid-row: 2/3;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 25px;
+    align-self: center;
+    justify-self: center;
+    margin: 0px;
+    }
+
+  .ocupation-rate-container {
+    grid-column: 14/15;
+    grid-row: 2/3;
+    width: 92px;
+    background-image: url('icons/ocupationsuitcase.svg');
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    .ocupation-rate-container > p {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0px;
+      padding-top: 10px;
+
+    }
 
 
+  .previous-budgets-container {
+    grid-column: 16/17;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
 
 
+.previous-budgets-number-container, .previous-purchases-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous-budgets-number-quantity, .previous-purchases-number-quantity {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.previous-budgets-number-title, .previous-purchases-number-title {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 13px;
+  margin: 0px;
+}
 
 
+.step2-check-container {
+  grid-column: 18/19;
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  }
+
+
+  .step2-check-container .custom-control-label::before {
+    width: 26px;
+    height: 26px;
+    border-radius: 9px;
+    border: 1px solid var(--main-orange);
+    cursor: pointer;
+  }
+
+  .step2-check-container  .custom-control-label::after {
+    width: 26px;
+    height: 26px;
+    outline: none;
+    border-radius: 9px;
+    border: 1px solid var(--main-orange);
+    cursor: pointer;
+  }
+
+  .step2-check-container .custom-control {
+    padding: 0px;
+    height: 0;
+    width: 0;
+  }
+
+
+  .step2-check-container label {
+    margin: 0px;
+  }
+
+  .step2-check-container .custom-control-label {
+    margin: 0;
+  }
 
 
 
@@ -3586,9 +3765,213 @@ width: auto;
     grid-column: 1/13;
     grid-row: 6/7;
     justify-self: center;
-    margin-top: 66px;
+    margin-top: 22px;
     margin-bottom: 89px;
 }
+
+
+
+@media only screen and (max-width: 1120px) {
+
+  .step2-breadcrumb-container, .step2-instructions, .travelers-results-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .step2-remember-container{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-step2-rows{
+      padding-top: 0px;
+  }
+
+  .step2-breadcrumb-container{
+    display: none;
+  }
+
+  .step2-wizard-container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .step2-wizard-container  .wizard-line-1, .step2-wizard-container .wizard-line-4{
+      display: none;
+    }
+
+  .step2-wizard-container  .wizard-text-1, .step2-wizard-container .wizard-text-3{
+    display: none;
+  }
+
+  .step2-wizard-container .wizard-number-1, .step2-wizard-container .wizard-number-3{
+    display: none;
+  }
+
+  .step2-wizard-container .wizard-circle-1, .step2-wizard-container .wizard-circle-3{
+    display: none;
+
+  }
+
+  .step2-wizard-container .wizard-line-2 {
+    grid-column: 1/7;
+  }
+
+  .step2-wizard-container .wizard-line-3 {
+    grid-column: 7/13;
+  }
+
+
+  .step2-instructions {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+
+  .traveler-result {
+    height: 562px;
+    grid-template-columns: 33fr auto 33fr ;
+    grid-template-rows: 16fr auto 30fr auto 24fr auto 24fr auto 24fr auto 44fr auto 35fr auto 35fr auto 25fr auto 75fr auto 20fr;
+    display: grid;
+    margin-bottom: 20px;
+
+  }
+
+
+  .from-country-container {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+  }
+
+
+  .from-country-container img {
+    height: 33px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 110px;
+  }
+
+  .from-country-destination{
+    margin: 0px;
+    text-align: left;
+  }
+
+
+
+
+  .from-country-title, .from-date-title, .until-date-title, .arrives-date-title {
+    text-align: left;
+    margin: 0px;
+    padding-bottom: 0px;
+  }
+
+  .from-date-content, .until-date-content, .arrives-date-content{
+    margin: 0px;
+    padding-top: 0px;
+  }
+
+  .from-date-container {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    }
+
+  .until-date-container {
+    grid-column: 2/3;
+    grid-row: 8/9;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    }
+
+  .arrives-date-container {
+    grid-column: 2/3;
+    grid-row: 10/11;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    }
+
+    .orange-travel-separator {
+      grid-column: 2/3;
+      grid-row: 12/13;
+      height: 1px;
+      width: 289px;
+      }
+
+    .traveler-name-step2 {
+      grid-column: 2/3;
+      grid-row: 14/15;
+      font-size: 20px;
+      line-height: 30px;
+      }
+
+    .ocupation-rate-container {
+      grid-column: 2/3;
+      grid-row: 16/17;
+      justify-self:center;
+      }
+
+      .ocupation-rate-container > p {
+          /* margin: 0px; */
+      }
+
+
+    .previous-budgets-container {
+      grid-column: 2/3;
+      grid-row: 18/19;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      }
+
+
+  .step2-check-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: auto;
+    }
+
+
+
+  .step2-button-finish-container {
+
+      margin-top: 17px;
+      margin-bottom: 33px;
+  }
+
+  .previous-budgets-number-container {
+    margin-right: 7.5px;
+  }
+
+  .previous-purchases-number-container {
+    margin-left: 7.5px;
+
+  }
+
+
+}
+
+
+
+
+
+
 
                                             /* Home viajero */
 .grid-traveler-rows {
