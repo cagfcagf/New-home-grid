@@ -3769,6 +3769,10 @@ width: auto;
     margin-bottom: 89px;
 }
 
+.arrow-down-orange {
+  display: none;
+}
+
 
 
 @media only screen and (max-width: 1120px) {
@@ -3833,11 +3837,13 @@ width: auto;
 
 
   .traveler-result {
-    height: 562px;
-    grid-template-columns: 33fr auto 33fr ;
+    height: auto;
+    grid-template-columns: 33fr 289px 33fr ;
     grid-template-rows: 16fr auto 30fr auto 24fr auto 24fr auto 24fr auto 44fr auto 35fr auto 35fr auto 25fr auto 75fr auto 20fr;
     display: grid;
     margin-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 20px;
 
   }
 
@@ -3848,6 +3854,8 @@ width: auto;
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 24px;
   }
 
 
@@ -3892,6 +3900,8 @@ width: auto;
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
     }
 
   .arrives-date-container {
@@ -3901,13 +3911,16 @@ width: auto;
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
+    margin-bottom: 25px;
     }
 
     .orange-travel-separator {
       grid-column: 2/3;
       grid-row: 12/13;
       height: 1px;
-      width: 289px;
+      width: auto;
+      margin-top: 19px;
+      margin-bottom: 35px;
       }
 
     .traveler-name-step2 {
@@ -3921,11 +3934,10 @@ width: auto;
       grid-column: 2/3;
       grid-row: 16/17;
       justify-self:center;
+      padding-top: 35px;
+      padding-bottom: 25px;
       }
 
-      .ocupation-rate-container > p {
-          /* margin: 0px; */
-      }
 
 
     .previous-budgets-container {
@@ -3934,6 +3946,7 @@ width: auto;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      padding-bottom: 75px;
       }
 
 
@@ -3962,6 +3975,23 @@ width: auto;
   .previous-purchases-number-container {
     margin-left: 7.5px;
 
+  }
+
+  .arrow-down-orange{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 20/21;
+    cursor: pointer;
+  }
+
+  .travel-results-hidden {
+    display: none;
+  }
+
+  .turn-arrow {
+    transform: rotate(-180deg);
   }
 
 

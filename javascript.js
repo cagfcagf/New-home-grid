@@ -38,6 +38,19 @@ return true;
 };
 
 
+function girarFlecha(line, name, rate, budgets, arrow) {
+  document.getElementById(line).classList.toggle("travel-results-hidden");
+  document.getElementById(name).classList.toggle("travel-results-hidden");
+  document.getElementById(rate).classList.toggle("travel-results-hidden");
+  document.getElementById(budgets).classList.toggle("travel-results-hidden");
+  document.getElementById(line).classList.toggle("animate__fadeIn");
+  document.getElementById(name).classList.toggle("animate__fadeIn");
+  document.getElementById(rate).classList.toggle("animate__fadeIn");
+  document.getElementById(budgets).classList.toggle("animate__fadeIn");
+  document.getElementById(arrow).classList.toggle("turn-arrow");
+}
+
+
 
 
 
