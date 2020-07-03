@@ -88,3 +88,18 @@ if (traveler.checked) {
 }
 
 };
+
+
+
+
+
+
+// mostrar y ocultar formularios step 3
+
+function ocultarStep3(plus, table, description){
+  document.getElementById(plus).classList.toggle("form-plus");
+  document.getElementById(table).classList.toggle("budget-hidden");
+  document.getElementById(description).classList.toggle("budget-hidden");
+  document.getElementById(table).classList.add("animate__fadeIn");
+  document.getElementById(description).classList.add("animate__fadeIn");
+}

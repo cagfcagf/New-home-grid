@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#282e3c"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <title>Paso 2</title>
+  </head>
+  <body>
+    <section class="grid">
+      <div class="grid-container grid-step3-rows">
+        <div class="step3-breadcrumb-container">
+          <ul class="breadcrumb">
+            <li><a class="breadcrumb-before" href="#">Inicio</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Comprador</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Paso 1</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Paso 2</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li class="breadcrumb-now">Paso 3</li>
+          </ul>
+        </div>
+        <div class="step3-wizard-container">
+          <div class="wizard-line-1"></div>
+          <div class="wizard-line-2"></div>
+          <div class="wizard-line-3"></div>
+          <div class="wizard-line-4"></div>
+          <div class="wizard-circle-1"></div>
+          <div class="wizard-circle-2"></div>
+          <div class="wizard-circle-3 wizard-circle-selected"></div>
+          <h6 class="wizard-number-1">1</h6>
+          <h6 class="wizard-number-2">2</h6>
+          <h6 class="wizard-number-3">3</h6>
+          <p class="wizard-text-1">Haz tu pedido al viajero</p>
+          <p class="wizard-text-2">Elige a tu viajero</p>
+          <p class="wizard-text-3 wizard-text-selected">Tu presupuesto</p>
+        </div>
+        <div class="step3-form-container">
+            <div class="step3-line"></div>
+            <div class="step3-circle-less-1" id="step3-circle-less-1" onclick="return ocultarStep3('step3-circle-less-1', 'step3-details-table')"></div>
+            <div class="step3-circle-less-2" id="step3-circle-less-2" onclick="return ocultarStep3('step3-circle-less-2', 'step3-dates-table', 'step3-dates-description')"></div>
+            <div class="step3-circle-less-3" id="step3-circle-less-3" onclick="return ocultarStep3('step3-circle-less-3', 'step3-address-table', 'step3-address-description')"></div>
+            <div class="step3-circle-less-4" id="step3-circle-less-4" onclick="return ocultarStep3('step3-circle-less-4', 'step3-fares-table', 'step3-fares-description')"></div>
+            <div class="step3-circle-less-5" id="step3-circle-less-5" onclick="return ocultarStep3('step3-circle-less-5', 'step3-question-description')"></div>
+            <div class="step3-circle-less-6" id="step3-circle-less-6" onclick="return ocultarStep3('step3-circle-less-6', 'step3-discount-table')"></div>
+            <p class="step3-details-title">Detalle de los productos que solicitaste cotizar</p>
+            <div class="step3-details-table animate__animated" id="step3-details-table">
+              <table class="table table-hover table-borderless shadow-lg table-details-size">
+                <thead>
+                  <tr>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Productos</th>
+                    <th scope="col">¿Requiere caja?</th>
+                    <th scope="col">Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-row">
+                    <td>1x</td>
+                    <td>www.comparto....</td>
+                    <td>Si</td>
+                    <td>USD 500</td>
+                  </tr>
+                  <tr class="table-row table-final-row">
+                    <td colspan="3" class="table-final-title" >Valor total de la compra</td>
+                    <td>USD 1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="step3-dates-title">Fechas</p>
+            <p class="step3-dates-description animate__animated" id="step3-dates-description">Estas con las fechas que debes considerar para que tus compras lleguen al alojamiento del viajero a tiempo. Una vez que el viajero llega, tenemos entre 1 o 2 días hábiles para enviarte tus compras o que estén disponibles para su retiro.</p>
+            <div class="step3-dates-table animate__animated" id="step3-dates-table">
+              <table class="table table-hover table-borderless shadow-lg table-dates-size">
+                <thead>
+                  <tr>
+                    <th scope="col">Recibe tus productos desde</th>
+                    <th scope="col">y hasta</th>
+                    <th scope="col">Llega a Chile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-row">
+                    <td>01/01/2020</td>
+                    <td>01/01/2020</td>
+                    <td>01/01/2020</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="step3-address-title">Dirección del Viajero</p>
+            <p class="step3-address-description animate__animated" id="step3-address-description">Esta es la dirección donde el viajero recibirá tus compras. Simula en tu tienda si a esta dirección tus productos alcanzan a llegar dentro de las fechas indicadas.</p>
+            <div class="step3-address-table animate__animated" id="step3-address-table">
+              <div class="address-table-container shadow bg-white">
+                <div class=""><p>Nombre</p><div class="wrapper-helper wrapper-helper-fares-table-size" data-toggle="tooltip" title="Todas las compras son entregadas en nuestras oficinas en Santiago o Lima." data-placement="top"></div></div>
+                <p>Juan Soto Soto</p>
+                <p>Dirección</p>
+                <p>99 Red cloud peak rd</p>
+                <p>Dirección 2 <span>(Opcional)</span></p>
+                <p>hotel plaza los arboles</p>
+                <p>Departamento <span>(Piso/ Suit/Edificio)</span></p>
+                <p>A302</p>
+                <p>Comuna <span>(distrito/barrio/pueblo)</span></p>
+                <p>Santiago</p>
+                <p>Ciudad</p>
+                <p>Santiago</p>
+                <p>Estado</p>
+                <p>Metropolitana</p>
+                <p>Código postal</p>
+                <p>7060080</p>
+                <p>Teléfono</p>
+                <p>64666484648</p>
+                <p></p>
+              </div>
+            </div>
+            <p class="step3-fares-title">Tarifas</p>
+            <p class="step3-fares-description animate__animated" id="step3-fares-description">Estas son las tarifas que deberás pagar para el transporte de tus productos. Recuerda que es solo el transporte, el producto lo debes comprar tu.</p>
+            <div class="step3-fares-table animate__animated" id="step3-fares-table">
+              <table class="table table-hover table-borderless shadow-lg table-fares-size">
+                <tbody>
+                  <tr class="table-row">
+                    <td><div><span>Tarifa de transporte</span><div class="wrapper-helper wrapper-helper-fares-table-size" data-toggle="tooltip" title="Todas las compras son entregadas en nuestras oficinas en Santiago o Lima." data-placement="top"></div></div></td>
+                    <td class="table-center-alineation">USD 500</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td><span>Envío dentro de Santiago</span></td>
+                    <td class="table-center-alineation">$5.000</td>
+                  </tr>
+                  <tr class="table-row table-final-row">
+                    <td class="table-final-title-fares"><span>Valor total de la compra</span></td>
+                    <td class="table-center-alineation">USD 500</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <p class="step3-question-title">¿Debo pagar algo más?</p>
+            <p class="step3-question-description animate__animated" id="step3-question-description">En caso que aduana determine el pago de la internación de los productos, el viajero lo pagará por ti y tu deberás y tu deberás pagar para poder retirar tus compras. Esto ocurre en menos del 1% de los casos.</p>
+            <p class="step3-discount-title">Código de descuento</p>
+            <div class="step3-discount-table animate__animated" id="step3-discount-table">
+              <div class="discount-container shadow bg-white">
+                <div class="discount-instructions"><p>Si tienes un código de descuento, ingrésalo aquí para aplicarlo</p><div class="wrapper-helper wrapper-helper-discount-table-size" data-toggle="tooltip" title="Todas las compras son entregadas en nuestras oficinas en Santiago o Lima." data-placement="top"></div></div>
+                <div class="discount-input">
+                  <input type="text" name="" value="">
+                  <a href="#" class="btn btn-main" role="button">ingresar código</a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="step3-button-accept-container">
+          <a href="#" class="btn btn-main" role="button">aceptar presupuesto y pagar</a>
+        </div>
+        <div class="step3-button-reject-container">
+          <a href="#" class="btn btn-secondary-green" role="button">rechazar</a>
+        </div>
+
+        <div class="step3-leta-container leta-flex-traveler">
+            <p>¡Si necesitas ayuda<br>puedes contactar a Leta!</p>
+            <img src="icons/letaprofile.svg" alt="" class="leta-image-traveler">
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- boostrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="javascript.js"</script>
+
+    </script>
+    <script src="flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.min.js"></script>
+  </body>
+</html>
