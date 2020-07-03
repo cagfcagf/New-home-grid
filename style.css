@@ -4747,8 +4747,9 @@ margin-bottom: 0px;
   }
 
   .table-fares-size, .table-details-size, .table-dates-size, .address-table-container {
-    width: 100%;
+    width: 90vw;
   }
+
 
 
   .step3-fares-table span {
