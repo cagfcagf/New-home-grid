@@ -4747,7 +4747,7 @@ margin-bottom: 0px;
   }
 
   .table-fares-size, .table-details-size, .table-dates-size, .address-table-container {
-    width: 90vw;
+    width: 100%;
   }
 
 
