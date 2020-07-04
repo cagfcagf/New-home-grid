@@ -2960,7 +2960,7 @@ width: auto;
 @media only screen and (max-width: 900px) {
 
 .grid-productform-rows {
-  grid-template-columns: minmax(12px, 12fr) auto minmax(45px, 45fr);
+  grid-template-columns: 12fr auto 45fr;
   grid-template-rows: minmax(20px, 20fr) auto minmax(20px, 20fr) auto minmax(20px, 20fr) auto minmax(20px, 20fr) auto minmax(20px, 20fr) auto minmax(48px, 48fr) auto minmax(38px, 38fr);
 }
 
