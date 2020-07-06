@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#282e3c"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <title>Pago</title>
+  </head>
+  <body>
+    <section class="grid">
+      <div class="grid-container grid-payment-rows">
+        <div class="payment-breadcrumb-container">
+          <ul class="breadcrumb">
+            <li><a class="breadcrumb-before" href="#">Inicio</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Comprador</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Paso 1</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Paso 2</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Paso 3</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li class="breadcrumb-now">Pago de presupuesto</li>
+          </ul>
+        </div>
+        <p class="payment-title">¡Felicitaciones, estás a un paso de<br>terminar tu compra!</p>
+        <p class="payment-detail">Has aceptado la cotización de $1088</p>
+        <div class="payment-button-see-budget-container">
+          <a href="index.html" class="btn-secondary payment-see-budget-size" role="button">ver pedido</a>
+        </div>
+        <div class="payment-forms-container">
+          <div class="traveler-circle-1"></div>
+          <div class="traveler-circle-2"></div>
+          <div class="traveler-circle-3"></div>
+          <p class="traveler-address-section-title">Envio de productos</p>
+          <div class="traveler-address-section-form">
+            <div class="traveler-address-section-form-container shadow bg-white">
+              <p>Esta es la dirección donde el viajero recibirá tus compras. Simula en tu tienda si a esta dirección tus productos alcanzan a llegar dentro de las fechas indicadas.</p>
+              <div class="">
+                <p>Nombre</p>
+                <div class="wrapper-helper wrapper-helper-fares-table-size" data-toggle="tooltip" title="Todas las compras son entregadas en nuestras oficinas en Santiago o Lima." data-placement="top">
+                </div>
+              </div>
+              <p>Juan Soto Soto</p>
+              <p>Dirección</p>
+              <p>99 Red cloud peak rd</p>
+              <p>Dirección 2 <span>(Opcional)</span></p>
+              <p>hotel plaza los arboles</p>
+              <p>Departamento <span>(Piso/ Suit/Edificio)</span></p>
+              <p>A302</p>
+              <p>Comuna <span>(distrito/barrio/pueblo)</span></p>
+              <p>Santiago</p>
+              <p>Ciudad</p>
+              <p>Santiago</p>
+              <p>Estado</p>
+              <p>Metropolitana</p>
+              <p>Código postal</p>
+              <p>7060080</p>
+              <p>Teléfono</p>
+              <p>64666484648</p>
+              <p>Este teléfono es para ser entregado a la tienda, no para el contacto con el viajero. <br><br>El contacto con el viajero está prohibido y hacerlo conlleva al bloqueo de tu cuenta y una multa de USD 7,5.</p>
+            </div>
+          </div>
+
+
+          <p class="traveler-shipping-section-title">Datos del comprador</p>
+          <div class="traveler-shipping-section-form">
+            <div class="traveler-shipping-section-form-container shadow bg-white">
+              <div class="traveler-shipping-section-name-container">
+                <p>Nombre</p>
+                <input type="text" name="" value="">
+              </div>
+              <div class="traveler-shipping-section-last-name-container">
+                <p>Apellido</p>
+                <input type="text" name="" value="">
+              </div>
+              <div class="traveler-shipping-section-phone-container">
+                <p>Teléfono</p>
+                <input type="text" name="" value="">
+              </div>
+              <div class="traveler-shipping-section-id-container">
+                <p>Rut/dni/cc/pasaporte</p>
+                <input type="text" name="" value="">
+              </div>
+            </div>
+          </div>
+          <p class="traveler-payment-section-title">Pago</p>
+          <div class="traveler-payment-section-form">
+            <div class="traveler-payment-section-form-container shadow bg-white">
+              <p>Tienes 12 horas para pagar o se anulará la cotización</p>
+              <div class="traveler-credit-container shadow bg-white"></div>
+              <div class="traveler-credit-container-data shadow bg-white">
+                <div class="form-group">
+                  <label for="cc-name">Nombre en la tarjeta</label>
+                  <input type="email" class="form-control" id="cc-name" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="cc-number">Nombre en la tarjeta</label>
+                  <input type="email" class="form-control" id="cc-number" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="cc-expiration">Nombre en la tarjeta</label>
+                  <input type="email" class="form-control" id="cc-cvv" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="cc-expiration">Nombre en la tarjeta</label>
+                  <input type="email" class="form-control" id="cc-cvv" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="traveler-debit-container shadow bg-white"></div>
+            </div>
+          </div>
+        </div>
+        <p class="payment-final-comment">¡Y ya está! dentro de 48 horas hábiles, una vez los productos lleguen a Chile el 08/06/2020, te avisaremos cuando tus compras estrés disponibles para su envío o entrega, de acuerdo a la opción elegida. <br><br>En caso de requerir devolución, se te devolverá el 100% del monto total pagado. </p>
+        <div class="payment-final-buttons-container">
+          <a href="#" class="btn btn-secondary-green btn-payment-cancel-size" role="button">Cancelar pedido</a>
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- boostrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="javascript.js"</script>
+
+    </script>
+    <script src="flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.min.js"></script>
+  </body>
+</html>
