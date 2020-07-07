@@ -6396,6 +6396,159 @@ margin-left: 14px;
 
 
 
+                                    /* Registro de viaje paso 2 */
+
+
+
+  .grid-traveler-step2-rows {
+    grid-template-rows: repeat(5, auto);
+    padding-top: 20px;
+  }
+
+  .step2-traveler-breadcrumb-container {
+    grid-column: 1/13;
+    grid-row: 1/2;
+  }
+
+
+  .step2-traveler-wizard-container {
+    grid-column: 1/13;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+
+  .step1-traveler-form-container {
+    grid-column: 1/13;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(3,auto);
+  }
+
+
+  /* .helper-traveler-step1{
+  height: 20px;
+  width: 20px;
+  } */
+
+  /* .step1-traveler-form-container input{
+  border-radius: 10px;
+  border-color: var(--lighter-black);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  padding: 9.3px 20px;
+  height: 45px;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 38px;
+  width: 90%;
+  background-color: white;
+  }
+
+
+  .step1-traveler-form-container input:focus {
+  border-color: var(--main-orange);
+  border-width: medium;
+  border: 2px solid var(--main-orange);
+  box-shadow: 0 0 0;
+  outline: 0 none;
+  padding-left: 10px;
+  } */
+
+  .step2-traveler-button-continue-container {
+    grid-column: 1/13;
+    grid-row: 4/5;
+    justify-self: center;
+    margin-top: 52px;
+    margin-bottom: 56px;
+  }
+
+  .btn-step2-traveler-size {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 7px 31px;
+
+  }
+
+  @media only screen and (max-width: 1120px) {
+
+  .step2-traveler-breadcrumb-container, .step2-traveler-form-container, .step2-traveler-button-continue-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+
+  .step2-traveler-breadcrumb-container {
+    display: none;
+  }
+
+
+  .step2-traveler-wizard-container  .wizard-line-1, .step2-traveler-wizard-container .wizard-line-4{
+      display: none;
+    }
+
+  .step2-traveler-wizard-container  .wizard-text-1, .step2-traveler-wizard-container .wizard-text-3{
+    display: none;
+  }
+
+  .step2-traveler-wizard-container .wizard-number-1, .step2-traveler-wizard-container .wizard-number-3{
+    display: none;
+  }
+
+  .step2-traveler-wizard-container .wizard-circle-1, .step2-traveler-wizard-container .wizard-circle-3{
+    display: none;
+
+  }
+
+  .step2-traveler-wizard-container .wizard-line-2 {
+    grid-column: 1/7;
+  }
+
+  .step2-traveler-wizard-container .wizard-line-3 {
+    grid-column: 7/13;
+  }
+
+  .step2-traveler-wizard-container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+
+
+  /* .helper-traveler-step1{
+  height: 20px;
+  width: 20px;
+  } */
+
+
+  .step1-traveler-button-continue-container {
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
+
+  .btn-step2-traveler-size {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 7px 31px;
+
+  }
+
+
+
+  }
 
 
 
