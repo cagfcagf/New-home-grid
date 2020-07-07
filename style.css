@@ -5209,7 +5209,7 @@ margin-bottom: 0px;
   font-weight: bold;
   letter-spacing: -0.2px;
   line-height: 35px;
-  width: 90%;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 19px;
@@ -5217,7 +5217,7 @@ margin-bottom: 0px;
 
 .traveler-credit-container, .traveler-debit-container {
   height: 96px;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -5247,7 +5247,7 @@ margin-bottom: 0px;
 }
 
 .traveler-credit-container-data  {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   display: none;
@@ -5310,7 +5310,7 @@ margin-bottom: 0px;
   justify-content: center;
   align-items: center;
   display: none;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding: 25px 40px;
@@ -5716,7 +5716,7 @@ margin-bottom: 0px;
   .credit-card-option label {
   font-size: 13px;
   font-weight: normal;
-  line-height: auto;
+  line-height: inherit;
   }
 
 
@@ -5742,8 +5742,14 @@ margin-bottom: 0px;
     margin-bottom: 0px;
   }
 
-  .custom-control-label::before {
-  top: 8px;
+  .credit-card-option .custom-control-label::before {
+  top: calc(100%/2 - 7px);
+  left: -30px;
+
+  }
+
+  .debit-card-option .custom-control-label::before {
+  top: calc(100%/2 - 7px);
   left: -30px;
 
   }
@@ -6178,6 +6184,221 @@ margin-left: 14px;
 }
 
 
+                                      /* Registro de viaje paso 1 */
+
+  .grid-traveler-step1-rows {
+    grid-template-rows: repeat(5, auto);
+    padding-top: 20px;
+  }
+
+  .step1-traveler-breadcrumb-container {
+    grid-column: 1/13;
+    grid-row: 1/2;
+  }
+
+
+  .step1-traveler-wizard-container {
+    grid-column: 1/13;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+
+  .step1-traveler-form-container {
+    grid-column: 1/13;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(3,auto);
+  }
+
+.step1-traveler-form-q1-container, .step1-traveler-form-q2-container, .step1-traveler-form-q3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.step1-traveler-form-q1-container{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.step1-traveler-form-q2-container{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.step1-traveler-form-q3-container{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.step1-traveler-form-container p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+
+.step1-traveler-form-container > div > div {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.helper-traveler-step1{
+  height: 20px;
+  width: 20px;
+}
+
+.step1-traveler-form-container input{
+  border-radius: 10px;
+  border-color: var(--lighter-black);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  padding: 9.3px 20px;
+  height: 45px;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 38px;
+  width: 90%;
+}
+
+
+.step1-traveler-form-container input:focus {
+  border-color: var(--main-orange);
+  border-width: medium;
+  border: 2px solid var(--main-orange);
+  box-shadow: 0 0 0;
+  outline: 0 none;
+  padding-left: 10px;
+}
+
+  .step1-traveler-button-continue-container {
+    grid-column: 1/13;
+    grid-row: 4/5;
+    justify-self: center;
+    margin-top: 52px;
+    margin-bottom: 56px;
+  }
+
+  .btn-step1-traveler-size {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 7px 31px;
+
+  }
+
+  @media only screen and (max-width: 1120px) {
+
+  .step1-traveler-breadcrumb-container, .step1-traveler-form-container, .step1-traveler-form-container, .step1-traveler-button-continue-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+
+  .step1-traveler-breadcrumb-container {
+    display: none;
+  }
+
+
+  .step1-traveler-wizard-container  .wizard-line-2, .step1-traveler-wizard-container .wizard-line-3, .step1-traveler-wizard-container .wizard-line-4{
+      display: none;
+    }
+
+  .step1-traveler-wizard-container  .wizard-text-2, .step1-traveler-wizard-container .wizard-text-3{
+    display: none;
+  }
+
+  .step1-traveler-wizard-container .wizard-number-2, .step1-traveler-wizard-container .wizard-number-3{
+    display: none;
+  }
+
+  .step1-traveler-wizard-container .wizard-circle-2, .step1-traveler-wizard-container .wizard-circle-3{
+    display: none;
+
+  }
+
+  .step1-traveler-wizard-container .wizard-line-1 {
+    grid-column: 7/13;
+  }
+
+  .step1-traveler-wizard-container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .step1-traveler-form-q1-container, .step1-traveler-form-q2-container, .step1-traveler-form-q3-container {
+    align-items: center;
+
+  }
+
+
+  .step1-traveler-form-container p {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  }
+
+  .helper-traveler-step1{
+  height: 20px;
+  width: 20px;
+  }
+
+  .step1-traveler-form-container input{
+  font-size: 15px;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  }
+
+
+  .step1-traveler-button-continue-container {
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
+
+  .btn-step1-traveler-size {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 7px 31px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
                                           /* Como funciona */
 
 .grid-howitworks-rows {
@@ -6323,6 +6544,19 @@ margin-left: 14px;
     line-height: 20px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                             /* Quienes somos */
 
