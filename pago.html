@@ -30,20 +30,21 @@
             <li class="breadcrumb-now">Pago de presupuesto</li>
           </ul>
         </div>
-        <p class="payment-title">¡Felicitaciones, estás a un paso de<br>terminar tu compra!</p>
-        <p class="payment-detail">Has aceptado la cotización de $1088</p>
+        <p class="payment-title">🥳 ¡Felicitaciones, estás a un paso de<br>terminar tu compra!</p>
+        <p class="payment-detail">Has aceptado la cotización por $1.088</p>
         <div class="payment-button-see-budget-container">
           <a href="index.html" class="btn-secondary payment-see-budget-size" role="button">ver pedido</a>
         </div>
         <div class="payment-forms-container">
-          <div class="traveler-circle-1"></div>
-          <div class="traveler-circle-2"></div>
-          <div class="traveler-circle-3"></div>
-          <p class="traveler-address-section-title">Envio de productos</p>
-          <div class="traveler-address-section-form">
+          <div class="traveler-line-vertical"></div>
+          <div class="traveler-circle-1" id="traveler-circle-1" onclick="return ocultarStep3V2('traveler-circle-1', 'traveler-address-section-form')"></div>
+          <div class="traveler-circle-2" id="traveler-circle-2" onclick="return ocultarStep3V2('traveler-circle-2', 'traveler-shipping-section-form')"></div>
+          <div class="traveler-circle-3" id="traveler-circle-3" onclick="return ocultarStep3V2('traveler-circle-3', 'traveler-payment-section-form')"></div>
+          <p class="traveler-address-section-title" onclick="return ocultarStep3V2('traveler-circle-1', 'traveler-address-section-form')">Envíale tus compras al viajero</p>
+          <div class="traveler-address-section-form animate__animated" id="traveler-address-section-form">
             <div class="traveler-address-section-form-container shadow bg-white">
-              <p>Esta es la dirección donde el viajero recibirá tus compras. Simula en tu tienda si a esta dirección tus productos alcanzan a llegar dentro de las fechas indicadas.</p>
-              <div class="">
+              <p>Esta es la dirección donde el viajero recibirá tus compras. Recuerda que deben llegar dentro de las fechas indicadas.</p>
+              <div class="traveler-name-helper">
                 <p>Nombre</p>
                 <div class="wrapper-helper wrapper-helper-fares-table-size" data-toggle="tooltip" title="Todas las compras son entregadas en nuestras oficinas en Santiago o Lima." data-placement="top">
                 </div>
@@ -65,13 +66,13 @@
               <p>7060080</p>
               <p>Teléfono</p>
               <p>64666484648</p>
-              <p>Este teléfono es para ser entregado a la tienda, no para el contacto con el viajero. <br><br>El contacto con el viajero está prohibido y hacerlo conlleva al bloqueo de tu cuenta y una multa de USD 7,5.</p>
+              <p>🙄Este teléfono es para ser entregado a la tienda, no para el contacto con el viajero. Recuerda que el contacto con el viajero está <b>prohibido</b> y hacerlo conlleva al bloqueo de tu cuenta y una multa de USD 7,5.</p>
             </div>
           </div>
 
 
-          <p class="traveler-shipping-section-title">Datos del comprador</p>
-          <div class="traveler-shipping-section-form">
+          <p class="traveler-shipping-section-title" onclick="return ocultarStep3V2('traveler-circle-2', 'traveler-shipping-section-form')">Datos del comprador</p>
+          <div class="traveler-shipping-section-form animate__animated" id="traveler-shipping-section-form">
             <div class="traveler-shipping-section-form-container shadow bg-white">
               <div class="traveler-shipping-section-name-container">
                 <p>Nombre</p>
@@ -91,38 +92,54 @@
               </div>
             </div>
           </div>
-          <p class="traveler-payment-section-title">Pago</p>
-          <div class="traveler-payment-section-form">
+          <p class="traveler-payment-section-title" onclick="return ocultarStep3V2('traveler-circle-3', 'traveler-payment-section-form')">Pago</p>
+          <div class="traveler-payment-section-form animate__animated" id="traveler-payment-section-form">
             <div class="traveler-payment-section-form-container shadow bg-white">
-              <p>Tienes 12 horas para pagar o se anulará la cotización</p>
-              <div class="traveler-credit-container shadow bg-white"></div>
-              <div class="traveler-credit-container-data shadow bg-white">
+              <p>Tienes 12 horas para pagar o se anulará la cotización.</p>
+              <div class="traveler-credit-container shadow bg-white">
+                <div class="credit-card-option">
+                  <input type="radio" name="paying_options" class="custom-control-input" id="customPaying1" onclick="return cardSelected('traveler-credit-card-container', 'traveler-debit-card-container', 'customPaying1')">
+                  <label class="custom-control-label" for="customPaying1">Tarjeta de crédito</label>
+                </div>
+                <img src="icons/creditcardschile.svg" alt="">
+              </div>
+              <div class="traveler-credit-container-data shadow bg-white" id="traveler-credit-card-container">
                    <div class="form-group owner">
                        <label for="owner">Nombre completo en la tarjeta</label>
                        <input name="ccname" type="text" class="form-control" id="owner" placeholder="Juan Godoy" required  autocomplete="cc-name">
                    </div>
                    <div class="form-group" id="card-number-field">
                        <label for="cardNumber">Número de tarjeta</label>
-                       <input name="cardnumber" type="text" class="form-control" placeholder="1111-1111-1111-1111" id="cardNumber" required autocomplete="cc-number">
+                       <input name="cardnumber" type="text" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx" id="cardNumber" required autocomplete="cc-number">
                    </div>
                    <div class="form-group CVV">
                        <label for="cvv">Código CVV</label>
-                       <input name="cvv" type="text" class="form-control" placeholder="123" id="cvv" required autocomplete="cc-csc">
+                       <input name="cvv" type="text" class="form-control" placeholder="xxx" id="cvv" required autocomplete="cc-csc">
                    </div>
                    <div class="form-group" id="expiration-date">
                        <label for="CCExp">Fecha de expiración</label>
-                        <input name="cc-exp" id="CCExp" required placeholder="MM-AAAA" autocomplete="cc-exp">
+                        <input name="cc-exp" id="CCExp" required placeholder="MM/AAAA" autocomplete="cc-exp">
                    </div>
                    <div class="form-group" id="payment-email">
                        <label for="paymentEmail">Email</label>
                         <input name="paymentEmail" id="CCEmail" required placeholder="juan@mail.com" autocomplete="cc-email">
                    </div>
+                  <a href="comprapaso2.html" class="btn btn-main payment-btn-size" role="button">Pagar</a>
               </div>
-              <div class="traveler-debit-container shadow bg-white"></div>
+              <div class="traveler-debit-container shadow bg-white">
+                <div class="debit-card-option">
+                  <input type="radio" name="paying_options" class="custom-control-input" id="customPaying2" onclick="return cardSelected('traveler-debit-card-container', 'traveler-credit-card-container', 'customPaying2')">
+                  <label class="custom-control-label" for="customPaying2">Tarjeta de débito y Mercado Pago</label>
+                </div>
+                <img src="icons/debitcardschile.png" alt="">
+              </div>
+              <div class="traveler-debit-container-data shadow bg-white" id="traveler-debit-card-container">
+                <a href="comprapaso2.html" class="btn btn-main payment-btn-size" role="button">Pagar</a>
+              </div>
             </div>
           </div>
         </div>
-        <p class="payment-final-comment">¡Y ya está! dentro de 48 horas hábiles, una vez los productos lleguen a Chile el 08/06/2020, te avisaremos cuando tus compras estrés disponibles para su envío o entrega, de acuerdo a la opción elegida. <br><br>En caso de requerir devolución, se te devolverá el 100% del monto total pagado. </p>
+        <p class="payment-final-comment">😉 ¡Y ya está! Dentro de 2 días hábiles una vez que llegue el viajero el 08/06/2020, te avisaremos cuando tus compras estrés disponibles para su envío o entrega, de acuerdo a la opción elegida. <br><br>En caso de requerir devolución, se te devolverá el 100% del monto total pagado. </p>
         <div class="payment-final-buttons-container">
           <a href="#" class="btn btn-secondary-green btn-payment-cancel-size" role="button">Cancelar pedido</a>
         </div>

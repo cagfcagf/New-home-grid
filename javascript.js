@@ -89,6 +89,34 @@ if (traveler.checked) {
 
 };
 
+function travelerSelected(travelerbox, travelercheck){
+
+const traveler = document.getElementById(travelercheck);
+
+if (traveler.checked) {
+    document.getElementById(travelerbox).style.backgroundColor = "rgba(235, 143, 0, 0.2)";
+} else {
+    document.getElementById(travelerbox).style.backgroundColor = "white";
+}
+
+};
+
+
+function cardSelected(creditbox, debitbox, cardcheck){
+
+const check = document.getElementById(cardcheck);
+
+if (check.checked) {
+    document.getElementById(creditbox).style.display = "grid";
+    document.getElementById(debitbox).style.display = "none";
+} else {
+    document.getElementById(creditbox).style.display = "grid";
+    document.getElementById(debitbox).style.display = "none";
+}
+
+};
+
+
 
 
 
