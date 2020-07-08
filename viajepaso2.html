@@ -38,10 +38,74 @@
           <h6 class="wizard-number-2">2</h6>
           <h6 class="wizard-number-3">3</h6>
           <p class="wizard-text-1">Fechas</p>
-          <p class="wizard-text-2 wizard-text-selected">Informacion de envío</p>
+          <p class="wizard-text-2 wizard-text-selected">Información de envío</p>
           <p class="wizard-text-3">Información de viaje</p>
         </div>
         <div class="step2-traveler-form-container">
+          <div class="step2-traveler-line"></div>
+          <div class="step2-traveler-circle-1" id="step2-traveler-circle-1" onclick="return ocultarStep3V2('step2-traveler-circle-1', 'step2-receiving-data-container')"></div>
+          <div class="step2-traveler-circle-2" id="step2-traveler-circle-2" onclick="return ocultarStep3V2('step2-traveler-circle-2', 'step2-place-data-container')"></div>
+          <div class="step2-traveler-circle-3" id="step2-traveler-circle-3" onclick="return ocultarStep3V2('step2-traveler-circle-3', 'step2-address-data-container')"></div>
+          <p class="step2-receiving-data-title" onclick="return ocultarStep3V2('step2-traveler-circle-1', 'step2-receiving-data-container')">Datos del que recibe</p>
+          <div class="step2-receiving-data-container shadow bg-white animate__animated" id="step2-receiving-data-container">
+            <div class="step2-receiving-data-name-container">
+              <div class=""><p>Nombre</p><div class="wrapper-helper helper-traveler-step2" data-toggle="tooltip" title="Todas las compras son entregadas en nuestras oficinas en Santiago o Lima." data-placement="top"></div></div>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-receiving-data-phone-container">
+              <div class=""><p>Telefono</p><div class="wrapper-helper helper-traveler-step2" data-toggle="tooltip" title="Todas las compras son entregadas en nuestras oficinas en Santiago o Lima." data-placement="top"></div></div>
+              <input type="text" name="" value="">
+            </div>
+          </div>
+          <p class="step2-place-data-title" onclick="return ocultarStep3V2('step2-traveler-circle-2', 'step2-place-data-container')">Tipo de alojamiento</p>
+          <div class="step2-place-data-container shadow bg-white animate__animated" id="step2-place-data-container">
+            <input type="radio" name="place_options" class="custom-control-input" id="place1" >
+            <label class="custom-control-label" for="place1">Departamento o casa arrendada</label>
+            <input type="radio" name="place_options" class="custom-control-input" id="place2" >
+            <label class="custom-control-label" for="place2">Hotel</label>
+            <input type="radio" name="place_options" class="custom-control-input" id="place3" >
+            <label class="custom-control-label" for="place3">Departamento o casa de un familiar o amigo</label>
+            <input type="radio" name="place_options" class="custom-control-input" id="place4" >
+            <label class="custom-control-label" for="place4">Bodega</label>
+            <input type="radio" name="place_options" class="custom-control-input" id="place5" >
+            <label class="custom-control-label" for="place5">Departamento o casa donde vivo</label>
+
+          </div>
+          <p class="step2-address-data-title" onclick="return ocultarStep3V2('step2-traveler-circle-3', 'step2-address-data-container')">Dirección</p>
+          <div class="step2-address-data-container shadow bg-white animate__animated" id="step2-address-data-container">
+            <div class="step2-address-data-street-container">
+              <p>Calle y número</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-address-data-aparment-container">
+              <p>Departamento/piso/suite/edificio</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-address-data-hotel-container">
+              <p>Nombre del hotel (en caso que te quedes en un hotel)</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-address-data-city-container">
+              <p>Ciudad</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-address-data-townhall-container">
+              <p>Comuna/distrito/barrio/pueblo</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-address-data-country-container">
+              <p>País</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-address-data-state-container">
+              <p>Estado/región</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="step2-address-data-zipcode-container">
+              <p>Código postal</p>
+              <input type="text" name="" value="">
+            </div>
+          </div>
         </div>
         <div class="step2-traveler-button-continue-container">
           <a href="comprapaso2.html" class="btn btn-main btn-step2-traveler-size" role="button">continuar</a>
@@ -53,13 +117,6 @@
               <div class="tip-container-text">
                 <p class="leta-step1-title">Ten en consideración</p>
                 <p class="leta-step1-tip">🏨 Hay hoteles que cobran por recibir productos o tienen límites en la cantidad. Consulta con tu hotel o si no puedes comunicarte, contáctate con nosotros para que lo hagamos por ti 😉</p>
-              </div>
-            <img src="images/letaprofile.png" alt="" >
-          </div>
-          <div class="tip-container">
-            <div class="tip-container-text">
-              <p class="leta-step1-title">Ten en consideración</p>
-              <p class="leta-step1-tip">👀 Revisa muy bien las fechas que coloques en el formulario, ya que cualquier error le generará problemas al cliente.</p>
               </div>
             <img src="images/letaprofile.png" alt="" >
           </div>
