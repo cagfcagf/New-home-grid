@@ -2729,7 +2729,6 @@ thead {
 }
 
 @media only screen and (max-width: 768px) {
-
   .step1-remember-container  p {
     font-size: 13px;
   }
@@ -6373,12 +6372,10 @@ margin-left: 14px;
   }
 
   .btn-step1-traveler-size {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    padding: 7px 31px;
-
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 5.5px 7.58px;
   }
 
 
@@ -6832,9 +6829,6 @@ border-radius: 50%;
   }
 
 
-
-
-
   .helper-traveler-step2{
   height: 20px;
   width: 20px;
@@ -6847,6 +6841,160 @@ border-radius: 50%;
   }
 
   .btn-step2-traveler-size {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 5.5px 7.58px;
+  }
+
+
+
+
+
+  }
+
+
+                                    /* Registro de viaje paso 3 */
+
+
+  .grid-traveler-step3-rows {
+    grid-template-rows: repeat(6, auto);
+    padding-top: 20px;
+  }
+
+  .step3-traveler-breadcrumb-container {
+    grid-column: 1/13;
+    grid-row: 1/2;
+  }
+
+
+  .step3-traveler-wizard-container {
+    grid-column: 1/13;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+
+  .step3-traveler-remember-container {
+    grid-column: 1/13;
+    grid-row: 3/4;
+    background-color: var(--background-black);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-self:center;
+    margin-bottom: 59px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: calc((100vw - 1120px)/2);
+    padding-right: calc((100vw - 1120px)/2);
+  }
+
+  .step3-traveler-remember-container  p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--main-black);
+    line-height : 19px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .step3-traveler-form-container {
+    grid-column: 1/13;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5,auto);
+  }
+
+.step3-traveler-form-employee-container, .step3-traveler-form-pnr-container, .step3-traveler-form-airline-container, .step3-traveler-form-flight-date-container, .step3-traveler-form-return-date-container{
+  grid-column: 2/3;
+  width: 100%;
+}
+
+.step3-traveler-form-employee-container{
+  grid-row: 1/2;
+}
+.step3-traveler-form-pnr-container{
+  grid-row: 2/3;
+}
+.step3-traveler-form-airline-container{
+  grid-row: 3/4;
+}
+.step3-traveler-form-flight-date-container{
+  grid-row: 4/5;
+}
+.step3-traveler-form-return-date-container{
+  grid-row: 5/6;
+}
+
+.step3-traveler-form-container p{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  margin-bottom: 0px;
+}
+
+.step3-traveler-form-container label {
+  margin-bottom: 71px;
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+
+.step3-traveler-form-container input{
+border-radius: 10px;
+border-color: var(--lighter-black);
+font-size: 18px;
+font-weight: 300;
+letter-spacing: -0.2px;
+padding: 9.3px 20px;
+height: 45px;
+border-width: 1px;
+margin-top: 10px;
+margin-bottom: 38px;
+width: 100%;
+background-color: white;
+}
+
+
+.step3-traveler-form-container input:focus {
+border-color: var(--main-orange);
+border-width: medium;
+border: 2px solid var(--main-orange);
+box-shadow: 0 0 0;
+outline: 0 none;
+padding-left: 10px;
+}
+
+.step3-traveler-form-container .custom-control-label::before {
+top: 2px;
+left: 0px;
+border-radius: 50%;
+}
+
+
+
+  .step3-traveler-button-continue-container {
+    grid-column: 1/13;
+    grid-row: 5/6;
+    justify-self: center;
+    margin-top: 52px;
+    margin-bottom: 56px;
+  }
+
+  .btn-step3-traveler-size {
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -6854,11 +7002,109 @@ border-radius: 50%;
     padding: 7px 31px;
   }
 
+@media only screen and (max-width: 1120px) {
 
-
-
-
+  .step3-traveler-remember-container {
+    width: auto;
   }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .step3-traveler-breadcrumb-container {
+    display: none;
+  }
+
+
+    .step3-traveler-wizard-container  .wizard-line-1, .step3-traveler-wizard-container .wizard-line-2, .step3-traveler-wizard-container .wizard-line-3{
+        display: none;
+      }
+
+    .step3-traveler-wizard-container  .wizard-text-1, .step3-traveler-wizard-container .wizard-text-2{
+      display: none;
+    }
+
+    .step3-traveler-wizard-container .wizard-number-1, .step3-traveler-wizard-container .wizard-number-2{
+      display: none;
+    }
+
+    .step3-traveler-wizard-container .wizard-circle-1, .step3-traveler-wizard-container .wizard-circle-2{
+      display: none;
+
+    }
+
+    .step3-traveler-wizard-container .wizard-line-4 {
+      grid-column: 1/7;
+    }
+
+
+    .step3-traveler-wizard-container {
+      padding-top: 20px;
+      padding-bottom: 14px;
+    }
+
+
+
+
+    .step3-traveler-remember-container  p {
+      font-size: 13px;
+    }
+
+    .step3-traveler-remember-container {
+      margin-bottom: 30px;
+    }
+
+
+    .step3-traveler-form-container {
+      grid-template-columns: 15px auto 15px;
+    }
+
+
+    .step3-traveler-form-container p{
+    font-size: 15px;
+    line-height: 20px;
+
+    }
+
+    .step3-traveler-form-container label {
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-size: 13px;
+    line-height: 16px;
+    }
+
+
+    .step3-traveler-form-container input{
+      font-size: 15px;
+      padding: 7px 15px;
+      height: 36px;
+      margin-bottom: 23px;
+    }
+
+
+    .step3-traveler-form-container .custom-control-label::before {
+    top: 0px;
+    }
+
+
+    .step3-traveler-button-continue-container {
+      margin-top: 12px;
+      margin-bottom: 30px;
+    }
+
+    .btn-step3-traveler-size {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 5.5px 7.58px;
+    }
+
+
+}
+
+
 
 
 
