@@ -8085,3 +8085,303 @@ left: 0px;
   margin-bottom: 56px;
 }
 }
+
+
+
+
+                                        /* Iniciar sesion */
+
+
+  .grid-sesion-rows {
+    grid-template-rows: repeat(2, auto);
+    padding-top: 20px;
+    padding-bottom: 147px;
+  }
+
+  .sesion-breadcrumb-container {
+    grid-column: 1/13;
+    grid-row: 1/2;
+  }
+
+  .sesion-start-container {
+    grid-column: 1/13;
+    grid-row: 2/3;
+    margin-top: 128px;
+    width: 70%;
+    justify-self: center;
+  }
+
+  .sesion-start-container a {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: var(--main-black);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+
+  .sesion-start-container li {
+    width: 50%;
+
+  }
+
+  .grid-sesion-rows .nav-tabs .nav-link {
+    border: 0px;
+  }
+
+  .grid-sesion-rows .nav-tabs .nav-link.active {
+    border: 2px solid var(--main-green);
+  }
+
+
+  .grid-sesion-rows .nav-tabs {
+    border: 0px;
+  }
+
+  .sign-in-container, .sign-up-container {
+    display: grid!important;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    padding: 120px;
+    padding: 72px 40px 40px 40px;
+  }
+
+
+.sign-in-facebook-container, .sign-up-facebook-container {
+  grid-row: 1/2;
+}
+.sign-in-google-container, .sign-up-google-container {
+  grid-row: 2/3;
+}
+.sign-in-line-container, .sign-up-line-container {
+  grid-row: 3/4;
+}
+
+.sign-up-name-container {
+  grid-row: 4/5;
+}
+
+.sign-in-mail-container {
+  grid-row: 4/5;
+}
+
+.sign-up-mail-container {
+  grid-row: 5/6;
+}
+.sign-in-password-container {
+  grid-row: 5/6;
+}
+
+.sign-up-password-container {
+  grid-row: 6/7;
+}
+
+.sign-in-others-container {
+  grid-row: 6/7;
+}
+
+.sign-up-others-container {
+  grid-row: 7/8;
+}
+.sign-in-button-container {
+  grid-row: 7/8;
+}
+.sign-up-button-container {
+  grid-row: 8/9;
+}
+
+.btn-sesion-size {
+  width: 100%;
+  padding: 5px 0px;
+  margin-top: 10px;
+  align-items: center;
+  line-height: inherit;
+}
+
+.sign-in-facebook-container img, .sign-up-facebook-container img  {
+  height: 25px;
+  padding-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sign-in-google-container img, .sign-up-google-container img  {
+  height: 20px;
+  padding-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sign-in-line-container, .sign-up-line-container {
+  height: 2px;
+  background-color: var(--main-green);
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 34px;
+  justify-self: center;
+}
+
+.sign-in-mail-container p, .sign-in-password-container p, .sign-up-mail-container p, .sign-up-password-container p, .sign-up-name-container p {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+
+.sign-in-mail-container input, .sign-in-password-container input, .sign-up-mail-container input, .sign-up-password-container input, .sign-up-name-container input{
+  border-radius: 10px;
+  border-color: var(--lighter-black);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  padding: 9.3px 20px;
+  height: 45px;
+  border-width: 1px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.sign-in-mail-container input:focus, .sign-in-password-container input:focus, .sign-up-mail-container input:focus, .sign-up-password-container input:focus  {
+  border-color: var(--main-orange);
+  border-width: medium;
+  border: 2px solid var(--main-orange);
+  box-shadow: 0 0 0;
+  outline: 0 none;
+  padding-left: 10px;
+
+}
+
+.sign-in-others-container label,.sign-in-others-container a, .sign-up-others-container p, .sign-up-others-container a  {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 35px;
+  text-align: left;
+  text-transform: none;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.sign-in-others-container label:hover ,.sign-in-others-container a:hover, .sign-up-others-container a:hover {
+ text-decoration: none;
+}
+
+.sign-in-others-container a:hover, .sign-up-others-container a:hover {
+  color: var(--main-green);
+}
+
+
+
+.sign-in-others-container label {
+  padding-left: 35px;
+}
+
+.sign-in-others-container .custom-control-label::before, .sign-in-others-container .custom-control-label::after{
+  top: 9px;
+  left: 0px;
+}
+
+.sign-in-button-container, .sign-up-button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.btn-sesion-start-size {
+  align-self: center;
+  padding: 5.55px 43px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .grid-sesion-rows {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sesion-start-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .sesion-start-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-sesion-rows {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .sesion-breadcrumb-container {
+    display: none;
+  }
+
+  .sesion-start-container {
+    margin-top: 0px;
+  }
+
+  .sesion-start-container a {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+
+  .sign-in-container, .sign-up-container {
+    padding: 120px;
+    padding: 45px 25px 22px 25px;
+  }
+
+
+.sign-in-mail-container p, .sign-in-password-container p, .sign-up-mail-container p, .sign-up-password-container p, .sign-up-name-container p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+
+.sign-in-mail-container input, .sign-in-password-container input, .sign-up-mail-container input, .sign-up-password-container input, .sign-up-name-container input{
+  font-size: 15px;
+  padding: 7px 15px;
+  height: 35px;
+  margin-bottom: 30px;
+}
+
+.btn-sesion-size {
+  border-width: 1.5px;
+}
+
+.sign-in-others-container label,.sign-in-others-container a, .sign-up-others-container p, .sign-up-others-container a  {
+  font-size: 15px;
+  line-height: 30px;
+
+}
+
+
+
+.sign-in-others-container label {
+  padding-left: 30px;
+}
+
+.sign-in-others-container .custom-control-label::before, .sign-in-others-container .custom-control-label::after{
+  top: 7px;
+}
+
+.sign-in-button-container, .sign-up-button-container {
+  padding-top: 40px;
+}
+
+}
