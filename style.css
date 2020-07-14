@@ -8195,7 +8195,7 @@ left: 0px;
   grid-row: 8/9;
 }
 
-.btn-sesion-size {
+.btn-sesion-size-social {
   width: 100%;
   padding: 5px 0px;
   margin-top: 10px;
@@ -8335,7 +8335,7 @@ left: 0px;
   }
 
   .sesion-start-container a {
-    font-size: 20px;
+    font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
@@ -8360,7 +8360,7 @@ left: 0px;
   margin-bottom: 30px;
 }
 
-.btn-sesion-size {
+.btn-sesion-size-social {
   border-width: 1.5px;
 }
 
