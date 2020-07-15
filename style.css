@@ -273,6 +273,43 @@ h5 {
 
 }
 
+/* Formularios */
+
+
+input{
+  border-radius: 10px;
+  border: solid 1px var(--lighter-black);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  padding: 9.3px 20px;
+  height: 45px;
+  background-color: white;
+}
+
+input:focus {
+  border-color: var(--main-orange);
+  border-width: medium;
+  border: 2px solid var(--main-orange);
+  box-shadow: 0 0 0;
+  outline: 0 none;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  input{
+  font-size: 15px;
+  padding: 7px 15px;
+  height: 36px;
+  }
+
+  input:focus {
+    border-width: 1px;
+  }
+}
+
+
 /* boton princial */
 
 .btn-main {
@@ -286,7 +323,7 @@ h5 {
   text-transform: uppercase;
   width: fit-content;
   height: fit-content;
-  padding: 14px 42px;
+  padding: 5.8px 42px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -294,7 +331,7 @@ h5 {
 .btn-main {
   font-size: 15px;
   font-weight: 600;
-  padding: 11px 23px;
+  padding: 7.8px 23px;
 }
 
 }
@@ -2814,22 +2851,6 @@ width: auto;
   margin-bottom: 10px;
   }
 
-.form-control {
-  border-radius: 10px;
-  border-color: #8D8D8D;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -0.2px;
-  padding: 9.3px 20px;
-}
-
-
-.form-control:focus {
-  border-color: var(--main-orange);
-  border-width: medium;
-  box-shadow: 0 0 0;
-  outline: 0 none;
-}
 
 
 .product-form-link-grid {
@@ -2841,22 +2862,16 @@ width: auto;
 
 .product-form-link-grid input {
   width: 358px;
-  height: 45px;
-  border: 1.3px var(--lighter-black) solid;
 }
 
 .form-value-container input {
   margin-left: -2px;
   height: 48px;
-  border: 1.3px var(--lighter-black) solid;
   z-index: 3;
-
 }
 
 .product-form-quantity-grid input {
   width: 358px;
-  height: 45px;
-  border: 1.3px var(--lighter-black) solid;
 }
 
 .product-form-price-grid {
@@ -2966,9 +2981,6 @@ width: auto;
   grid-row: 10/11;
 }
 
-.form-value-container input {
-  height: 48px;
-}
 
 .step1-addproduct-title {
   grid-column: 2/4;
@@ -3009,7 +3021,6 @@ width: auto;
     width: 27px;
     height: 27px;
     justify-self: center;
-    /* align-self: start; */
   }
 
   .step1-plus1 {
@@ -3035,42 +3046,18 @@ width: auto;
     grid-column: 1/5;
   }
 
-
-  .form-control {
-    font-size: 13px;
-    padding: 9.3px 20px;
-  }
-
-
-
-  .product-form-link-grid input {
+  .product-form-link-grid input, .product-form-quantity-grid input, .form-box-size, .form-category-size  {
     width: 298px;
-    height: 36px;
   }
 
   .form-value-container input {
-    margin-left: -2px;
-    height: 36px;
-  }
-
-  .product-form-quantity-grid input {
-    width: 298px;
-    height: 36px;
-  }
-
-  .product-form-price-grid input {
-    width: 213px;
     height: 39px;
   }
 
-  .form-box-size {
-    width: 298px;
-  }
 
-  .form-category-size {
-    width: 298px;
+  .product-form-price-grid input {
+    width: 213px;
   }
-
 }
 
 
@@ -6256,29 +6243,11 @@ margin-left: 14px;
 }
 
 .step1-traveler-form-container input{
-  border-radius: 10px;
-  border-color: var(--lighter-black);
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -0.2px;
-  padding: 9.3px 20px;
-  height: 45px;
-  border-width: 1px;
   margin-top: 10px;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
   width: 90%;
-  background-color: white;
 }
 
-
-.step1-traveler-form-container input:focus {
-  border-color: var(--main-orange);
-  border-width: medium;
-  border: 2px solid var(--main-orange);
-  box-shadow: 0 0 0;
-  outline: 0 none;
-  padding-left: 10px;
-}
 
   .step1-traveler-button-continue-container {
     grid-column: 1/13;
@@ -6358,8 +6327,6 @@ margin-left: 14px;
   }
 
   .step1-traveler-form-container input{
-  font-size: 15px;
-  padding: 7px 15px;
   margin-bottom: 20px;
   width: 100%;
   }
@@ -6376,16 +6343,6 @@ margin-left: 14px;
     line-height: 20px;
     padding: 5.5px 7.58px;
   }
-
-
-
-
-
-
-
-
-
-
 
   }
 
@@ -6597,29 +6554,11 @@ border-radius: 50%;
   }
 
   .step2-traveler-form-container input{
-  border-radius: 10px;
-  border-color: var(--lighter-black);
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -0.2px;
-  padding: 9.3px 20px;
-  height: 45px;
-  border-width: 1px;
   margin-top: 10px;
   margin-bottom: 38px;
   width: 100%;
-  background-color: white;
   }
 
-
-  .step2-traveler-form-container input:focus {
-  border-color: var(--main-orange);
-  border-width: medium;
-  border: 2px solid var(--main-orange);
-  box-shadow: 0 0 0;
-  outline: 0 none;
-  padding-left: 10px;
-  }
 
   .step2-traveler-button-continue-container {
     grid-column: 1/13;
@@ -6820,11 +6759,7 @@ border-radius: 50%;
 
 
   .step2-traveler-form-container input{
-  font-size: 15px;
-  padding: 7px 15px;
-  height: 36px;
   margin-bottom: 23px;
-
   }
 
 
@@ -6845,10 +6780,6 @@ border-radius: 50%;
     line-height: 20px;
     padding: 5.5px 7.58px;
   }
-
-
-
-
 
   }
 
@@ -6953,34 +6884,14 @@ border-radius: 50%;
 
 
 .step3-traveler-form-container input{
-border-radius: 10px;
-border-color: var(--lighter-black);
-font-size: 18px;
-font-weight: 300;
-letter-spacing: -0.2px;
-padding: 9.3px 20px;
-height: 45px;
-border-width: 1px;
 margin-top: 10px;
-margin-bottom: 38px;
+margin-bottom: 28px;
 width: 100%;
-background-color: white;
-}
-
-
-.step3-traveler-form-container input:focus {
-border-color: var(--main-orange);
-border-width: medium;
-border: 2px solid var(--main-orange);
-box-shadow: 0 0 0;
-outline: 0 none;
-padding-left: 10px;
 }
 
 .step3-traveler-form-container .custom-control-label::before {
 top: 2px;
 left: 0px;
-
 }
 
 
@@ -7076,9 +6987,6 @@ left: 0px;
 
 
     .step3-traveler-form-container input{
-      font-size: 15px;
-      padding: 7px 15px;
-      height: 36px;
       margin-bottom: 23px;
     }
 
@@ -8236,27 +8144,10 @@ left: 0px;
 
 
 .sign-in-mail-container input, .sign-in-password-container input, .sign-up-mail-container input, .sign-up-password-container input, .sign-up-name-container input{
-  border-radius: 10px;
-  border-color: var(--lighter-black);
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -0.2px;
-  padding: 9.3px 20px;
-  height: 45px;
-  border-width: 1px;
   margin-bottom: 40px;
   width: 100%;
 }
 
-.sign-in-mail-container input:focus, .sign-in-password-container input:focus, .sign-up-mail-container input:focus, .sign-up-password-container input:focus  {
-  border-color: var(--main-orange);
-  border-width: medium;
-  border: 2px solid var(--main-orange);
-  box-shadow: 0 0 0;
-  outline: 0 none;
-  padding-left: 10px;
-
-}
 
 .sign-in-others-container label,.sign-in-others-container a, .sign-up-others-container p, .sign-up-others-container a  {
   font-size: 15px;
@@ -8354,9 +8245,6 @@ left: 0px;
 
 
 .sign-in-mail-container input, .sign-in-password-container input, .sign-up-mail-container input, .sign-up-password-container input, .sign-up-name-container input{
-  font-size: 15px;
-  padding: 7px 15px;
-  height: 35px;
   margin-bottom: 30px;
 }
 
@@ -8383,5 +8271,292 @@ left: 0px;
 .sign-in-button-container, .sign-up-button-container {
   padding-top: 40px;
 }
+
+}
+
+
+                        /* Reenviar confirmacion de creacion de cuenta */
+
+
+.grid-resend-rows {
+  grid-template-rows: repeat(2, auto);
+  padding-top: 20px;
+  padding-bottom: 147px;
+}
+
+.resend-breadcrumb-container {
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+
+.resend-form-container {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  padding: 62px 30px 36px 30px;
+  width: 70%;
+  justify-self: center;
+  margin-top: 124px;
+}
+
+.resend-form-container > p {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 49px;
+  margin: 0px;
+  grid-row: 1/2;
+  margin-bottom: 69px;
+}
+
+.resend-email-container {
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.resend-email-container p:nth-child(1) {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.resend-email-container a {
+  font-size: 15px;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  color: var(--main-black);
+  margin-bottom: 74px;
+}
+
+.resend-email-container a:hover {
+  color: var(--main-green);
+  text-decoration: none;
+
+}
+
+.resend-send-button-container {
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+}
+
+.resend-sesion-button-container {
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.resend-button-start-size {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  padding: 2.5px 10px;
+}
+
+@media only screen and (max-width: 1120px){
+  .grid-resend-rows {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .resend-form-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  .grid-resend-rows {
+    grid-template-rows: repeat(2, auto);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .resend-breadcrumb-container {
+    display: none;
+  }
+
+  .resend-form-container {
+    padding: 23x 30px 65px 30px;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .resend-form-container > p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+
+  .resend-email-container p:nth-child(1) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .resend-email-container a {
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 55px;
+  }
+
+
+
+  .resend-button-start-size {
+    line-height: 24px;
+    padding: 2.5px 10px;
+  }
+
+
+}
+
+                            /* Olvidaste contrasena */
+
+
+.grid-password-rows {
+grid-template-rows: repeat(2, auto);
+padding-top: 20px;
+padding-bottom: 147px;
+}
+
+.password-breadcrumb-container {
+grid-column: 1/13;
+grid-row: 1/2;
+}
+
+.password-form-container {
+grid-column: 1/13;
+grid-row: 2/3;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: repeat(4, auto);
+padding: 62px 30px 36px 30px;
+width: 70%;
+justify-self: center;
+margin-top: 124px;
+}
+
+.password-form-container > p {
+font-size: 35px;
+font-weight: bold;
+line-height: 49px;
+margin: 0px;
+grid-row: 1/2;
+margin-bottom: 69px;
+}
+
+.password-email-container {
+grid-row: 2/3;
+display: flex;
+flex-direction: column;
+}
+
+.password-email-container p:nth-child(1) {
+font-size: 18px;
+line-height: 35px;
+letter-spacing: -0.2px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.password-email-container a {
+font-size: 15px;
+line-height: 35px;
+letter-spacing: -0.2px;
+font-weight: 500;
+color: var(--main-black);
+margin-bottom: 74px;
+}
+
+.password-email-container a:hover {
+color: var(--main-green);
+text-decoration: none;
+
+}
+
+.password-send-button-container {
+grid-row: 3/4;
+display: flex;
+justify-content: center;
+}
+
+.password-sesion-button-container {
+grid-row: 4/5;
+display: flex;
+justify-content: center;
+padding-top: 10px;
+}
+
+.password-button-start-size {
+font-size: 15px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: -0.2px;
+padding: 2.5px 10px;
+}
+
+@media only screen and (max-width: 1120px){
+.grid-password-rows {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.password-form-container {
+width: 90%;
+}
+}
+
+@media only screen and (max-width: 768px){
+
+.grid-password-rows {
+grid-template-rows: repeat(2, auto);
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.password-breadcrumb-container {
+display: none;
+}
+
+.password-form-container {
+padding: 23x 30px 65px 30px;
+width: 100%;
+margin-top: 0px;
+}
+
+.password-form-container > p {
+font-size: 20px;
+line-height: 25px;
+margin-bottom: 28px;
+text-align: center;
+}
+
+
+.password-email-container p:nth-child(1) {
+font-size: 15px;
+line-height: 30px;
+}
+
+.password-email-container a {
+font-size: 14px;
+line-height: 30px;
+margin-bottom: 55px;
+}
+
+
+
+.password-button-start-size {
+line-height: 24px;
+padding: 2.5px 10px;
+}
+
 
 }
