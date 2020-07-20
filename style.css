@@ -2872,6 +2872,8 @@ width: auto;
   z-index: 3;
 }
 
+
+
 .product-form-quantity-grid input {
   width: 358px;
 }
@@ -8693,6 +8695,261 @@ padding: 2.5px 10px;
 .claimbook-inputs-container .wrapper p {
   line-height: 19px;
 }
+
+
+}
+
+                                  /* Ofertar paso 1 */
+
+
+.grid-bid1-rows {
+grid-template-rows: repeat(5, auto);
+padding-top: 20px;
+}
+
+.grid-bid1-rows > p {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  font-size: 35px;
+  line-height: 33px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 60px;
+}
+
+
+.bid1-breadcrumb-container {
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+
+.bid1-remember-container {
+    grid-column: 1/13;
+    grid-row: 3/4;
+    background-color: var(--background-black);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-self:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: calc((100vw - 1120px)/2);
+    padding-right: calc((100vw - 1120px)/2);
+}
+
+.bid1-remember-container  p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main-black);
+  line-height : 19px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.bid1-main-container {
+  grid-column: 1/13;
+  grid-row: 4/5;
+  padding: 97px 0px 0px 100px;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: auto;
+}
+
+.bid1-table-container > p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0px 0px 21px 0px;
+}
+
+.bid1-table-container table {
+  width: 100%;
+}
+
+.bid1-table-container{
+  grid-row: 1/2;
+}
+
+
+.bid1-input-container{
+  grid-row: 2/3;
+  padding-top: 80px;
+  padding-bottom: 90px;
+
+}
+
+.bid1-input-container p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
+.bid1-value-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bid1-value-container p {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.bid1-value-container input {
+  text-align: center;
+  font-size: 18px;
+  width: 140px;
+
+}
+
+
+.bid1-fareometro-container{
+  grid-row: 3/4;
+}
+
+.bid1-buttons-container{
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+}
+
+
+.bid1-buttons-container button{
+  padding: 7px 80px;
+
+}
+
+.bid1-buttons-container a{
+    letter-spacing: -0.2px;
+    color: var(--main-black);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-left: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bid1-buttons-container a:hover{
+    text-decoration: none;
+    color: var(--main-green);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1120px) {
+
+
+  .bid1-breadcrumb-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.bid1-remember-container  p {
+  font-size: 13px;
+}
+
+.bid1-remember-container {
+  margin-bottom: 30px;
+}
+
+
+.grid-bid1-rows {
+  padding-top: 0px;
+}
+
+.grid-bid1-rows > p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+
+
+.bid1-breadcrumb-container {
+  display: none;
+}
+
+
+.bid1-main-container {
+  padding: 34px 20px 0px 20px;
+}
+
+.bid1-table-container > p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0px 0px 10px 0px;
+  text-align: left;
+}
+
+
+.bid1-input-container{
+  padding-top: 53px;
+  padding-bottom: 60px;
+}
+
+.bid1-input-container p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.bid1-value-container p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.bid1-value-container input {
+  font-size: 15px;
+
+}
+
+
+.bid1-buttons-container{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.bid1-buttons-container button{
+  padding: 7px 75px;
+
+}
+
+.bid1-buttons-container a{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+
+}
+
+
 
 
 }
