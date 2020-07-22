@@ -9488,7 +9488,7 @@ padding: 20px 50px;
 
 
       .tracking-line-separator {
-        width: 50%;
+        width: 70%;
         justify-self: center;
         margin-top: 0px;
         margin-bottom: 50px;
@@ -9510,6 +9510,7 @@ padding: 20px 50px;
         line-height: 17px;
         padding: 0px;
         text-align: left;
+        margin-bottom: 8px;
       }
 
 
