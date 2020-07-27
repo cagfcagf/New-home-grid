@@ -75,6 +75,22 @@ return true;
 };
 
 
+function rotarFlechaMenu(address, arrow){
+const direccion = document.getElementById(address);
+const flecha = document.getElementById(arrow);
+if(!direccion) {
+return true;
+}
+if (direccion.style.display == "none") {
+direccion.style.display = "block"
+flecha.classList.add('rotar-menu');
+direccion.classList.add('animate__fadeIn');
+} else {
+direccion.style.display = "none"
+flecha.classList.remove('rotar-menu');
+};
+return true;
+};
 // Pinta de naranjo el fondo de un viajero seleccionado
 
 function travelerSelected(travelerbox, travelercheck){
