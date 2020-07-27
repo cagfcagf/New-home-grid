@@ -10082,7 +10082,7 @@ padding: 7px 31px;
   }
 
   .hide-profile{
-    display: none;
+    display: none!important;
   }
 
   .account-menu-container-phone {
@@ -10529,7 +10529,7 @@ padding: 7px 31px;
 
   .resumen-uptodate {
     font-size: 15px;
-    line-height: 20px; 
+    line-height: 20px;
   }
 
 
