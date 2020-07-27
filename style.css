@@ -10533,6 +10533,12 @@ padding: 7px 31px;
   }
 
 
+}
 
+@media only screen and (max-width: 460px) {
+
+.account-resume-body-supertraveler p {
+
+  width: 50%;
 
 }
