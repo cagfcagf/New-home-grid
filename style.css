@@ -10539,6 +10539,6 @@ padding: 7px 31px;
 
 .account-resume-body-supertraveler p {
 
-  width: 50%;
+  width: calc(100% - 125px);
 
 }
