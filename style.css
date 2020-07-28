@@ -10542,3 +10542,185 @@ padding: 7px 31px;
   width: calc(100% - 125px);
 
 }
+}
+
+
+                                      /* Mi cuenta "Validacion" */
+
+
+
+
+.account-validation-container {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+}
+
+.account-validation-breadcrumb-container {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.account-validation-body-container{
+  grid-column: 1/13;
+  grid-row: 2/3;
+  padding: 78px 0px 46px 0px;
+  display: grid;
+  grid-template-columns: 108fr auto 206fr;
+  grid-template-rows: auto;
+}
+
+.account-validation-body-container h4{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--main-black);
+  text-align: center;
+}
+
+
+
+.account-validation-inputs-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 60px 20px;
+  margin-top: 23px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  justify-self: center;
+  width: 70%;
+}
+
+.account-phone-validation-container, .account-identity-validation-container, .account-traveler-validation-container {
+    margin-bottom: 70px;
+
+
+
+}
+
+.account-phone-validation-container h5, .account-identity-validation-container h5, .account-traveler-validation-container h5 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  color: var(--main-black);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+
+.account-phone-validation-container p, .account-identity-validation-container p, .account-traveler-validation-container p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: var(--main-black);
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.account-phone-validation-container div, .account-identity-validation-container div, .account-traveler-validation-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  }
+
+.account-phone-validation-container{
+grid-row: 1/2;
+}
+
+.account-identity-validation-container {
+grid-row: 2/3;
+}
+
+.account-traveler-validation-container {
+grid-row: 3/4;
+}
+
+.account-identity-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-identity-inputs > p {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.validate-button-size {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 1.3px  38.4px;
+  margin-left: 44px;
+}
+
+.validate-traveler-button-size {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px  40px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .account-validation-container {
+    grid-column: 1/2;
+  }
+
+  .account-validation-breadcrumb-container {
+    display: none;
+  }
+
+
+  .account-validation-body-container{
+    padding: 40px 10px 50px 10px;
+    margin-bottom: 30px;
+  }
+
+  .account-validation-body-container h4{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--main-black);
+    text-align: center;
+  }
+
+
+  .account-validation-inputs-container {
+    padding: 40px 10px;
+    width: 100%;
+  }
+
+  .account-phone-validation-container, .account-identity-validation-container, .account-traveler-validation-container {
+      margin-bottom: 50px;
+  }
+
+  .account-phone-validation-container h5, .account-identity-validation-container h5, .account-traveler-validation-container h5 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  .account-phone-validation-container p, .account-identity-validation-container p, .account-traveler-validation-container p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+
+
+
+  .account-identity-inputs > p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .validate-traveler-button-size {
+    padding: 7px  30px;
+  }
+
+}

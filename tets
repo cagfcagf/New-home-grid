@@ -1,86 +1,42 @@
-.grid-bid1-rows {
-grid-template-rows: repeat(5, auto);
-padding-top: 20px;
+
+
+.account-validation-container {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
 }
 
 
-
-.bid1-breadcrumb-container {
-grid-column: 1/13;
-grid-row: 1/2;
+.account-validation-breadcrumb-container {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  padding-left: 10px;
+  padding-top: 20px;
 }
 
-.bid1-remember-container {
-    grid-column: 1/13;
-    grid-row: 3/4;
-    background-color: var(--background-black);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    justify-self:center;
-    margin-bottom: 59px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: calc((100vw - 1120px)/2);
-    padding-right: calc((100vw - 1120px)/2);
+.account-validation-body-container{
+  grid-column: 1/13;
+  grid-row: 2/3;
+  padding: 78px 0px 46px 0px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: repeat(5, auto);
 }
 
-.bid1-remember-container  p {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--main-black);
-  line-height : 19px;
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-  margin: 0;
-  padding-left: 14px;
-  padding-right: 14px;
-}
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 768px) {
 
-  .bid1-remember-container {
-    width: auto;
+  .account-validation-container {
+    grid-column: 1/2;
+  }
+
+  .account-validation-breadcrumb-container {
+    display: none;
+  }
+
+
+  .account-validation-body-container{
+    padding: 40px 10px 50px 10px;
   }
 
 }
-
-
-.step1-remember-container  p {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--main-black);
-  line-height : 19px;
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-  margin: 0;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-768px
-
-.step1-remember-container  p {
-  font-size: 13px;
-}
-
-.step1-remember-container {
-  margin-bottom: 30px;
-}
-
-
-step1-button-finish-container
-
-grid-column: 1/13;
-grid-row: 5/6;
-justify-self: end;
-margin-top: 56px;
-margin-bottom: 71px;
-
-
-768px
-justify-self: center;
-margin-right: 0px;
