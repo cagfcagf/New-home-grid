@@ -10723,4 +10723,13 @@ grid-row: 3/4;
     padding: 7px  30px;
   }
 
+  .account-phone-validation-container div {
+    flex-direction: column;
+  }
+
+  .validate-button-size {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
 }
