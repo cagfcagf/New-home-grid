@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flickity.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <title>Validación</title>
+    <title>Mi perfil</title>
   </head>
   <body>
 
@@ -72,9 +72,6 @@
                 </g>
                 </svg><span class="btn-sesion-text">iniciar sesión</span></a>
           </div>
-
-
-
         </div>
 
       </nav>
@@ -114,49 +111,79 @@
 
 
       </div>
-      <div class="account-validation-container">
-        <div class="account-validation-breadcrumb-container">
+      <div class="account-profile-container">
+        <div class="account-profile-breadcrumb-container">
           <ul class="breadcrumb">
             <li><a class="breadcrumb-before" href="#">Inicio</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
             <li><a class="breadcrumb-before" href="#">Mi cuenta</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
-            <li class="breadcrumb-now">Validación</li>
+            <li class="breadcrumb-now">Mi perfil</li>
           </ul>
         </div>
-        <div class="account-validation-body-container">
-          <h4>Validación</h4>
-          <div class="account-validation-inputs-container shadow">
-            <div class="account-phone-validation-container">
-              <h5>Teléfono</h5>
-              <p>Te enviaremos un código a tu celular que deberás ingresar para validar tu número. A este número nos contactaremos contigo para validar tu viaje. Por lo tanto, debe ser un número tuyo y ojalá tenga Whatsapp.</p>
-              <div class="">
-                <input type="phone" name="" value="">
-                <button class="btn-secondary validate-button-size"type="button" name="button">Validar</button>
-              </div>
+        <h4>Mi perfil</h4>
+        <div class="account-profile-body-container shadow">
+          <div class="account-profile-data-container">
+            <h5>Mis datos</h5>
+            <div class="">
+              <p>Nombre</p>
+              <input type="text" name="" value="">
             </div>
-            <div class="account-identity-validation-container">
-              <h5>Identidad</h5>
-              <p>Sube una foto de tu documento de identidad por ambos lados y la validaremos dentro de 2 días hábiles.
-              <br><br><b>Chilenos</b>: Pueden subir carnet de identidad o pasaporte.
-              <br><b>Peruanos</b>: Solo pasaporte.
-              <br><b>Otros documentos</b>: Enviar documento más un video en el que salgas diciendo "Comparto Mi Maleta" a contacto@compartomimaleta.com</p>
-              <div class="account-identity-inputs">
-                <p>Foto frontal</p>
-                <input type="file" name="" value="">
-                <p>Foto reverso</p>
-                <input type="file" name="" value="">
-              </div>
+            <div class="">
+              <p>Correo electrónico</p>
+              <input type="email" name="" value="">
             </div>
-            <div class="account-traveler-validation-container">
-              <h5>Capacitación viajero</h5>
-              <p>Para que tu viaje aparezca público, debes realizar esta capacitación que no te tomará más de 5 minutos.</p>
-              <div class="">
-                <button class="btn-secondary validate-traveler-button-size"type="button" name="button">Realizar capacitación</button>
-              </div>
-
+            <div class="">
+              <p>Sexo</p>
+              <div class="select_wrap form-account-size">
+                <ul class="default_option">
+                    <li>
+                        <div class="wrapper-select">
+                          <p>Seleccionar</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="select_ul">
+                    <li>
+                        <div class="option">
+                          <p class="options-text">Masculino</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                          <p class="options-text">Femenino</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="">
+              <p>Apellido</p>
+              <input type="text" name="" value="">
+            </div>
+            <div class="">
+              <p>Fecha de nacimiento</p>
+              <input type="date" name="" value="">
+            </div>
+            <div class="">
+              <p>País</p>
+              <input type="country" name="" value="">
             </div>
           </div>
+          <div class="account-profile-password-container">
+            <h5>Cambiar contraseña</h5>
+            <div class="">
+              <p>Nueva contraseña</p>
+              <input type="password" name="" value="">
+            </div>
+            <div class="">
+              <p>Confirmar nueva contraseña</p>
+              <input type="password" name="" value="">
+            </div>
+          </div>
+        </div>
+        <div class="account-profile-save-button">
+          <button type="button" name="button" class="btn-main">Guardar cambios</button>
         </div>
       </div>
 

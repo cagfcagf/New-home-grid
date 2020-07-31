@@ -1,20 +1,20 @@
 
 
-.account-validation-container {
+.account-profile-container {
   grid-column: 2/3;
   display: grid;
   grid-template-columns: repeat(12, auto);
 }
 
 
-.account-validation-breadcrumb-container {
+.account-profile-breadcrumb-container {
   grid-column: 1/13;
   grid-row: 1/2;
   padding-left: 10px;
   padding-top: 20px;
 }
 
-.account-validation-body-container{
+.account-profile-body-container{
   grid-column: 1/13;
   grid-row: 2/3;
   padding: 78px 0px 46px 0px;
@@ -26,16 +26,16 @@
 
 @media only screen and (max-width: 768px) {
 
-  .account-validation-container {
+  .account-profile-container {
     grid-column: 1/2;
   }
 
-  .account-validation-breadcrumb-container {
+  .account-profile-breadcrumb-container {
     display: none;
   }
 
 
-  .account-validation-body-container{
+  .account-profile-body-container{
     padding: 40px 10px 50px 10px;
   }
 
