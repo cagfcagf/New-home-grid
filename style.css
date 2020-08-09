@@ -11075,5 +11075,344 @@ grid-row: 3/4;
   }
 
 
+}
+
+
+                                      /* Mis viajes */
+
+
+
+.account-travels-container {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+}
+
+
+.account-travels-breadcrumb-container {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.account-travels-container h4 {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  grid-column: 1/13;
+  grid-row: 2/3;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--main-black);
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.account-active-travels-container {
+  grid-column: 1/13;
+  grid-row: 3/4;
+  display: grid;
+   margin-left: 50px;
+   margin-bottom: 50px;
+   margin-right: 50px;
+
+
+}
+
+.account-historic-travels-container {
+  grid-column: 1/13;
+  grid-row: 4/5;
+  display: grid;
+   margin-left: 50px;
+   margin-bottom: 180px;
+    margin-right: 50px;
+
+}
+
+.account-active-travels-container > p, .account-historic-travels-container > p{
+font-size: 24px;
+font-weight: bold;
+line-height: 49px;
+margin-bottom: 10px;
+grid-column: 1/2;
+grid-row: 1/2;
+}
+
+.account-active-travels-table, .account-historic-travels-table {
+ grid-column: 1/2;
+ grid-row: 2/3;
+}
+
+
+
+.account-active-travels-table table, .account-historic-travels-table table{
+
+ border: 1px var(--main-orange) solid;
+}
+
+.account-active-travels-table table tr, .account-historic-travels-table table tr{
+
+ border-bottom: 0px;
+}
+
+.account-active-travels-table thead th, .account-historic-travels-table thead th {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 49px;
+  text-align: center;
+  padding: 0px;
+  height: 74px;
+  vertical-align: middle;
+}
+
+.table-account-travels-separator {
+  width: 2px;
+  height: 70px;
+  background-color: var(--main-orange);
+}
+
+.account-active-travels-table table, .account-historic-travels-table table{
+ width: 100%;
+}
+
+.account-active-travels-table table tr:nth-of-type(4n+4), .account-historic-travels-table table tr:nth-of-type(even){
+ background-color: #FAFAFA;
+}
+
+
+
+.account-active-travels-table table tr:nth-of-type(4n+3){
+ background-color: #FAFAFA;
+}
+
+
+.account-active-travels-table tbody td, .account-historic-travels-table tbody td {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  height: 149px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+
+.account-active-travels-table tbody td:nth-of-type(1), .account-active-travels-table th:nth-of-type(1), .account-historic-travels-table tbody td:nth-of-type(1), .account-historic-travels-table th:nth-of-type(1)  {
+  padding-left: 70px;
+}
+
+.account-active-travels-table tbody td:nth-of-type(2), .account-active-travels-table th:nth-of-type(2), .account-historic-travels-table tbody td:nth-of-type(2), .account-historic-travels-table th:nth-of-type(2)   {
+  padding-left: 100px;
+}
+
+.account-active-travels-table tbody td:nth-of-type(3), .account-active-travels-table th:nth-of-type(3), .account-historic-travels-table tbody td:nth-of-type(3), .account-historic-travels-table th:nth-of-type(3)  {
+  padding-left: 50px;
+}
+
+.account-active-travels-table tbody td:nth-of-type(4), .account-active-travels-table th:nth-of-type(4), .account-historic-travels-table tbody td:nth-of-type(4), .account-historic-travels-table th:nth-of-type(4)  {
+  padding-left: 25px;
+}
+
+.account-active-travels-table tbody td:nth-of-type(5), .account-active-travels-table th:nth-of-type(5), .account-historic-travels-table tbody td:nth-of-type(5), .account-historic-travels-table th:nth-of-type(5)   {
+  padding-left: 86px;
+}
+
+.account-active-travels-table tbody td:nth-of-type(6), .account-active-travels-table th:nth-of-type(6), .account-historic-travels-table tbody td:nth-of-type(6), .account-historic-travels-table th:nth-of-type(6)   {
+  padding-left: 50px;
+}
+
+.account-active-travels-table tbody td:nth-of-type(7), .account-active-travels-table th:nth-of-type(7), .account-historic-travels-table tbody td:nth-of-type(7), .account-historic-travels-table th:nth-of-type(7)   {
+  padding-left: 30px;
+  padding-right: 23px;
+}
+
+
+
+
+
+.account-active-travels-table tbody td div p, .account-historic-travels-table tbody td div p {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 15px;
+  text-align: center;
+  margin: 6px 0px 0px 0px;
+}
+
+.table-noshow-pc {
+  display: none;
+}
+
+@media only screen and (max-width: 1335px) {
+
+  .account-active-travels-container, .account-historic-travels-container {
+     margin-right: 10px;
+     margin-left: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1255px) {
+
+  .account-active-travels-table tbody td:nth-of-type(1), .account-active-travels-table th:nth-of-type(1), .account-historic-travels-table tbody td:nth-of-type(1), .account-historic-travels-table th:nth-of-type(1)  {
+    padding-left: 35px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(2), .account-active-travels-table th:nth-of-type(2), .account-historic-travels-table tbody td:nth-of-type(2), .account-historic-travels-table th:nth-of-type(2)   {
+    padding-left: 50px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(3), .account-active-travels-table th:nth-of-type(3), .account-historic-travels-table tbody td:nth-of-type(3), .account-historic-travels-table th:nth-of-type(3)  {
+    padding-left: 25px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(4), .account-active-travels-table th:nth-of-type(4), .account-historic-travels-table tbody td:nth-of-type(4), .account-historic-travels-table th:nth-of-type(4)  {
+    padding-left: 12px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(5), .account-active-travels-table th:nth-of-type(5), .account-historic-travels-table tbody td:nth-of-type(5), .account-historic-travels-table th:nth-of-type(5)   {
+    padding-left: 43px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(6), .account-active-travels-table th:nth-of-type(6), .account-historic-travels-table tbody td:nth-of-type(6), .account-historic-travels-table th:nth-of-type(6)   {
+    padding-left: 25px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(7), .account-active-travels-table th:nth-of-type(7), .account-historic-travels-table tbody td:nth-of-type(7), .account-historic-travels-table th:nth-of-type(7)   {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1044px) {
+
+  .account-active-travels-table tbody td:nth-of-type(1), .account-active-travels-table th:nth-of-type(1), .account-historic-travels-table tbody td:nth-of-type(1), .account-historic-travels-table th:nth-of-type(1)  {
+    padding-left: 10px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(2), .account-active-travels-table th:nth-of-type(2), .account-historic-travels-table tbody td:nth-of-type(2), .account-historic-travels-table th:nth-of-type(2)   {
+    padding-left: 10px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(3), .account-active-travels-table th:nth-of-type(3), .account-historic-travels-table tbody td:nth-of-type(3), .account-historic-travels-table th:nth-of-type(3)  {
+    padding-left: 10px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(4), .account-active-travels-table th:nth-of-type(4), .account-historic-travels-table tbody td:nth-of-type(4), .account-historic-travels-table th:nth-of-type(4)  {
+    padding-left: 10px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(5), .account-active-travels-table th:nth-of-type(5), .account-historic-travels-table tbody td:nth-of-type(5), .account-historic-travels-table th:nth-of-type(5)   {
+    padding-left: 10px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(6), .account-active-travels-table th:nth-of-type(6), .account-historic-travels-table tbody td:nth-of-type(6), .account-historic-travels-table th:nth-of-type(6)   {
+    padding-left: 10px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(7), .account-active-travels-table th:nth-of-type(7), .account-historic-travels-table tbody td:nth-of-type(7), .account-historic-travels-table th:nth-of-type(7)   {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .table-noshow-phone {
+    display: none;
+  }
+
+  .table-noshow-pc {
+    display: table-row;
+  }
+
+  .account-travels-container h4 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--main-black);
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+
+
+
+  .account-travels-size {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 5px  86px;
+  }
+
+  .account-active-travels-table tbody td, .account-historic-travels-table tbody td{
+    height: 82px;
+  }
+
+  .account-active-travels-table tbody td:nth-of-type(odd){
+    height: 55px;
+  }
+
+
+
+
+
+  .account-active-travels-container > p, .account-historic-travels-container > p{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  }
+
+
+  .account-active-travels-table thead th, .account-historic-travels-table thead th {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .table-account-travels-separator {
+    height: 44px;
+  }
+
+
+  .account-active-travels-table tbody td, .account-historic-travels-table tbody td {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    height: 80px;
+  }
+
+
+  .account-active-travels-table tbody td div p, .account-historic-travels-table tbody td div p {
+    font-size: 11px;
+  }
+
+  .account-active-travels-table tbody td img, .account-historic-travels-table tbody td img {
+    height: 30px;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .account-travels-container {
+    grid-column: 1/2;
+  }
+
+  .account-travels-breadcrumb-container {
+    display: none;
+  }
+
+
 
 }

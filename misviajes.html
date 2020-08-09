@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flickity.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <title>Validación</title>
+    <title>Mis viajes</title>
   </head>
   <body>
 
@@ -72,9 +72,6 @@
                 </g>
                 </svg><span class="btn-sesion-text">iniciar sesión</span></a>
           </div>
-
-
-
         </div>
 
       </nav>
@@ -114,52 +111,205 @@
 
 
       </div>
-      <div class="account-validation-container">
-        <div class="account-validation-breadcrumb-container">
+      <div class="account-travels-container">
+        <div class="account-travels-breadcrumb-container">
           <ul class="breadcrumb">
             <li><a class="breadcrumb-before" href="#">Inicio</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
             <li><a class="breadcrumb-before" href="#">Mi cuenta</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
-            <li class="breadcrumb-now">Validación</li>
+            <li class="breadcrumb-now">Mis viajes</li>
           </ul>
         </div>
-        <div class="account-validation-body-container">
-          <h4>Validación</h4>
-          <div class="account-validation-inputs-container shadow">
-            <div class="account-phone-validation-container">
-              <h5>Teléfono</h5>
-              <p>Te enviaremos un código a tu celular que deberás ingresar para validar tu número. A este número nos contactaremos contigo para validar tu viaje. Por lo tanto, debe ser un número tuyo y ojalá tenga Whatsapp.</p>
-              <div class="">
-                <input type="phone" name="" value="">
-                <button class="btn-secondary validate-button-size"type="button" name="button">Validar</button>
-              </div>
-            </div>
-            <div class="account-identity-validation-container">
-              <h5>Identidad</h5>
-              <p>Sube una foto de tu documento de identidad por ambos lados y la validaremos dentro de 2 días hábiles.
-              <br><br><b>Chilenos</b>: Pueden subir carnet de identidad o pasaporte.
-              <br><b>Peruanos</b>: Solo pasaporte.
-              <br><b>Otros documentos</b>: Enviar documento más un video en el que salgas diciendo "Comparto Mi Maleta" a contacto@compartomimaleta.com</p>
-              <div class="account-identity-inputs">
-                <p>Foto frontal</p>
-                <input type="file" name="" value="">
-                <p>Foto reverso</p>
-                <input type="file" name="" value="">
-              </div>
-            </div>
-            <div class="account-traveler-validation-container">
-              <h5>Capacitación viajero</h5>
-              <p>Para que tu viaje aparezca público, debes realizar esta capacitación que no te tomará más de 5 minutos.</p>
-              <div class="">
-                <button class="btn-secondary validate-traveler-button-size"type="button" name="button">Realizar capacitación</button>
-              </div>
+        <h4>Mis viajes</h4>
+        <div class="account-active-travels-container">
+          <p>Viajes activos</p>
+          <div class="account-active-travels-table">
+            <table class="table table-hover table-borderless shadow-lg table-details-size">
+              <thead>
+                <tr>
+                  <th scope="col">Desde</th>
+                  <th scope="col">A</th>
+                  <th scope="col"></th>
+                  <th scope="col">Recibes hasta</th>
+                  <th scope="col">Llegas</th>
+                  <th scope="col" class="table-noshow-phone"></th>
+                  <th scope="col" class="table-noshow-phone"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td class="table-noshow-phone"><div class="table-account-travels-separator"></div></td>
+                  <td class="table-noshow-phone"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+                <tr class="table-row table-noshow-pc">
+                  <td colspan="5"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
 
-            </div>
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td class="table-noshow-phone"><div class="table-account-travels-separator"></div></td>
+                  <td class="table-noshow-phone"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+                <tr class="table-row table-noshow-pc">
+                  <td colspan="5"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td class="table-noshow-phone"><div class="table-account-travels-separator"></div></td>
+                  <td class="table-noshow-phone"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+                <tr class="table-row table-noshow-pc">
+                  <td colspan="5"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+
+
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td class="table-noshow-phone"><div class="table-account-travels-separator"></div></td>
+                  <td class="table-noshow-phone"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+                <tr class="table-row table-noshow-pc">
+                  <td colspan="5"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td class="table-noshow-phone"><div class="table-account-travels-separator"></div></td>
+                  <td class="table-noshow-phone"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+                <tr class="table-row table-noshow-pc">
+                  <td colspan="5"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td class="table-noshow-phone"><div class="table-account-travels-separator"></div></td>
+                  <td class="table-noshow-phone"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+                <tr class="table-row table-noshow-pc">
+                  <td colspan="5"><button class="btn-secondary-green account-travels-size" type="button" name="button">Ver viaje</button></td>
+                </tr>
+
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
+        <div class="account-historic-travels-container">
+          <p>Últimos viajes</p>
+          <div class="account-historic-travels-table">
+            <table class="table table-hover table-borderless shadow-lg table-details-size">
+              <thead>
+                <tr>
+                  <th scope="col">Desde</th>
+                  <th scope="col">A</th>
+                  <th scope="col"></th>
+                  <th scope="col">Recibes hasta</th>
+                  <th scope="col">Llegas</th>
+                  <th scope="col"></th>
+                  <th scope="col">Ganaste</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>$10.990</td>
+                </tr>
 
+                <tr class="table-row">
+                  <td><div class="">
+                    <img src="icons/chileflag.svg" alt="">
+                    <p>Santiago,<br>Chile</p>
+                  </div></td>
+                  <td><div class="">
+                    <img src="icons/peruflag.svg" alt="">
+                    <p>Lima,<br>Perú</p>
+                  </div></td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>20/06/2020</td>
+                  <td>20/06/2020</td>
+                  <td><div class="table-account-travels-separator"></div></td>
+                  <td>$24.990</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+        </div>
 
     </section>
     <!-- boostrap -->
