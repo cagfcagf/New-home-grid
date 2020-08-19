@@ -12261,6 +12261,10 @@ grid-row: 1/2;
 
 
 
+
+
+
+
 }
 
 
@@ -12273,6 +12277,70 @@ grid-row: 1/2;
   .account-travel-breadcrumb-container {
     display: none;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .account-travel-budgets-table th {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+
+  /* .account-travel-budgets-table tbody tr:nth-of-type(4n+3), .account-travel-budgets-table tbody tr:nth-of-type(4n+1) {
+    height: 129px;
+  } */
+
+
+  .account-travel-budgets-table tr td:nth-of-type(1) {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    max-width: 170px;
+
+  }
+
+  .account-travel-budgets-table tr td:nth-of-type(2) {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 25px;
+
+  }
+
+  .account-travel-budgets-table tr td:nth-of-type(3)  img{
+   height: 35px;
+  }
+
+
+  .account-travel-budgets-table tr td:nth-of-type(4) {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+    max-width: 160px;
+  }
+
+  .account-travel-budgets-button-container {
+    grid-column: 1/13;
+    grid-row: 6/7;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+ }
+
+
+
+
 
 
 }
