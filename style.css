@@ -12283,6 +12283,60 @@ grid-row: 1/2;
 
 
 
+  .account-travel-title {
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: column;
+
+  }
+
+  .account-travel-title h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--main-black);
+    margin-bottom: 28px;
+  }
+
+
+  .account-travel-title div img {
+   height: 29px;
+  }
+
+
+  .account-travel-title div p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 5px 0px 0px 0px;
+  }
+
+
+  .account-travel-fromto-container img {
+    height: 42px;
+    margin-bottom: 5px;
+  }
+
+
+
+  .account-travel-novisible-container {
+    padding: 24px 32px 30px 32px;
+    margin: 24px 0px 45px 0px;
+
+  }
+
+  .account-travel-novisible-container p {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    
+  }
+
+
+
+
 
 
 
