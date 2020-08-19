@@ -10112,14 +10112,14 @@ padding: 7px 31px;
 
 .account-menu-secondary-container-phone > div {
  display: flex;
- margin-bottom: 10px;
+ margin-bottom: 20px;
 }
 
 .account-menu-secondary-container-phone > div > div {
  background-color: var(--light-red);
  font-size: 15px;
  color: white;
- margin-left: 20px;
+ margin-left: 10px;
  width: 20px;
  height: 20px;
  display: flex;
