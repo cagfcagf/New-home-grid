@@ -23,31 +23,73 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto d-flex justify-content-between">
           <div class="account-menu-container-phone">
-            <p class="account-menu-primary-text-phone menu-chosen-phone">Resumen</p>
+              <a href="" class="account-menu-primary-text-phone menu-chosen-phone">Resumen</a>
             <div class="account-menu-primary-container-phone">
               <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-budgets-phone" onclick="return rotarFlechaMenu('account-my-budgets-phone', 'account-arrow-budgets-phone')">
               <p class="account-menu-primary-text-phone" onclick="return rotarFlechaMenu('account-my-budgets-phone', 'account-arrow-budgets-phone')">Mis presupuestos</p>
             </div>
             <div class="account-menu-secondary-container-phone animate__animated" id="account-my-budgets-phone">
-              <p>Recibidos</p>
-              <p>Pendientes</p>
-              <p>Esperando su llegada</p>
-              <p>Listos</p>
+              <div class="">
+                <a href="#">Recibidos</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Pendientes</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Esperando su llegada</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Listos</a>
+                <div class="notification">1</div>
+              </div>
             </div>
             <div class="account-menu-primary-container-phone">
               <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-travels-phone" onclick="return rotarFlechaMenu('account-my-travels-phone', 'account-arrow-travels-phone')">
               <p class="account-menu-primary-text-phone" onclick="return rotarFlechaMenu('account-my-travels-phone', 'account-arrow-travels-phone')">Mis viajes</p>
             </div>
             <div class="account-menu-secondary-container-phone animate__animated nav-item" id="account-my-travels-phone">
-              <p>Activos</p>
-              <p>Historial de viajes</p>
+              <div class="">
+                <a href="miviajes.html" class="account-menu-bold">📍 Miami</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Por presupuestar</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Por confirmar</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Por entregar</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Expirados</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="#">Todos</a>
+                <div class="notification">1</div>
+              </div>
+              <div class="">
+                <a href="misviajes.html" class="account-menu-bold">Historial de viajes</a>
+              </div>
             </div>
             <div class="account-menu-primary-container-phone nav-item">
               <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-validations" onclick="return rotarFlechaMenu('account-my-validations-phone', 'account-arrow-validations-phone')" >
               <p class="account-menu-primary-text-phone" onclick="return rotarFlechaMenu('account-my-validations-phone', 'account-arrow-validations-phone')">Mi perfil</p>
             </div>
             <div class="account-menu-secondary-container-phone animate__animated nav-item" id="account-my-validations-phone">
-              <p>Validación</p>
+              <div class="">
+                <a href="miperfil.html">Mis datos</a>
+              </div>
+              <div class="">
+                <a href="validacion.html">Validación</a>
+              </div>
             </div>
             <div class="account-menu-primary-container-phone nav-item">
               <p class="account-menu-primary-text-phone close-sesion">❌Cerrar sesión</p>
@@ -85,31 +127,69 @@
           <p class="account-menu-primary-text" onclick="return rotarFlechaMenu('account-my-budgets', 'account-arrow-budgets')">Mis presupuestos</p>
         </div>
         <div class="account-menu-secondary-container animate__animated" id="account-my-budgets">
-          <a href="#">Recibidos</a><br>
-          <a href="#">Pendientes</a><br>
-          <a href="#">Esperando su llegada</a><br>
-          <a href="#">Listos</a><br>
+          <div class="">
+            <a href="#">Recibidos</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Pendientes</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Esperando su llegada</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Listos</a>
+            <div class="notification">1</div>
+          </div>
+
         </div>
         <div class="account-menu-primary-container">
           <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-travels" onclick="return rotarFlechaMenu('account-my-travels', 'account-arrow-travels')">
           <p class="account-menu-primary-text" onclick="return rotarFlechaMenu('account-my-travels', 'account-arrow-travels')">Mis viajes</p>
         </div>
         <div class="account-menu-secondary-container animate__animated nav-item" id="account-my-travels">
-          <a href="#" class="account-menu-bold">Miami</a><br>
-          <a href="#">Por presupuestar </a><br>
-          <a href="#">Por confirmar </a><span class="notification">1</span><br>
-          <a href="#">Por entregar </a><span class="notification">8</span><br>
-          <a href="#">Expirados </a><span class="notification">10</span><br>
-          <a href="#">Todos </a><span class="notification">3</span><br><br>
-          <a href="#" class="account-menu-bold">Historial de viajes</a>
+          <div class="">
+            <a href="miviajes.html" class="account-menu-bold">📍 Miami</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Por presupuestar</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Por confirmar</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Por entregar</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Expirados</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="#">Todos</a>
+            <div class="notification">1</div>
+          </div>
+          <div class="">
+            <a href="misviajes.html" class="account-menu-bold">Historial de viajes</a>
+          </div>
+
         </div>
         <div class="account-menu-primary-container nav-item">
           <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-validations" onclick="return rotarFlechaMenu('account-my-validations', 'account-arrow-validations')" >
           <p class="account-menu-primary-text" onclick="return rotarFlechaMenu('account-my-validations', 'account-arrow-validations')">Mi perfil</p>
         </div>
         <div class="account-menu-secondary-container animate__animated nav-item" id="account-my-validations">
-          <a href="#">Mis datos</a>
-          <a href="#">Validación</a>
+          <div class="">
+            <a href="miperfil.html">Mis datos</a>
+          </div>
+          <div class="">
+            <a href="validacion.html">Validación</a>
+          </div>
         </div>
         <div class="account-menu-primary-container nav-item">
           <p class="account-menu-primary-text close-sesion">❌Cerrar sesión</p>
