@@ -12279,6 +12279,17 @@ grid-row: 1/2;
   }
 
 
+  .account-travel-budgets-title, .account-travel-more-info-title, .account-travel-transporting-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .account-travel-budgets-container, .account-travel-more-info-container, .account-travel-transporting-table {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
 
 
 
@@ -12331,7 +12342,7 @@ grid-row: 1/2;
     font-size: 13px;
     line-height: 16px;
     font-weight: 500;
-    
+
   }
 
 
@@ -12391,6 +12402,70 @@ grid-row: 1/2;
     justify-content: center;
 
  }
+
+
+
+ .account-travel-more-info-table {
+
+   padding: 10px 25px 10px 25px;
+
+ }
+
+
+
+
+ .account-travel-more-info-table div > p, .account-travel-bank-table div > p {
+   font-size: 13px;
+   font-weight: bold;
+   line-height: 16px;
+ }
+
+ .account-travel-more-info-table div span, .account-travel-bank-table div span {
+   font-size: 11px;
+   font-weight: 200;
+   line-height: 14px;
+ }
+
+ .account-travel-more-info-table div > p + p, .account-travel-bank-table div > p + p {
+   font-size: 13px;
+   font-weight: 500;
+   line-height: 16px;
+ }
+
+
+ .account-travel-bank-table {
+   padding: 10px 25px 10px 25px;
+   margin-bottom: 0px;
+ }
+
+
+
+
+ .account-travel-transporting-table {
+   padding: 10px 25px 10px 25px;
+   margin-bottom: 40px;
+ }
+
+ .account-travel-transporting-table p:nth-of-type(1) {
+   font-size: 15px;
+   font-weight: bold;
+   line-height: 20px;
+ }
+
+ .account-travel-transporting-table p:nth-of-type(3) {
+   font-size: 15px;
+   font-weight: bold;
+   line-height: 20px;
+ }
+
+
+
+ .account-travel-budgets-button-container {
+   margin-top: 50px;
+
+
+ }
+
 
 
 
