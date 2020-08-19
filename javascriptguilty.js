@@ -1,12 +1,16 @@
 
+
+const respuesta = document.getElementById('1316701');
+
+if (respuesta.value = "no") {
+  document.getElementById('testeo').style.display = "none";
+} else {
+  document.getElementById('testeo').style.display = "block";
+};
+
 // Muestra y oculta las preguntas frecuentes
 
-function mostrarOcultar(Faq, icon){
-const elemento = document.getElementById(Faq);
-const icono = document.getElementById(icon);
-if(!elemento) {
-return true;
-}
+
 if (elemento.style.display == "none") {
 elemento.style.display = "block"
 icono.classList.add('less');
@@ -57,7 +61,7 @@ return true;
 
 function girarFlecha(line, name, rate, budgets, arrow) {
   document.getElementById(line).classList.toggle("travel-results-hidden");
-  document.getElementById(name).classList.toggle("travel-results-hidden");
+  document.getElementById('1316701').classList.toggle("travel-results-hidden");
   document.getElementById(rate).classList.toggle("travel-results-hidden");
   document.getElementById(budgets).classList.toggle("travel-results-hidden");
   document.getElementById(line).classList.toggle("animate__fadeIn");

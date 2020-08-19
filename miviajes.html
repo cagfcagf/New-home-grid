@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#282e3c"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <title>Mis viajes</title>
+  </head>
+  <body>
+
+    <header class="grid">
+      <nav class="grid-container-nav navbar navbar-expand-md navbar-dark mt-auto mb-auto fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="images/Logoetiquetasinfondo.png" alt="comparto_mi_maleta_logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto d-flex justify-content-between">
+          <div class="account-menu-container-phone">
+            <p class="account-menu-primary-text-phone menu-chosen-phone">Resumen</p>
+            <div class="account-menu-primary-container-phone">
+              <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-budgets-phone" onclick="return rotarFlechaMenu('account-my-budgets-phone', 'account-arrow-budgets-phone')">
+              <p class="account-menu-primary-text-phone" onclick="return rotarFlechaMenu('account-my-budgets-phone', 'account-arrow-budgets-phone')">Mis presupuestos</p>
+            </div>
+            <div class="account-menu-secondary-container-phone animate__animated" id="account-my-budgets-phone">
+              <p>Recibidos</p>
+              <p>Pendientes</p>
+              <p>Esperando su llegada</p>
+              <p>Listos</p>
+            </div>
+            <div class="account-menu-primary-container-phone">
+              <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-travels-phone" onclick="return rotarFlechaMenu('account-my-travels-phone', 'account-arrow-travels-phone')">
+              <p class="account-menu-primary-text-phone" onclick="return rotarFlechaMenu('account-my-travels-phone', 'account-arrow-travels-phone')">Mis viajes</p>
+            </div>
+            <div class="account-menu-secondary-container-phone animate__animated nav-item" id="account-my-travels-phone">
+              <p>Activos</p>
+              <p>Historial de viajes</p>
+            </div>
+            <div class="account-menu-primary-container-phone nav-item">
+              <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-validations" onclick="return rotarFlechaMenu('account-my-validations-phone', 'account-arrow-validations-phone')" >
+              <p class="account-menu-primary-text-phone" onclick="return rotarFlechaMenu('account-my-validations-phone', 'account-arrow-validations-phone')">Mi perfil</p>
+            </div>
+            <div class="account-menu-secondary-container-phone animate__animated nav-item" id="account-my-validations-phone">
+              <p>Validación</p>
+            </div>
+            <div class="account-menu-primary-container-phone nav-item">
+              <p class="account-menu-primary-text-phone close-sesion">❌Cerrar sesión</p>
+            </div>
+          </div>
+
+          <a href="viajero.html" class="nav-item nav-link d-flex justify-content-start align-items-center btn-sesion p-0 btn-sesion-size btn-sesion-top-margin account-margin-buttons" role="button"><svg id="Grupo_15" data-name="Grupo 15" xmlns="http://www.w3.org/2000/svg" class="btn-sesion-icon" viewBox="0 0 65.463 63.106">
+            <path id="Trazado_9" data-name="Trazado 9" d="M768.985,175.783a18.066,18.066,0,1,1,18.066-18.066A18.065,18.065,0,0,1,768.985,175.783Zm0-33.518a15.46,15.46,0,1,0,15.461,15.461v-.009A15.477,15.477,0,0,0,768.985,142.264Z" transform="translate(-733.18 -139.651)" fill="#282e3c"/>
+            <path id="Trazado_10" data-name="Trazado 10" d="M804.96,165.479a4.966,4.966,0,0,0-6.186-1.187l-1.426-1.734a3.978,3.978,0,0,0-5.173-.766l-1.4.926-.843-1a3.971,3.971,0,0,0-5.167-.767l-9.52,6.2L764.664,162.8a9.964,9.964,0,0,0-9.964,1.426l-13.491,10.73a1.3,1.3,0,1,0,1.5,2.131,1.39,1.39,0,0,0,.124-.1l13.489-10.73a7.361,7.361,0,0,1,7.389-1.051l18.7,7.666a2.415,2.415,0,0,1-1.8,4.477l-12.656-4.936a1.3,1.3,0,1,0-.95,2.422l12.617,4.974a5.109,5.109,0,0,0,1.832.346,5.045,5.045,0,0,0,5.028-4.791l.145-.076,13.183-8.608a2.391,2.391,0,0,1,2.683,3.955L784.64,183.293a9.258,9.258,0,0,1-7.918,1.357L761.644,180.4a8.833,8.833,0,0,0-7.987,1.663L749.6,185.4a1.3,1.3,0,0,0,.828,2.3,1.257,1.257,0,0,0,.819-.292l4.1-3.3a6.207,6.207,0,0,1,5.626-1.172l15.039,4.238a11.836,11.836,0,0,0,10.1-1.763l17.9-12.663a4.989,4.989,0,0,0,1.2-6.953C805.127,165.688,805.046,165.583,804.96,165.479Zm-18.833-2.352a1.365,1.365,0,0,1,1.772.268l.643.766-7.9,5.2-2.475-1.02Zm-.29,9.557a5.009,5.009,0,0,0-2.3-2.116l10.034-6.6a1.373,1.373,0,0,1,1.772.261l1.21,1.486Z" transform="translate(-740.656 -124.594)" fill="#282e3c"/>
+            <path id="Trazado_11" data-name="Trazado 11" d="M764.151,149.231a17.54,17.54,0,0,1,3.765.536,1.3,1.3,0,0,0,.689-2.513h0a21.616,21.616,0,0,0-3.151-.56v-1.77a1.3,1.3,0,0,0-2.607,0v1.786c-3.495.475-3.916,2.859-3.916,3.948,0,2.705,2.791,3.832,4.461,4.537l.323.13.489.2c1.687.665,2.423,1.087,2.423,2.3s-.812,1.8-2.4,1.87h-.277a15.492,15.492,0,0,1-4.354-1.049,1.3,1.3,0,1,0-1.042,2.387,1.139,1.139,0,0,0,.107.042,21.019,21.019,0,0,0,4.184,1.12v1.754a1.3,1.3,0,0,0,2.607,0V162.13a4.242,4.242,0,0,0,3.778-4.345c0-3.066-2.544-4.077-4.062-4.684l-.766-.321c-1.2-.491-2.845-1.165-2.845-2.123C761.538,150.2,761.538,149.231,764.151,149.231Z" transform="translate(-728.187 -136.76)" fill="#282e3c"/>
+            </svg>
+            <span class="btn-sesion-text">registrar viaje</span></a>
+          <a href="comprador.html" class="nav-item nav-link d-flex justify-content-start align-items-center btn-sesion btn-sesion p-0 btn-sesion-size account-margin-buttons" role="button"><svg xmlns="http://www.w3.org/2000/svg" class="btn-sesion-icon" viewBox="0 0 40.931 68.327">
+              <g id="Grupo_13" data-name="Grupo 13" transform="translate(0.25 0.25)">
+              <path id="Trazado_7" data-name="Trazado 7" d="M983.122,147.481h-7.757v-7.233h4.2v-1.639H956.409v1.639h4.2v7.233h-7.758a5.087,5.087,0,0,0-5.081,5.083v41.675a5.074,5.074,0,0,0,4.318,5V202.5h3.5v1.417a2.526,2.526,0,0,0,2.525,2.523h1.332a2.526,2.526,0,0,0,2.525-2.523V202.5H974v1.417a2.526,2.526,0,0,0,2.525,2.523h1.332a2.525,2.525,0,0,0,2.523-2.523V202.5h3.5v-3.253a5.077,5.077,0,0,0,4.32-5V152.564A5.089,5.089,0,0,0,983.122,147.481Zm-20.87-7.233h11.474v7.233H962.252Zm-6.472,60.609h-2.05V199.32h3.879A2.528,2.528,0,0,0,955.78,200.857Zm4.556,1.639v1.417a.885.885,0,0,1-.884.884h-1.332a.885.885,0,0,1-.885-.884v-2.121a.885.885,0,0,1,.885-.886h1.332a.885.885,0,0,1,.884.886Zm13.849-1.639H961.791a2.527,2.527,0,0,0-1.831-1.537h16.055A2.53,2.53,0,0,0,974.185,200.857Zm4.557,1.639v1.417a.885.885,0,0,1-.884.884h-1.332a.886.886,0,0,1-.886-.884v-2.121a.886.886,0,0,1,.886-.886h1.332a.885.885,0,0,1,.884.886Zm3.5-1.639H980.2a2.527,2.527,0,0,0-1.829-1.537h3.877v1.537Zm4.318-6.618a3.446,3.446,0,0,1-3.442,3.442H952.856a3.447,3.447,0,0,1-3.444-3.442V152.564a3.447,3.447,0,0,1,3.444-3.443h30.267a3.447,3.447,0,0,1,3.442,3.443v41.675Z" transform="translate(-947.773 -138.609)" fill="#282e3c" stroke="#282e3c" stroke-miterlimit="10" stroke-width="0.5"/>
+              <path id="Trazado_8" data-name="Trazado 8" d="M951.954,154.419H957.1v3.655h1.64v-3.655h20.49v-1.639H951.954Z" transform="translate(-945.377 -130.488)" fill="#282e3c" stroke="#282e3c" stroke-miterlimit="10" stroke-width="0.5"/>
+              </g>
+            </svg><span class="btn-sesion-text">Crear pedido</span></a>
+            <a href="iniciarsesion.html" class="nav-item nav-link d-flex justify-content-start align-items-center btn-sesion btn-sesion p-0 btn-sesion-size hide-profile" role="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.824 64.816" class="btn-sesion-icon"
+                <g id="Grupo_92" data-name="Grupo 92" transform="translate(0)">
+                <path id="Trazado_8" data-name="Trazado 8" d="M1200.21,151.383a32.4,32.4,0,1,0-18.793,55.06q1.228-.154,2.434-.4a32.41,32.41,0,0,0,16.359-54.656ZM1176.763,203.9h-.743l-.323-.013-.224-.015-.31-.02-.224-.017-.3-.026-.226-.022-.3-.029-.226-.027-.29-.033-.226-.033-.288-.037-.226-.037-.286-.046-.226-.039-.286-.05-.224-.042-.286-.057-.226-.046-.284-.059-.224-.053-.284-.064-.226-.055-.28-.07-.226-.061-.283-.073-.224-.064-.283-.081-.226-.068-.279-.084-.225-.07-.278-.092-.223-.073-.28-.1-.224-.079-.277-.1-.226-.081-.277-.108-.213-.084-.277-.114-.21-.086-.277-.119-.207-.09-.275-.127-.2-.092-.276-.134-.2-.094-.275-.138-.2-.1-.277-.145-.189-.1-.284-.156-.18-.1-.3-.165-.167-.1-.323-.191-.132-.079c-.151-.09-.3-.184-.451-.277a16.169,16.169,0,0,1,10.615-18.916l.079.035.143.059.178.072.143.057.184.066.141.05.191.066.136.046.226.064.112.035.327.092.075.018.258.062.127.028.209.044.141.027.2.037.146.024.2.033.148.02.195.024.149.016a1.917,1.917,0,0,1,.2.02l.143.013.211.013h1.655l.21-.013.146-.013.2-.02.147-.016.2-.024.147-.02.2-.033.147-.024.2-.037.14-.027.209-.044.127-.028.26-.064.073-.017.329-.092.11-.033.226-.066.132-.044.194-.068.14-.05.181-.066.145-.057.179-.072.14-.059.079-.035a16.178,16.178,0,0,1,10.668,18.9c-.149.094-.3.187-.452.277l-.143.086-.312.184-.176.1-.284.163c-.062.035-.125.066-.187.1l-.276.149-.2.1-.273.141-.2.1-.27.136-.206.1-.274.13-.208.094-.27.123-.211.092-.274.119-.211.088-.276.112-.225.086-.275.106-.224.081-.275.1-.226.079c-.092.031-.186.066-.277.1l-.226.077-.273.09-.226.07-.277.084-.225.068-.279.081-.225.064-.279.073-.226.062-.283.07-.224.053-.283.066-.226.051-.281.059-.225.049-.283.053-.226.044-.284.049-.237.039-.286.044-.224.037-.29.039-.224.031-.292.033-.225.028-.294.029-.226.022-.3.026-.226.016-.306.022-.226.013-.321.013h-1.276A2.8,2.8,0,0,1,1176.763,203.9Zm4.907-26.174a9.945,9.945,0,0,1-4.375,1,10.354,10.354,0,0,1-1.7-.141,9.91,9.91,0,0,1-2.678-.861h0a10.016,10.016,0,1,1,8.752,0Zm14.524,19.378c.029-.428.042-.859.042-1.288a18.783,18.783,0,0,0-3.83-11.437,19.141,19.141,0,0,0-7.038-5.7,12.81,12.81,0,1,0-16.13,0,19.155,19.155,0,0,0-7.036,5.7,18.77,18.77,0,0,0-3.83,11.437c0,.429.014.861.044,1.288a29.608,29.608,0,1,1,37.8,0Z" transform="translate(-1144.885 -141.89)" fill="#282e3c"/>
+                </g>
+                </svg><span class="btn-sesion-text">iniciar sesión</span></a>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+
+    <section class="account-grid">
+      <div class="account-menu-container">
+        <a href="#" class="account-menu-primary-text menu-chosen">Resumen</a>
+        <div class="account-menu-primary-container">
+          <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-budgets" onclick="return rotarFlechaMenu('account-my-budgets', 'account-arrow-budgets')">
+          <p class="account-menu-primary-text" onclick="return rotarFlechaMenu('account-my-budgets', 'account-arrow-budgets')">Mis presupuestos</p>
+        </div>
+        <div class="account-menu-secondary-container animate__animated" id="account-my-budgets">
+          <a href="#">Recibidos</a><br>
+          <a href="#">Pendientes</a><br>
+          <a href="#">Esperando su llegada</a><br>
+          <a href="#">Listos</a><br>
+        </div>
+        <div class="account-menu-primary-container">
+          <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-travels" onclick="return rotarFlechaMenu('account-my-travels', 'account-arrow-travels')">
+          <p class="account-menu-primary-text" onclick="return rotarFlechaMenu('account-my-travels', 'account-arrow-travels')">Mis viajes</p>
+        </div>
+        <div class="account-menu-secondary-container animate__animated nav-item" id="account-my-travels">
+          <a href="#" class="account-menu-bold">Miami</a><br>
+          <a href="#">Por presupuestar </a><br>
+          <a href="#">Por confirmar </a><span class="notification">1</span><br>
+          <a href="#">Por entregar </a><span class="notification">8</span><br>
+          <a href="#">Expirados </a><span class="notification">10</span><br>
+          <a href="#">Todos </a><span class="notification">3</span><br><br>
+          <a href="#" class="account-menu-bold">Historial de viajes</a>
+        </div>
+        <div class="account-menu-primary-container nav-item">
+          <img src="icons/menuarrowclose.svg" alt="" id="account-arrow-validations" onclick="return rotarFlechaMenu('account-my-validations', 'account-arrow-validations')" >
+          <p class="account-menu-primary-text" onclick="return rotarFlechaMenu('account-my-validations', 'account-arrow-validations')">Mi perfil</p>
+        </div>
+        <div class="account-menu-secondary-container animate__animated nav-item" id="account-my-validations">
+          <a href="#">Mis datos</a>
+          <a href="#">Validación</a>
+        </div>
+        <div class="account-menu-primary-container nav-item">
+          <p class="account-menu-primary-text close-sesion">❌Cerrar sesión</p>
+        </div>
+
+
+      </div>
+      <div class="account-travel-container">
+        <div class="account-travel-breadcrumb-container">
+          <ul class="breadcrumb">
+            <li><a class="breadcrumb-before" href="#">Inicio</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Mi cuenta</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li><a class="breadcrumb-before" href="#">Mis viajes</a></li>
+            <li><img src="icons/arrowbread.png" alt=""></li>
+            <li class="breadcrumb-now">Mi viaje</li>
+          </ul>
+        </div>
+        <div class="account-travel-title">
+          <h4>Mi viaje</h4>
+          <div class="">
+            <img src="icons/switchoff.svg" alt="">
+            <p>Tu viaje no está visible</p>
+          </div>
+        </div>
+        <div class="account-travel-fromto-container">
+            <div class="">
+              <img src="icons/chileflag.svg" alt="">
+              <p>Santiago, Chile</p>
+            </div>
+            <div class="">
+
+            </div>
+            <div class="">
+              <img src="icons/peruflag.svg" alt="">
+              <p>Lima, Perú</p>
+            </div>
+        </div>
+        <div class="account-travel-novisible-container">
+          <p>Tu viaje no es visible debido a:<br> - Tu viaje aún no ha sido aprobado por el equipo de Comparto Mi Maleta. Nos contactaremos contigo cuando falten 3 semanas para la fecha de entrega en nuestra oficina. Si te registraste cuando ya quedaba menos de un mes, te llamaremos dentro de 3 días hábiles.<br>- No has certificado tu teléfono.</p>
+        </div>
+        <div class="account-travel-main-container">
+          <div class="account-travel-circle-1" id="account-travel-circle-1" onclick="return mostrarOcultarGrid('account-travel-budgets-container', 'account-travel-circle-1')"></div>
+          <div class="account-travel-circle-2" id="account-travel-circle-2" onclick="return mostrarOcultarGrid('account-travel-more-info-container', 'account-travel-circle-2')"></div>
+          <div class="account-travel-circle-3" id="account-travel-circle-3" onclick="return mostrarOcultarGrid('account-travel-transporting-table', 'account-travel-circle-3')"></div>
+          <div class="account-travel-line"></div>
+          <p class="account-travel-budgets-title" onclick="return mostrarOcultarGrid('account-travel-budgets-container', 'account-travel-circle-3')">🤑 Presupuestos</p>
+          <p class="account-travel-more-info-title" onclick="return mostrarOcultarGrid('account-travel-more-info-container', 'account-travel-circle-1')">✈️ Información del viaje y pago</p>
+          <p class="account-travel-transporting-title" onclick="return mostrarOcultarGrid('account-travel-transporting-table', 'account-travel-circle-2')">🧳 Límite para transportar</p>
+          <div class="account-travel-more-info-container animate__animated" id="account-travel-more-info-container">
+
+
+            <div class="account-travel-more-info-table shadow">
+              <div class="">
+                <p>Nombre</p>
+                <p>Cristian Godoy</p>
+              </div>
+              <div class="">
+                <p>Dirección</p>
+                <p>99 Red cloud peak rd</p>
+              </div>
+              <div class="">
+                <p>Dirección 2 (opcional)</p>
+                <p>Hotel Las Americas</p>
+              </div>
+              <div class="">
+                <p>Departamento <span>(Piso/ Suit/Edificio)</span></p>
+                <p>219</p>
+              </div>
+              <div class="">
+                <p>Comuna <span>(distrito/barrio/pueblo)</span></p>
+                <p>La reina</p>
+              </div>
+              <div class="">
+                <p>Estado</p>
+                <p>Metropolitana</p>
+              </div>
+              <div class="">
+                <p>Ciudad</p>
+                <p>Santiago</p>
+              </div>
+              <div class="">
+                <p>Código postal</p>
+                <p>7060080</p>
+              </div>
+              <div class="">
+                <p>País</p>
+                <p>Estados Unidos</p>
+              </div>
+              <div class="">
+                <p>Teléfono</p>
+                <p>346846864</p>
+              </div>
+              <div class="">
+                <p>Recibes desde</p>
+                <p>30/01/2020</p>
+              </div>
+              <div class="">
+                <p>Recibes hasta</p>
+                <p>30/01/2020</p>
+              </div>
+              <div class="">
+                <p>Entregas en nuestra oficina</p>
+                <p>20/01/2020</p>
+              </div>
+
+
+            </div>
+            <div class="account-travel-bank-table shadow">
+              <div class="">
+                <p>Nombre completo</p>
+                <p>Por definir</p>
+              </div>
+              <div class="">
+                <p>Número de cuenta</p>
+                <p>Por definir</p>
+              </div>
+              <div class="">
+                <p>Banco</p>
+                <p>Por definir</p>
+              </div>
+              <div class="">
+                <p>Rut o DNI</p>
+                <p>Por definir</p>
+              </div>
+              <div class="">
+                <button class="btn-main" type="button" name="button">editar</button>
+              </div>
+              <div class="">
+                <p><span>👀 Una vez entregados los productos, se te hará el pago dentro de 2 días hábiles vía transferencia bancaria. En caso de que haya productos que no recibiste, deberemos primero confirmar qué pasó con ellos antes de liberar el pago. Recuerda que si recibes algún pedido incompleto, se realizará un ajuste en la tarifa al momento de la entrega. Y no olvides confirmar correctamente la recepción de los productos y entregar a tiempo para evitar multas.</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="account-travel-transporting-table shadow animate__animated" id="account-travel-transporting-table">
+            <div class="account-travel-transporting-occupation-container">
+              <p class="account-traveler-ocupation-rate">60%</p>
+            </div>
+            <p>Valor de los productos</p>
+            <p>$00</p>
+            <p>Límite por traer en este viaje</p>
+            <p>Por definir</p>
+          </div>
+          <div class="account-travel-budgets-container shadow animate__animated" id="account-travel-budgets-container">
+            <div class="account-travel-budgets-table-container">
+            <table class="table table-hover table-borderless account-travel-budgets-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Orden</th>
+                    <th scope="col">ID del pedido</th>
+                    <th scope="col">¿Requiere caja?</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
+                    <td>ID: 589973</td>
+                    <td><img src="icons/cajasi.png" alt=""></td>
+                    <td>Presupuesto pendiente</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
+                  </tr>
+
+                </tbody>
+
+
+            </table>
+          </div>
+
+        </div>
+
+
+
+        </div>
+
+        <div class="account-travel-budgets-button-container">
+            <button type="button" name="button" class="btn-main">Volver a mis viajes</button>
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- boostrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="javascript.js"</script>
+
+    </script>
+    <script src="flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.min.js"></script>
+  </body>
+</html>
