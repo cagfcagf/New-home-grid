@@ -169,5 +169,21 @@ function ocultarStep3V2(plus, table){
   document.getElementById(plus).classList.toggle("form-plus");
   document.getElementById(table).classList.toggle("budget-hidden");
   document.getElementById(table).classList.add("animate__fadeIn");
+}
+
+function ocultarMostrarOrder(arrow, field1, field2, field3, field4, field5, field6){
+  document.getElementById(arrow).classList.toggle("account-arrow-rotate");
+  document.getElementById(field1).classList.toggle("account-display-none");
+  document.getElementById(field1).classList.add("animate__fadeIn");
+  document.getElementById(field2).classList.toggle("account-display-none");
+  document.getElementById(field2).classList.add("animate__fadeIn");
+  document.getElementById(field3).classList.toggle("account-display-none");
+  document.getElementById(field3).classList.add("animate__fadeIn");
+  document.getElementById(field4).classList.toggle("account-display-none");
+  document.getElementById(field4).classList.add("animate__fadeIn");
+  document.getElementById(field5).classList.toggle("account-display-none");
+  document.getElementById(field5).classList.add("animate__fadeIn");
+  document.getElementById(field6).classList.toggle("account-display-none");
+  document.getElementById(field6).classList.add("animate__fadeIn");
 
 }

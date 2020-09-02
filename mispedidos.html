@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flickity.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <title>Mis viajes</title>
+    <title>Mi pedidos</title>
   </head>
   <body>
 
@@ -197,254 +197,134 @@
 
 
       </div>
-      <div class="account-travel-container">
-        <div class="account-travel-breadcrumb-container">
+      <div class="account-orders-container">
+        <div class="account-orders-breadcrumb-container">
           <ul class="breadcrumb">
             <li><a class="breadcrumb-before" href="#">Inicio</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
             <li><a class="breadcrumb-before" href="#">Mi cuenta</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
-            <li><a class="breadcrumb-before" href="#">Mis viajes</a></li>
+            <li><a class="breadcrumb-before" href="#">Mis presupuestos</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
-            <li class="breadcrumb-now">Mi viaje</li>
+            <li class="breadcrumb-now">Recibidos</li>
           </ul>
         </div>
-        <div class="account-travel-title">
-          <h4>Mi viaje</h4>
-          <div class="">
-            <img src="icons/switchoff.svg" alt="">
-            <p>Tu viaje no está visible</p>
-          </div>
-        </div>
-        <div class="account-travel-fromto-container">
-            <div class="">
-              <img src="icons/chileflag.svg" alt="">
-              <p>Santiago, Chile</p>
+        <h2>Mis presupuestos</h2>
+        <div class="account-orders-tables-container">
+          <div class="account-orders-table">
+            <div class="account-orders-table-header">
+              <p>Recibidos</p>
             </div>
-            <div class="">
+            <div class="account-orders-table-body">
+              <div class="account-orders-order">
+                <div class="">
+                  <p>ID: 589973</p>
+                  <p>Cristián</p>
+                </div>
+                <div class=""></div>
+                <div class="account-orders-flags">
+                  <img src="icons/peruflag.svg" alt="">
+                  <img src="icons/chileflag.svg" alt="">
+                  <div class=""></div>
+                  <p>Santiago, Chile</p>
+                  <p>Lima, Perú</p>
+                </div>
+                <div class=""></div>
+                <div class="">
+                  <p>CLP $9.910</p>
+                </div>
+                <div class=""></div>
+                <div class="account-orders-just-pc">
+                  <button class="btn-secondary-green" type="button" name="button">Más acciones</button>
+                </div>
+                <p class="account-display-none animate__animated" id="orders-field1">Recibe productos desde:</p>
+                <p class="account-display-none animate__animated" id="orders-field2">Y hasta:</p>
+                <p class="account-display-none animate__animated" id="orders-field3">Llega a Chile</p>
+                <p class="account-display-none animate__animated" id="orders-field4">1/06/2020</p>
+                <p class="account-display-none animate__animated" id="orders-field5">13/06/2020</p>
+                <p class="account-display-none animate__animated" id="orders-field6">20/06/2020</p>
+                <div class="" onclick="return ocultarMostrarOrder('orders-arrow1', 'orders-field1', 'orders-field2', 'orders-field3', 'orders-field4', 'orders-field5', 'orders-field6')" >
+                  <img src="icons/ordersarrowdown.svg" id="orders-arrow1" alt="">
+                </div>
+                <div class="account-orders-just-phone">
+                  <img src="icons/menudots.svg" alt="">
+                </div>
+              </div>
+              <div class="account-orders-order">
+                <div class="">
+                  <p>ID: 589973</p>
+                  <p>Cristián</p>
+                </div>
+                <div class=""></div>
+                <div class="account-orders-flags">
+                  <img src="icons/peruflag.svg" alt="">
+                  <img src="icons/chileflag.svg" alt="">
+                  <div class=""></div>
+                  <p>Santiago, Chile</p>
+                  <p>Lima, Perú</p>
+                </div>
+                <div class=""></div>
+                <div class="">
+                  <p>CLP $9.910</p>
+                </div>
+                <div class=""></div>
+                <div class="account-orders-just-pc">
+                  <button class="btn-secondary-green" type="button" name="button">Más acciones</button>
+                </div>
+                <p class="account-display-none animate__animated" id="orders2-field1">Recibe productos desde:</p>
+                <p class="account-display-none animate__animated" id="orders2-field2">Y hasta:</p>
+                <p class="account-display-none animate__animated" id="orders2-field3">Llega a Chile</p>
+                <p class="account-display-none animate__animated" id="orders2-field4">1/06/2020</p>
+                <p class="account-display-none animate__animated" id="orders2-field5">13/06/2020</p>
+                <p class="account-display-none animate__animated" id="orders2-field6">20/06/2020</p>
+                <div class="" onclick="return ocultarMostrarOrder('orders-arrow2', 'orders2-field1', 'orders2-field2', 'orders2-field3', 'orders2-field4', 'orders2-field5', 'orders2-field6')" >
+                  <img src="icons/ordersarrowdown.svg" id="orders-arrow2" alt="">
+                </div>
+                <div class="account-orders-just-phone">
+                  <img src="icons/menudots.svg" alt="">
+                </div>
+              </div>
+              <div class="account-orders-order">
+                <div class="">
+                  <p>ID: 589973</p>
+                  <p>Cristián</p>
+                </div>
+                <div class=""></div>
+                <div class="account-orders-flags">
+                  <img src="icons/peruflag.svg" alt="">
+                  <img src="icons/chileflag.svg" alt="">
+                  <div class=""></div>
+                  <p>Santiago, Chile</p>
+                  <p>Lima, Perú</p>
+                </div>
+                <div class=""></div>
+                <div class="">
+                  <p>CLP $9.910</p>
+                </div>
+                <div class=""></div>
+                <div class="account-orders-just-pc">
+                  <button class="btn-secondary-green" type="button" name="button">Más acciones</button>
+                </div>
+                <p class="account-display-none animate__animated" id="orders3-field1">Recibe productos desde:</p>
+                <p class="account-display-none animate__animated" id="orders3-field2">Y hasta:</p>
+                <p class="account-display-none animate__animated" id="orders3-field3">Llega a Chile</p>
+                <p class="account-display-none animate__animated" id="orders3-field4">1/06/2020</p>
+                <p class="account-display-none animate__animated" id="orders3-field5">13/06/2020</p>
+                <p class="account-display-none animate__animated" id="orders3-field6">20/06/2020</p>
+                <div class="" onclick="return ocultarMostrarOrder('orders-arrow3', 'orders3-field1', 'orders3-field2', 'orders3-field3', 'orders3-field4', 'orders3-field5', 'orders3-field6')" >
+                  <img src="icons/ordersarrowdown.svg" id="orders-arrow3" alt="">
+                </div>
+                <div class="account-orders-just-phone">
+                  <img src="icons/menudots.svg" alt="">
+                </div>
+              </div>
+
 
             </div>
-            <div class="">
-              <img src="icons/peruflag.svg" alt="">
-              <p>Lima, Perú</p>
-            </div>
-        </div>
-        <div class="account-travel-novisible-container">
-          <p>Tu viaje no es visible debido a:<br> - Tu viaje aún no ha sido aprobado por el equipo de Comparto Mi Maleta. Nos contactaremos contigo cuando falten 3 semanas para la fecha de entrega en nuestra oficina. Si te registraste cuando ya quedaba menos de un mes, te llamaremos dentro de 3 días hábiles.<br>- No has certificado tu teléfono.</p>
-        </div>
-        <div class="account-travel-main-container">
-          <div class="account-travel-circle-1" id="account-travel-circle-1" onclick="return mostrarOcultarGrid('account-travel-budgets-container', 'account-travel-circle-1')"></div>
-          <div class="account-travel-circle-2" id="account-travel-circle-2" onclick="return mostrarOcultarGrid('account-travel-more-info-container', 'account-travel-circle-2')"></div>
-          <div class="account-travel-circle-3" id="account-travel-circle-3" onclick="return mostrarOcultarGrid('account-travel-transporting-table', 'account-travel-circle-3')"></div>
-          <div class="account-travel-line"></div>
-          <p class="account-travel-budgets-title" onclick="return mostrarOcultarGrid('account-travel-budgets-container', 'account-travel-circle-3')">🤑 Presupuestos</p>
-          <p class="account-travel-more-info-title" onclick="return mostrarOcultarGrid('account-travel-more-info-container', 'account-travel-circle-1')">✈️ Información del viaje y pago</p>
-          <p class="account-travel-transporting-title" onclick="return mostrarOcultarGrid('account-travel-transporting-table', 'account-travel-circle-2')">🧳 Límite para transportar</p>
-          <div class="account-travel-more-info-container animate__animated" id="account-travel-more-info-container">
 
-
-            <div class="account-travel-more-info-table shadow">
-              <div class="">
-                <p>Nombre</p>
-                <p>Cristian Godoy</p>
-              </div>
-              <div class="">
-                <p>Dirección</p>
-                <p>99 Red cloud peak rd</p>
-              </div>
-              <div class="">
-                <p>Dirección 2 (opcional)</p>
-                <p>Hotel Las Americas</p>
-              </div>
-              <div class="">
-                <p>Departamento <span>(Piso/ Suit/Edificio)</span></p>
-                <p>219</p>
-              </div>
-              <div class="">
-                <p>Comuna <span>(distrito/barrio/pueblo)</span></p>
-                <p>La reina</p>
-              </div>
-              <div class="">
-                <p>Estado</p>
-                <p>Metropolitana</p>
-              </div>
-              <div class="">
-                <p>Ciudad</p>
-                <p>Santiago</p>
-              </div>
-              <div class="">
-                <p>Código postal</p>
-                <p>7060080</p>
-              </div>
-              <div class="">
-                <p>País</p>
-                <p>Estados Unidos</p>
-              </div>
-              <div class="">
-                <p>Teléfono</p>
-                <p>346846864</p>
-              </div>
-              <div class="">
-                <p>Recibes desde</p>
-                <p>30/01/2020</p>
-              </div>
-              <div class="">
-                <p>Recibes hasta</p>
-                <p>30/01/2020</p>
-              </div>
-              <div class="">
-                <p>Entregas en nuestra oficina</p>
-                <p>20/01/2020</p>
-              </div>
-
-
-            </div>
-            <div class="account-travel-bank-table shadow">
-              <div class="">
-                <p>Nombre completo</p>
-                <p>Por definir</p>
-              </div>
-              <div class="">
-                <p>Número de cuenta</p>
-                <p>Por definir</p>
-              </div>
-              <div class="">
-                <p>Banco</p>
-                <p>Por definir</p>
-              </div>
-              <div class="">
-                <p>Rut o DNI</p>
-                <p>Por definir</p>
-              </div>
-              <div class="">
-                <button class="btn-main" type="button" name="button">editar</button>
-              </div>
-              <div class="">
-                <p><span>👀 Una vez entregados los productos, se te hará el pago dentro de 2 días hábiles vía transferencia bancaria. En caso de que haya productos que no recibiste, deberemos primero confirmar qué pasó con ellos antes de liberar el pago. Recuerda que si recibes algún pedido incompleto, se realizará un ajuste en la tarifa al momento de la entrega. Y no olvides confirmar correctamente la recepción de los productos y entregar a tiempo para evitar multas.</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="account-travel-transporting-table shadow animate__animated" id="account-travel-transporting-table">
-            <div class="account-travel-transporting-occupation-container">
-              <p class="account-traveler-ocupation-rate">60%</p>
-            </div>
-            <p>Valor de los productos</p>
-            <p>$00</p>
-            <p>Límite por traer en este viaje</p>
-            <p>Por definir</p>
-          </div>
-          <div class="account-travel-budgets-container animate__animated" id="account-travel-budgets-container">
-            <div class="account-travel-budgets-table-container shadow">
-            <table class="table table-hover table-borderless account-travel-budgets-table">
-                <thead>
-                  <tr>
-                    <th scope="col">Orden</th>
-                    <th scope="col">ID del pedido</th>
-                    <th scope="col">¿Requiere caja?</th>
-                    <th scope="col">Estado</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                  <tr class="table-row">
-                    <td>polera de niños dfdf sdf ds fsd fds f dsf dsf </td>
-                    <td>589973</td>
-                    <td><img src="icons/cajasi.png" alt=""></td>
-                    <td>Presupuesto pendiente</td>
-                  </tr>
-                  <tr class="table-row">
-                    <td colspan="4"><button class="btn-secondary-green" type="button" name="button">Crear presupuesto</button></td>
-                  </tr>
-
-                </tbody>
-
-
-            </table>
-          </div>
-          <div class="account-travel-pages-container">
-            <button class="btn-main" type="button" name="button">1</button>
-            <button class="btn-secondary-green" type="button" name="button">2</button>
-            <button class="btn-secondary-green" type="button" name="button">3</button>
-            <button class="btn-secondary-green" type="button" name="button">4</button>
           </div>
         </div>
 
-
-
-        </div>
-
-        <div class="account-travel-budgets-button-container">
-            <button type="button" name="button" class="btn-main">Volver a mis viajes</button>
-        </div>
 
 
       </div>

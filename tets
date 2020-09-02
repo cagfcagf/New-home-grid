@@ -1,13 +1,13 @@
 
 
-.account-travel-container {
+.account-orders-container {
   grid-column: 2/3;
   display: grid;
   grid-template-columns: repeat(12, auto);
 }
 
 
-.account-travel-breadcrumb-container {
+.account-orders-breadcrumb-container {
   grid-column: 1/13;
   grid-row: 1/2;
   padding-left: 10px;
@@ -19,11 +19,11 @@
 
 @media only screen and (max-width: 768px) {
 
-  .account-travel-container {
+  .account-orders-container {
     grid-column: 1/2;
   }
 
-  .account-travel-breadcrumb-container {
+  .account-orders-breadcrumb-container {
     display: none;
   }
 
