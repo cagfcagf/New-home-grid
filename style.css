@@ -979,22 +979,29 @@ thead {
 
 .home-alert-container {
   width: 100%;
-  height: 40px;
+  height: auto;
   background-color: var(--main-green);
+
+}
+
+.home-alert-container div {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding-top: 10px;
 }
 
 .home-alert-container a {
   margin: 0px;
   text-decoration: none;
   color: var(--main-black);
-  line-height: 30px;
   font-size: 15px;
   font-weight: 500;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 7px;
+  margin-left: 7px;
+  text-align: center;
 }
 
 .home-alert-container a:hover {
@@ -1138,12 +1145,11 @@ thead {
 
 @media only screen and (max-width: 768px) {
 
-  .home-alert-container {
-      height: 30px;
+  .home-alert-container div {
+    padding-top: 4px;
   }
 
   .home-alert-container a {
-    line-height: 27px;
     font-size: 13px;
   }
 
