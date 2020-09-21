@@ -993,6 +993,8 @@ thead {
   line-height: 30px;
   font-size: 15px;
   font-weight: 500;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .home-alert-container a:hover {
