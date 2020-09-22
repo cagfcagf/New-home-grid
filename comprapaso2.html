@@ -23,7 +23,7 @@
             <li><img src="icons/arrowbread.png" alt=""></li>
             <li><a class="breadcrumb-before" href="#">Haz tu pedido al viajero</a></li>
             <li><img src="icons/arrowbread.png" alt=""></li>
-            <li class="breadcrumb-now">Elige a tu viajero</li>
+            <li class="breadcrumb-now">Elige a tus viajeros</li>
           </ul>
         </div>
         <div class="step2-wizard-container">
@@ -38,15 +38,15 @@
           <h6 class="wizard-number-2">2</h6>
           <h6 class="wizard-number-3">3</h6>
           <p class="wizard-text-1">Haz tu pedido al viajero</p>
-          <p class="wizard-text-2 wizard-text-selected">Elige a tu viajero</p>
-          <p class="wizard-text-3">Presupuesto</p>
+          <p class="wizard-text-2 wizard-text-selected">Elige a tus viajeros</p>
+          <p class="wizard-text-3">Recibe presupuesto</p>
         </div>
         <p class="step2-instructions">Elige hasta 7 viajeros con los que te gustaría cotizar el transporte de tus producto.</p>
         <div class="step2-remember-container">
           <p>😎 Para tu comodidad, todos los productos llegan a Santiago y desde ahí se distribuyen.</p>
         </div>
         <div class="travelers-results-container">
-          <div class="traveler-result shadow" id="travelerresult1">
+          <div class="traveler-result shadow supertraveler-background" id="travelerresult1">
             <div class="from-country-container">
               <p class="from-country-title">Desde</p>
               <img src="icons/chileflag.svg" alt="">
@@ -64,12 +64,18 @@
               <p class="arrives-date-title">Llega a Chile</p>
               <p class="arrives-date-content">1/ENE/1990</p>
             </div>
-            <div class="orange-travel-separator travel-results-hidden animate__animated" id="line-traveler2"></div>
-            <p class="traveler-name-step2 travel-results-hidden animate__animated" id="name-traveler2">Cristian</p>
-            <div class="ocupation-rate-container travel-results-hidden animate__animated" id="rate-traveler2">
+            <div class="orange-travel-separator travel-results-hidden animate__animated" id="line-traveler1"></div>
+            <div class="traveler-name-step2-container travel-results-hidden animate__animated" id="name-traveler1">
+              <p class="traveler-name-step2-text">Cristian</p>
+              <div class="traveler-name-step2-supertraveler-container">
+                <p class="traveler-name-step2-supertraveler-text">superviajero</p>
+                <img src="icons/startraveler.svg" alt="">
+              </div>
+            </div>
+            <div class="ocupation-rate-container travel-results-hidden animate__animated" id="rate-traveler1">
               <p>67%</p>
             </div>
-            <div class="previous-budgets-container travel-results-hidden animate__animated" id="budgets-traveler2">
+            <div class="previous-budgets-container travel-results-hidden animate__animated" id="budgets-traveler1">
               <div class="previous-budgets-number-container">
                 <p class="previous-budgets-number-quantity">6</p>
                 <p class="previous-budgets-number-title">Veces has<br>cotizado</p>
@@ -86,8 +92,9 @@
                 <span class="custom-control-label"></span>
               </label>
             </div>
-              <img class="arrow-down-orange"src="icons/arrowdown.svg" id="arrow-traveler2" alt="" onclick="return girarFlecha('line-traveler2', 'name-traveler2', 'rate-traveler2', 'budgets-traveler2', 'arrow-traveler2')">
+              <img class="arrow-down-orange"src="icons/arrowdown.svg" id="arrow-traveler1" alt="" onclick="return girarFlecha('line-traveler1', 'name-traveler1', 'rate-traveler1', 'budgets-traveler1', 'arrow-traveler1')">
             </div>
+
             <div class="traveler-result shadow" id="travelerresult2">
               <div class="from-country-container">
                 <p class="from-country-title">Desde</p>
@@ -106,12 +113,16 @@
                 <p class="arrives-date-title">Llega a Chile</p>
                 <p class="arrives-date-content">1/ENE/1990</p>
               </div>
-              <div class="orange-travel-separator travel-results-hidden animate__animated" id="line-traveler1"></div>
-              <p class="traveler-name-step2 travel-results-hidden animate__animated" id="name-traveler1">Cristian</p>
-              <div class="ocupation-rate-container travel-results-hidden animate__animated" id="rate-traveler1">
+              <div class="orange-travel-separator travel-results-hidden animate__animated" id="line-traveler2"></div>
+              <div class="traveler-name-step2-container travel-results-hidden animate__animated" id="name-traveler2">
+                <p class="traveler-name-step2-text">Cristian</p>
+                <div class="traveler-name-step2-supertraveler-container">
+                </div>
+              </div>
+              <div class="ocupation-rate-container travel-results-hidden animate__animated" id="rate-traveler2">
                 <p>67%</p>
               </div>
-              <div class="previous-budgets-container travel-results-hidden animate__animated" id="budgets-traveler1">
+              <div class="previous-budgets-container travel-results-hidden animate__animated" id="budgets-traveler2">
                 <div class="previous-budgets-number-container">
                   <p class="previous-budgets-number-quantity">6</p>
                   <p class="previous-budgets-number-title">Veces has<br>cotizado</p>
@@ -128,23 +139,13 @@
                   <span class="custom-control-label"></span>
                 </label>
               </div>
-                <img class="arrow-down-orange" id="arrow-traveler1"src="icons/arrowdown.svg" alt="" onclick="return girarFlecha('line-traveler1', 'name-traveler1', 'rate-traveler1', 'budgets-traveler1', 'arrow-traveler1')">
+                <img class="arrow-down-orange"src="icons/arrowdown.svg" id="arrow-traveler2" alt="" onclick="return girarFlecha('line-traveler2', 'name-traveler2', 'rate-traveler2', 'budgets-traveler2', 'arrow-traveler2')">
               </div>
-
           </div>
-
         </div>
         <div class="step2-button-finish-container">
           <a href="#" class="btn btn-main btn-step2-buyer-size" role="button">Enviar</a>
         </div>
-
-
-
-
-
-
-
-
       </div>
 
     </section>

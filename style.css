@@ -2208,7 +2208,7 @@ thead {
 }
 
 
-                                        /* Home comprador */
+                                        /* Comprador (Home comprador) */
 .grid-buyer-rows {
   grid-template-rows: repeat(5,auto);
   display: grid;
@@ -2596,9 +2596,8 @@ thead {
     margin-left: 14px;
   }
 
-
 }
-                                                  /* Paso 1 de compra */
+                                                  /* Compra paso 1 (Descripcion de productos) */
 
 .grid-step1-rows {
   grid-template-rows: repeat(6, auto);
@@ -2674,10 +2673,6 @@ thead {
   grid-column: 9/13;
   grid-row: 1/2;
 }
-
-
-
-
 
 .wizard-text-1, .wizard-text-2, .wizard-text-3 {
   font-size: 23px;
@@ -2781,8 +2776,6 @@ thead {
 
 }
 
-
-
 .step1-remember-container {
   grid-column: 1/13;
   grid-row: 3/4;
@@ -2806,7 +2799,6 @@ thead {
 
 }
 
-
 .step1-remember-container  p {
   font-size: 15px;
   font-weight: 500;
@@ -2824,7 +2816,6 @@ thead {
   .step1-addproduct-form, .step1-aditional-form, .step1-shipping-form, .step1-form-buttom-addproduct, .step1-button-finish-container   {
     margin-right: 15px;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -2895,12 +2886,8 @@ thead {
   margin-right: 0px;
 }
 
-
-
-
 .form-currency-size {
 width: auto;
-
 }
 
 .form-value-container {
@@ -2931,8 +2918,6 @@ width: auto;
   margin-bottom: 10px;
   }
 
-
-
 .product-form-link-grid {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -2949,8 +2934,6 @@ width: auto;
   height: 48px;
   z-index: 3;
 }
-
-
 
 .product-form-quantity-grid input {
   width: 358px;
@@ -2982,7 +2965,6 @@ width: auto;
   width: 128px;
 }
 
-
 .product-form-box-grid {
   grid-column: 2/3;
   grid-row: 4/5;
@@ -2992,7 +2974,6 @@ width: auto;
 
 .product-form-box-grid > div{
   width: 179px;
-
 }
 
 .product-form-category-grid {
@@ -3006,14 +2987,11 @@ width: auto;
   width: 236px;
 }
 
-
-
 .field-currency-type {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right: 0;
 }
-
 
 .field-currency-input {
   border-top-left-radius: 0;
@@ -3062,7 +3040,6 @@ width: auto;
   grid-column: 2/3;
   grid-row: 10/11;
 }
-
 
 .step1-addproduct-title {
   grid-column: 2/4;
@@ -3136,13 +3113,10 @@ width: auto;
     height: 39px;
   }
 
-
   .product-form-price-grid input {
     width: 213px;
   }
 }
-
-
 
 .grid-shippingform-rows {
   grid-template-columns: auto;
@@ -3152,7 +3126,6 @@ width: auto;
   font-size: 18px;
   padding: 32px 30px 40px 33px;
 }
-
 
 .step1-shipping-title {
   grid-column: 2/3;
@@ -3199,14 +3172,12 @@ width: auto;
   left: -30px;
 }
 
-
 .shipping-option1-text, .shipping-option2-text, .shipping-option3-text {
   grid-column: 1/2;
   margin-left: 28px;
   font-size: 18px;
   line-height: 22px;
 }
-
 
 .shipping-option1-text {
   grid-row: 2/3;
@@ -3222,9 +3193,6 @@ width: auto;
   grid-row: 4/5;
 }
 
-
-
-
 .step1-plus1-line1, .step1-plus1-line2, .step1-plus1-line3, .step1-plus1-line4, .step1-plus1-line5{
   height: inherit;
   width: 2px;
@@ -3234,9 +3202,7 @@ width: auto;
   margin-left: auto;
   margin-right: auto;
   z-index: -1;
-
 }
-
 
 .step1-plus1-line1 {
     grid-row: 1/2;
@@ -3304,8 +3270,6 @@ width: auto;
     grid-column: 1/5;
   }
 
-
-
 }
 
 .step1-aditional-title {
@@ -3371,7 +3335,6 @@ width: auto;
   border-radius: 10px;
   border: 3px solid var(--main-orange);
 }
-
 
 .step1-aditional-disclaimer {
   grid-column: 1/13;
@@ -3479,16 +3442,11 @@ width: auto;
     margin-bottom: 14px;
   }
 
-
   .step1-button-finish-container {
-
     justify-self: center;
     margin-right: 0px;
-
   }
-
 }
-
 
 .leta-step1-title  {
   font-size: 36px;
@@ -3526,7 +3484,6 @@ width: auto;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 .tip-container-text {
@@ -3547,9 +3504,7 @@ width: auto;
     padding-left: 14px;
     padding-right: 14px;
   }
-
 }
-
 
 @media only screen and (max-width: 1100px) {
 
@@ -3560,7 +3515,6 @@ width: auto;
   .gallery-tip-background img {
     margin-left: 0;
   }
-
 }
 
 @media only screen and (max-width: 960px) {
@@ -3576,7 +3530,6 @@ width: auto;
   .gallery-tip-background img {
     margin-top: 35px;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -3615,7 +3568,7 @@ width: auto;
 
 }
 
-                                        /* Resultados de busqueda */
+                                        /* Compra Paso 2 (Viajeros a elegir) */
 
 .grid-step2-rows{
   grid-template-rows: repeat(6, auto);
@@ -3677,11 +3630,11 @@ width: auto;
 }
 
 .travelers-results-container {
-    grid-column: 1/13;
-    grid-row: 5/6;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    display: grid;
+  grid-column: 1/13;
+  grid-row: 5/6;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  display: grid;
 }
 
 .traveler-result {
@@ -3723,8 +3676,6 @@ width: auto;
   margin: 0px;
   text-align: center;
 }
-
-
 
 
 .from-country-title, .from-date-title, .until-date-title, .arrives-date-title {
@@ -3779,16 +3730,46 @@ width: auto;
     align-self: center;
     }
 
-  .traveler-name-step2 {
+  .traveler-name-step2-container {
     grid-column: 12/13;
     grid-row: 2/3;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 25px;
-    align-self: center;
-    justify-self: center;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
+
+    .traveler-name-step2-text {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 25px;
+      align-self: center;
+      justify-self: center;
+      margin: 0px;
+    }
+
+    .traveler-name-step2-supertraveler-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .traveler-name-step2-supertraveler-text {
+      margin: 0px;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .supertraveler-background {
+      background-color: var(--lighter-green);
+    }
+
+    .traveler-name-step2-supertraveler-container img {
+      height: 20px;
+      margin-left: 5px;
+    }
+
+
 
   .ocupation-rate-container {
     grid-column: 14/15;
@@ -3803,23 +3784,22 @@ width: auto;
     align-items: center;
     }
 
-    .ocupation-rate-container > p {
-      font-size: 30px;
-      font-weight: bold;
-      margin: 0px;
-      padding-top: 10px;
+.ocupation-rate-container > p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+  padding-top: 10px;
+}
 
-    }
 
-
-  .previous-budgets-container {
-    grid-column: 16/17;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    }
+.previous-budgets-container {
+  grid-column: 16/17;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
 
 
 .previous-budgets-number-container, .previous-purchases-number-container {
@@ -3841,7 +3821,6 @@ width: auto;
   margin: 0px;
 }
 
-
 .step2-check-container {
   grid-column: 18/19;
   grid-row: 2/3;
@@ -3851,38 +3830,37 @@ width: auto;
   width: 26px;
   }
 
+.step2-check-container .custom-control-label::before {
+  width: 26px;
+  height: 26px;
+  border-radius: 9px;
+  border: 1px solid var(--main-orange);
+  cursor: pointer;
+}
 
-  .step2-check-container .custom-control-label::before {
-    width: 26px;
-    height: 26px;
-    border-radius: 9px;
-    border: 1px solid var(--main-orange);
-    cursor: pointer;
-  }
+.step2-check-container  .custom-control-label::after {
+  width: 26px;
+  height: 26px;
+  outline: none;
+  border-radius: 9px;
+  border: 1px solid var(--main-orange);
+  cursor: pointer;
+}
 
-  .step2-check-container  .custom-control-label::after {
-    width: 26px;
-    height: 26px;
-    outline: none;
-    border-radius: 9px;
-    border: 1px solid var(--main-orange);
-    cursor: pointer;
-  }
-
-  .step2-check-container .custom-control {
-    padding: 0px;
-    height: 0;
-    width: 0;
-  }
+.step2-check-container .custom-control {
+  padding: 0px;
+  height: 0;
+  width: 0;
+}
 
 
-  .step2-check-container label {
-    margin: 0px;
-  }
+.step2-check-container label {
+  margin: 0px;
+}
 
-  .step2-check-container .custom-control-label {
-    margin: 0;
-  }
+.step2-check-container .custom-control-label {
+  margin: 0;
+}
 
 
 
@@ -3898,15 +3876,9 @@ width: auto;
   padding: 5.8px 30.6px;
 }
 
-
-
-
-
 .arrow-down-orange {
   display: none;
 }
-
-
 
 @media only screen and (max-width: 1120px) {
 
@@ -3918,186 +3890,170 @@ width: auto;
   .step2-remember-container{
     width: 100%;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
-  .grid-step2-rows{
-      padding-top: 0px;
-  }
+.grid-step2-rows{
+  padding-top: 0px;
+}
 
-  .step2-breadcrumb-container{
+.step2-breadcrumb-container{
+  display: none;
+}
+
+.step2-wizard-container {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.step2-wizard-container  .wizard-line-1, .step2-wizard-container .wizard-line-4{
     display: none;
   }
 
-  .step2-wizard-container {
-    padding-top: 40px;
-    padding-bottom: 30px;
+.step2-wizard-container  .wizard-text-1, .step2-wizard-container .wizard-text-3{
+  display: none;
+}
+
+.step2-wizard-container .wizard-number-1, .step2-wizard-container .wizard-number-3{
+  display: none;
+}
+
+.step2-wizard-container .wizard-circle-1, .step2-wizard-container .wizard-circle-3{
+  display: none;
+}
+
+.step2-wizard-container .wizard-line-2 {
+  grid-column: 1/7;
+}
+
+.step2-wizard-container .wizard-line-3 {
+  grid-column: 7/13;
+}
+
+
+.step2-instructions {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.traveler-result {
+  height: auto;
+  grid-template-columns: 33fr 289px 33fr ;
+  grid-template-rows: 16fr auto 30fr auto 24fr auto 24fr auto 24fr auto 44fr auto 35fr auto 35fr auto 25fr auto 75fr auto 20fr;
+  display: grid;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.from-country-container {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
+.from-country-container img {
+  height: 33px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 110px;
+}
+
+.from-country-destination{
+  margin: 0px;
+  text-align: left;
+}
+
+.from-country-title, .from-date-title, .until-date-title, .arrives-date-title {
+  text-align: left;
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+.from-date-content, .until-date-content, .arrives-date-content{
+  margin: 0px;
+  padding-top: 0px;
+}
+
+.from-date-container {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
   }
 
-  .step2-wizard-container  .wizard-line-1, .step2-wizard-container .wizard-line-4{
-      display: none;
-    }
-
-  .step2-wizard-container  .wizard-text-1, .step2-wizard-container .wizard-text-3{
-    display: none;
+.until-date-container {
+  grid-column: 2/3;
+  grid-row: 8/9;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
   }
 
-  .step2-wizard-container .wizard-number-1, .step2-wizard-container .wizard-number-3{
-    display: none;
+.arrives-date-container {
+  grid-column: 2/3;
+  grid-row: 10/11;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 25px;
   }
 
-  .step2-wizard-container .wizard-circle-1, .step2-wizard-container .wizard-circle-3{
-    display: none;
-
+.orange-travel-separator {
+  grid-column: 2/3;
+  grid-row: 12/13;
+  height: 1px;
+  width: auto;
+  margin-top: 19px;
+  margin-bottom: 35px;
   }
 
-  .step2-wizard-container .wizard-line-2 {
-    grid-column: 1/7;
+.traveler-name-step2-container {
+  grid-column: 2/3;
+  grid-row: 14/15;
+  font-size: 20px;
+  line-height: 30px;
   }
 
-  .step2-wizard-container .wizard-line-3 {
-    grid-column: 7/13;
+.ocupation-rate-container {
+  grid-column: 2/3;
+  grid-row: 16/17;
+  justify-self:center;
+  padding-top: 35px;
+  padding-bottom: 25px;
   }
 
-
-  .step2-instructions {
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    margin-bottom: 0px;
+.previous-budgets-container {
+  grid-column: 2/3;
+  grid-row: 18/19;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 75px;
   }
-
-
-  .traveler-result {
-    height: auto;
-    grid-template-columns: 33fr 289px 33fr ;
-    grid-template-rows: 16fr auto 30fr auto 24fr auto 24fr auto 24fr auto 44fr auto 35fr auto 35fr auto 25fr auto 75fr auto 20fr;
-    display: grid;
-    margin-bottom: 20px;
-    padding-top: 16px;
-    padding-bottom: 20px;
-
-  }
-
-
-  .from-country-container {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 24px;
-  }
-
-
-  .from-country-container img {
-    height: 33px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 110px;
-  }
-
-  .from-country-destination{
-    margin: 0px;
-    text-align: left;
-  }
-
-
-
-
-
-  .from-country-title, .from-date-title, .until-date-title, .arrives-date-title {
-    text-align: left;
-    margin: 0px;
-    padding-bottom: 0px;
-  }
-
-  .from-date-content, .until-date-content, .arrives-date-content{
-    margin: 0px;
-    padding-top: 0px;
-  }
-
-  .from-date-container {
-    grid-column: 2/3;
-    grid-row: 6/7;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    }
-
-  .until-date-container {
-    grid-column: 2/3;
-    grid-row: 8/9;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    }
-
-  .arrives-date-container {
-    grid-column: 2/3;
-    grid-row: 10/11;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    }
-
-    .orange-travel-separator {
-      grid-column: 2/3;
-      grid-row: 12/13;
-      height: 1px;
-      width: auto;
-      margin-top: 19px;
-      margin-bottom: 35px;
-      }
-
-    .traveler-name-step2 {
-      grid-column: 2/3;
-      grid-row: 14/15;
-      font-size: 20px;
-      line-height: 30px;
-      }
-
-    .ocupation-rate-container {
-      grid-column: 2/3;
-      grid-row: 16/17;
-      justify-self:center;
-      padding-top: 35px;
-      padding-bottom: 25px;
-      }
-
-
-
-    .previous-budgets-container {
-      grid-column: 2/3;
-      grid-row: 18/19;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 75px;
-      }
-
 
   .step2-check-container {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 26px;
-    width: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  width: auto;
     }
 
-
-
   .step2-button-finish-container {
-
       margin-top: 17px;
       margin-bottom: 33px;
   }
@@ -4108,31 +4064,28 @@ width: auto;
 
   .previous-purchases-number-container {
     margin-left: 7.5px;
-
   }
 
   .arrow-down-orange{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    grid-column: 2/3;
-    grid-row: 20/21;
-    cursor: pointer;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  grid-column: 2/3;
+  grid-row: 20/21;
+  cursor: pointer;
   }
 
   .travel-results-hidden {
-    display: none;
+  display: none;
   }
 
   .turn-arrow {
-    transform: rotate(-180deg);
+  transform: rotate(-180deg);
   }
-
-
 }
 
 
-                                          /* Comprador paso 3 */
+                                          /* Comprador paso 3 (Presupuesto recibido) */
 
   .grid-step3-rows{
     grid-template-rows: repeat(6, auto);
@@ -4497,7 +4450,7 @@ width: auto;
 .step3-question-description {
   grid-column: 3/4;
   grid-row: 13/14;
-  padding-bottom: 90px;
+  padding-bottom: 10px;
 }
 
 .step3-discount-title {
@@ -4895,16 +4848,10 @@ margin-bottom: 0px;
   padding-left: 0px;
   margin-top: -40px;
   }
-
-
-
-
 }
 
 
-
-
-                                        /* Pago de presupuesto aceptado */
+                                        /* Pago (Pago de presupuesto aceptado) */
 
 
   .grid-payment-rows{
