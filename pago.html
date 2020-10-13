@@ -33,14 +33,57 @@
         <p class="payment-title">🥳 ¡Felicitaciones, estás a un paso de<br>terminar tu compra!</p>
         <p class="payment-detail">Has aceptado la cotización por $1.088</p>
         <div class="payment-button-see-budget-container">
-          <a href="index.html" class="btn-secondary payment-see-budget-size" role="button">ver pedido</a>
+          <a href="#see-budget"  data-toggle="modal" class="btn-secondary payment-see-budget-size" role="button">ver pedido</a>
         </div>
+
+        <div class="modal fade" id="see-budget" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLongTitle">Productos cotizados</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body d-flex justify-content-center">
+                <table class="table table-hover table-borderless shadow-lg table-details-size">
+                  <thead>
+                    <tr>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Productos</th>
+                      <th scope="col">¿Requiere caja?</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-row">
+                      <td>1x</td>
+                      <td>www.comparto....</td>
+                      <td>Si</td>
+                      <td>USD 500</td>
+                    </tr>
+                    <tr class="table-row table-final-row">
+                      <td colspan="3" class="table-final-title" >Valor total de la compra</td>
+                      <td>USD 1</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-main" data-dismiss="modal">Entendido 👍</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="payment-forms-container">
           <div class="traveler-line-vertical"></div>
           <div class="traveler-circle-1" id="traveler-circle-1" onclick="return ocultarStep3V2('traveler-circle-1', 'traveler-address-section-form')"></div>
           <div class="traveler-circle-2" id="traveler-circle-2" onclick="return ocultarStep3V2('traveler-circle-2', 'traveler-shipping-section-form')"></div>
           <div class="traveler-circle-3" id="traveler-circle-3" onclick="return ocultarStep3V2('traveler-circle-3', 'traveler-payment-section-form')"></div>
-          <p class="traveler-address-section-title" onclick="return ocultarStep3V2('traveler-circle-1', 'traveler-address-section-form')">Envíale tus compras al viajero</p>
+          <p class="traveler-address-section-title" onclick="return ocultarStep3V2('traveler-circle-1', 'traveler-address-section-form')">🏷️ Envíale tus compras al viajero</p>
           <div class="traveler-address-section-form animate__animated" id="traveler-address-section-form">
             <div class="traveler-address-section-form-container shadow bg-white">
               <p>Esta es la dirección donde el viajero recibirá tus compras. Recuerda que deben llegar dentro de las fechas indicadas.</p>
@@ -71,7 +114,7 @@
           </div>
 
 
-          <p class="traveler-shipping-section-title" onclick="return ocultarStep3V2('traveler-circle-2', 'traveler-shipping-section-form')">Datos del comprador</p>
+          <p class="traveler-shipping-section-title" onclick="return ocultarStep3V2('traveler-circle-2', 'traveler-shipping-section-form')">🧐 Tus datos</p>
           <div class="traveler-shipping-section-form animate__animated" id="traveler-shipping-section-form">
             <div class="traveler-shipping-section-form-container shadow bg-white">
               <div class="traveler-shipping-section-name-container">
@@ -92,7 +135,7 @@
               </div>
             </div>
           </div>
-          <p class="traveler-payment-section-title" onclick="return ocultarStep3V2('traveler-circle-3', 'traveler-payment-section-form')">Pago</p>
+          <p class="traveler-payment-section-title" onclick="return ocultarStep3V2('traveler-circle-3', 'traveler-payment-section-form')">💳 Pago</p>
           <div class="traveler-payment-section-form animate__animated" id="traveler-payment-section-form">
             <div class="traveler-payment-section-form-container shadow bg-white">
               <p>Tienes 12 horas para pagar o se anulará la cotización.</p>
@@ -141,7 +184,7 @@
         </div>
         <p class="payment-final-comment">😉 ¡Y ya está! Dentro de 2 días hábiles una vez que llegue el viajero el 08/06/2020, te avisaremos cuando tus compras estrés disponibles para su envío o entrega, de acuerdo a la opción elegida. <br><br>En caso de requerir devolución, se te devolverá el 100% del monto total pagado. </p>
         <div class="payment-final-buttons-container">
-          <a href="#" class="btn btn-secondary-green btn-payment-cancel-size" role="button">Cancelar pedido</a>
+          <a href="#" class="btn btn-secondary-green btn-payment-cancel-size" role="button">☠️ Cancelar pedido</a>
         </div>
 
 

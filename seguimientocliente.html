@@ -26,7 +26,7 @@
             <li class="breadcrumb-now">Presupuesto ID XXX</li>
           </ul>
         </div>
-        <p>Presupuesto ID XXX</p>
+        <p>🛍️ Presupuesto ID XXX</p>
         <div class="tracking-customer-form-container">
           <div class="tracking-customer-line"></div>
           <div class="tracking-customer-circle-1 tracking-customer-circle-red"></div>
@@ -35,21 +35,92 @@
           <div class="tracking-customer-circle-4 tracking-customer-circle-red"></div>
           <div class="tracking-customer-circle-4 tracking-customer-circle-red"></div>
           <div class="tracking-customer-box-1 shadow bg-white">
-            <h5>Código de seguimiento</h5>
+            <h5>🚚 Número de seguimiento</h5>
             <p>Adjunta el código de seguimiento de tu(s) productos para que el viajero pueda saber dónde vienen.</p>
-            <a href="index.html" class="btn-secondary tracking-customer-pending-size" role="button">adjuntar</a>
+            <a href="#tracking-upload" data-toggle="modal" class="btn-secondary tracking-customer-pending-size" role="button">adjuntar</a>
+            <div class="modal fade" id="tracking-upload" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLongTitle">🚚 Agrega tus números de seguimiento</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-tracking-subtitle">Ingresa él o los números de seguimiento que te entregó la tienda y la empresa de transporte por la que fue enviado. Este NO es el número de pedido. Es el número entregado por la tienda una vez hace el despacho de los producto, probablemente un par de días después de hacer la compra.</p>
+                    <div class="modal-tracking-container">
+                      <div class="modal-tracking-inputs">
+                        <p>Transportista</p>
+                        <p>Número de seguimiento</p>
+                        <input type="text" name="" placeholder="Por ejemplo: USPS" value="">
+                        <input type="text" name="" placeholder="Por ejemplo: 21668468468486" value="">
+                        <a href="#" class="visibility-tracking-title">❌ Eliminar</a>
+                        <a href="#" class="display-tracking-add">➕ Agregar otro</a>
+                      </div>
+                      <div class="modal-tracking-inputs">
+                        <p class="display-tracking-title">Transportista</p>
+                        <p class="display-tracking-title">Número de seguimiento</p>
+                        <input type="text" name="" placeholder="Por ejemplo: USPS" value="">
+                        <input type="text" name="" placeholder="Por ejemplo: 21668468468486" value="">
+                        <a href="#">❌ Eliminar</a>
+                        <a href="#">➕ Agregar otro</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-main" data-dismiss="modal">☝️ Subir números</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="tracking-customer-box-2 shadow bg-white">
-            <h5>Boleta de compra</h5>
+            <h5>🧾 Boleta de compra</h5>
             <p>Es obligación del cliente subir la boleta de compra en caso sea requerida por aduana.</p>
-            <a href="index.html" class="btn-secondary tracking-customer-pending-size" role="button">adjuntar</a>
+            <a href="#invoice-upload" data-toggle="modal" class="btn-secondary tracking-customer-pending-size" role="button">adjuntar</a>
+            <div class="modal fade" id="invoice-upload" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLongTitle">🧾 Agrega tus boletas de compra</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-tracking-subtitle">
+                      Es <b>obligatorio</b> subir la boleta de compra que te entregó tu tienda. Así, en caso que aduana determine el pago de impuestos por tu compra, el viajero tenga toda la información disponible y se realice todo el proceso rápido. Recuerda que esto pasa en menos del 1% de los casos, pero puede pasar 😉.
+                      <br><br>En caso de que la tienda no te envíe una boleta de compra, puedes subir una captura de pantalla donde se vea el producto y el valor de este, o el email de confirmación de compra donde se vea lo que estás comprando y los precios pagados.
+                    </p>
+                    <div class="modal-tracking-container">
+                      <p class="file-size-adv">Archivo debe ser en formato pdf, png o jpg y debe pesar menos de 10 MB.</p>
+                        <div class="modal-invoice-inputs">
+                          <input type="file" name="" value="">
+                          <a href="#" class="visibility-tracking-title">❌ Eliminar</a>
+                          <a href="#" class="display-tracking-add">➕ Agregar otro</a>
+                        </div>
+                        <div class="modal-invoice-inputs">
+                          <input type="file" name="" value="">
+                          <a href="#">❌ Eliminar</a>
+                          <a href="#">➕ Agregar otro</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-main" data-dismiss="modal">☝️ Subir boletas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tracking-customer-box-3 shadow bg-white">
-            <h5>¿Llegaron los productos?</h5>
+            <h5>🏘️ ¿Llegaron los productos?</h5>
             <p>El viajero te confirmará la recepción de tus compras entre el 03/05/2020 y el 06/05/2020.</p>
           </div>
           <div class="tracking-customer-box-4 shadow bg-white ">
-            <h5>Tus productos aún no están en Perú.</h5>
+            <h5>📬 Tus productos aún no están en Perú.</h5>
             <p>Tus productos aún no están listos para su entrega.</p>
           </div>
         </div>
